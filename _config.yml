@@ -24,12 +24,12 @@ brand:
 
 # Default author settings
 author:
-    name:       John Smith
-    github:     PressApps    # Github username for avatar
+    name:       Jeremy Van
+    github:     maniaclab    # Github username for avatar
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
-    peter:
+    jeremy:
         name:       Jeremy Van
         github:     maniaclab    # Github username for avatar
 
