@@ -19,6 +19,7 @@ cta:
     subtitle: Get in touch with us for details on additional services and custom work pricing
     button_text: Contact Us   
     button_url: /contact/  
+    image: maniaclogo.png
 ---
 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
