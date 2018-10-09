@@ -15,7 +15,7 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://docs.jekyll.plus"
+url:                "https://maniaclab.github.io"
 
 # Site logo, image or text
 brand:
@@ -30,23 +30,23 @@ author:
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
     peter:
-        name:       Peter Brown
-        github:     PressApps    # Github username for avatar
+        name:       Jeremy Van
+        github:     maniaclab    # Github username for avatar
 
 # Social icons displayed in footer
 social:
     email:
     website:
-    facebook:       https://www.facebook.com/
+    facebook:
     flickr:
     dribbble:
-    github:
+    github:         https://www.github.com/maniaclab
     googleplus:
-    instagram:      https://www.instagram.com/
+    instagram:
     linkedin:
     pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
+    twitter:
+    vimeo:
     youtube:
 
 # Twitter share button
@@ -54,7 +54,7 @@ twitter_username:
 
 # Default footer image settings
 footer:
-    copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+    copyright:      Made by <a href="https://github.com/maniaclab">Jeremy Van</a>.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
