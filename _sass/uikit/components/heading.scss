@@ -84,7 +84,7 @@ $heading-line-margin-horizontal:                 0.6em !default;
  ========================================================================== */
 
 .uk-heading-hero {
-    font-size: $heading-hero-font-size;
+    font-size: 4rem;
     line-height: $heading-hero-line-height;
     @if(mixin-exists(hook-heading-hero)) {@include hook-heading-hero();}
 }
@@ -93,7 +93,7 @@ $heading-line-margin-horizontal:                 0.6em !default;
 @media (min-width: $breakpoint-medium) {
 
     .uk-heading-hero {
-        font-size: $heading-hero-font-size-m;
+        font-size: 4rem;
         line-height: $heading-hero-line-height-m;
     }
 
@@ -103,7 +103,7 @@ $heading-line-margin-horizontal:                 0.6em !default;
 @media (min-width: $breakpoint-large) {
 
     .uk-heading-hero {
-        font-size: $heading-hero-font-size-l;
+        font-size: 4rem;
         line-height: $heading-hero-line-height-l;
     }
 
