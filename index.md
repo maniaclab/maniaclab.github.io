@@ -2,7 +2,7 @@
 layout: home
 hero:
     title: Maniac Lab
-    subtitle: Scientific Computation and Data Analytics
+    subtitle: Computating and Analytics for Collaborative Science
     image: maniaclogo.png
     search: true
 categories:
