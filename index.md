@@ -3,7 +3,6 @@ layout: home
 hero:
     title: MANIAC Lab
     subtitle: Computing and analytics for collaborative science
-    image: maniaclogo.png
     search: true
 categories:
     columns: 3
