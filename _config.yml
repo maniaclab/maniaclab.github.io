@@ -22,6 +22,9 @@ brand:
     image:          Maniac_Logo2_cropped.svg  # e.g. logo.png, upload logo image file to /assets/img/ folder
     text:           Docs      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
+brand_2:
+    image:          Maniac_Logo_M_cropped.png
+
 # Default author settings
 author:
     name:       Jeremy Van
@@ -94,4 +97,6 @@ sass:
 
 collections:
   docs:
+    output: true
+  projects:
     output: true

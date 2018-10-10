@@ -1,9 +1,10 @@
 ---
 layout: post
-title: How To Setup Naked Domain SSL With Github Pages
-categories: [Getting Started, Troubleshooting]
-author: John Black
-excerpt: In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et
+title: OSG
+categories: [projects]
+author: Jeremy Van
+icon: /assets/posts/osg-logo.png
+excerpt: Open Science Grid
 ---
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
