@@ -100,3 +100,5 @@ collections:
     output: true
   projects:
     output: true
+  collaborations:
+    output: true

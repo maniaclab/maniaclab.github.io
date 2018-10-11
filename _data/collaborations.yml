@@ -1,0 +1,21 @@
+# Categories home page navigation
+
+- title: SLATE
+  desc: Service Layer At The Edge
+  icon: settings
+  project: slate
+
+- title: VC3
+  desc: Virtual Clusters for Community Computation
+  icon: credit-card
+  project: vc3
+
+- title: SAND
+  desc: Something About Something Here
+  icon: cog
+  project: sand
+
+- title: OSG
+  desc: Open Science Gateway
+  icon: cog
+  project: osg
