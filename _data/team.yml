@@ -1,0 +1,37 @@
+# Categories home page navigation
+
+- name: Rob Gardner
+  title: Research Professor
+  desc: Get your account up and running in just few easy steps
+  icon: /assets/team/rgardner.jpg
+  doc: home
+
+- name: Lincoln Bryant
+  title: System Admin
+  desc: Managing your account, creating new users and exporting data
+  icon: /assets/team/lbryant.jpg
+  doc: frontmatter
+
+- name: Judith Stephens
+  title: System Admin
+  desc: Answers to most common configuration issues
+  icon: /assets/team/briedal.jpg
+  doc: variables
+
+- name: Benedikt Riedel
+  title: Scientific Programmer
+  desc: Answers to most common configuration issues
+  icon: /assets/team/briedal.jpg
+  doc: variables
+
+- name: Jeremy Van
+  title: Web Developer
+  desc: Answers to most common configuration issues
+  icon: /assets/team/jvan.jpeg
+  doc: variables
+
+- name: Chris Weaver
+  title: Software Engineer
+  desc: Answers to most common configuration issues
+  icon: /assets/team/cweaver.jpg
+  doc: variables

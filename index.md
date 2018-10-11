@@ -7,13 +7,10 @@ hero:
     search: true
 categories:
     columns: 3
-    title: Browse Projects
-    subtitle: Read about our projects and fellow collaborations.
-featured:
-    title: Popular Articles
-    tag: featured
+    title: Meet Our Team
+    subtitle: Quick Team Bios
 section:
-    title: Need More?
+    title: Quick Blurb
     subtitle: This section displays optional page content lorem ipsum
 cta:
     title: Didn't find an answer to your question?
