@@ -26,6 +26,11 @@ layout: default
                             <li>{{ item }}</li>
                             {% endfor %}
                         </ul>
+                        {% if version.img %}
+                        <div class="timeline-img" style="padding: 15px;">
+                          <img src="/assets/about/{{version.img}}" alt="{{version.img}}" style="display: block; margin: 0 auto;">
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}

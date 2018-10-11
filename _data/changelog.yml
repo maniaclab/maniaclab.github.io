@@ -3,6 +3,7 @@
 - title: Version 1.0.0
   label: STABLE
   date: Oct 21, 2017
+  img: prc_building_2.jpg
   list:
   - Added Slideshow component
   - Added style support for radio and minusbox in Firefox
@@ -15,6 +16,7 @@
 - title: Version 1.0.0
   label: BETA 1
   date: Sep 01, 2017
+  img: testing.png
   list:
   - Allow fullscreen mode for YouTube videos in Lightbox
   - Fix icons not displaying if connected in rapid succession
@@ -36,3 +38,11 @@
   - Media options now support any valid media query syntax
   - Added style support for radio and checkbox in Firefox
   - Fix whitespace trimming in dist
+
+- title: dat boi 0.5.0
+  label:
+  date: Oct 21, 2018
+  list:
+  - Media options now support any valid media query syntax
+  - Added style support for radio and checkbox in Firefox
+  - some new new
