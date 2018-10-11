@@ -15,11 +15,17 @@
 - name: Judith Stephens
   title: System Admin
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/briedal.jpg
+  icon: /assets/team/jstephen.jpg
+  doc: variables
+
+- name: Ilija Vukotic
+  title: Senior Computational Scientist
+  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  icon: /assets/team/ilija.jpg
   doc: variables
 
 - name: Benedikt Riedel
-  title: Scientific Programmer
+  title: Computational Scientist
   desc: Insert quick personal blurb here. Job description and/or hobbies.
   icon: /assets/team/briedal.jpg
   doc: variables
