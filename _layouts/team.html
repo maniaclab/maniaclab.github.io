@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% if page.categories.columns %}
+    {% assign columns = page.categories.columns %}
+{% else %}
+    {% assign columns = 3 %}
+{% endif %}
+
+{% if page.categories %}
+<div class="uk-section">
+    <div class="uk-container">
+
+        {% if page.categories.title %}
+            <h2 class="uk-text-center heading-hero-2">{{ page.categories.title }}</h2>
+        {% endif %}
+
+        {% if page.categories.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>{% endif %}
+
+        <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+        {% for item in site.data.team %}
+            {% if item.name %}
+            {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
+            {% assign doc = site.docs | where:"url", doc_url | first %}
+            <div>
+                <div class="uk-card uk-card-body uk-inline uk-border-rounded">
+                    <!-- <a class="uk-position-cover" href="{{ doc.url }}"></a> -->
+                    {% if item.icon %}
+                    <!-- <span data-uk-icon="icon: {{ item.icon }}; ratio: 2" class=""></span> -->
+                    <img src="{{item.icon}}" style="height:200px; width:auto; border-radius: 100%;"/>
+                    {% endif %}
+                    <h3 class="uk-card-title uk-margin">{{ item.name }}</h3>
+                    {% if item.title %}
+                    <label style="color: #C68220; font-weight: 500;">{{ item.title }}</label>
+                    {% endif %}
+                    {% if item.desc %}
+                    <p style="color: #155F83;">{{ item.desc }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endif %}
