@@ -25,6 +25,9 @@ brand:
 brand_2:
     image:          Maniac_Logo2_cropped.svg
 
+efi_brand:
+  image: efi_logo_orange.png
+
 # Default author settings
 author:
     name:       Jeremy Van
