@@ -9,7 +9,7 @@ layout: default
 {% endif %}
 
 {% if page.categories %}
-<div class="uk-section">
+<div class="uk-section section-projects">
     <div class="uk-container">
 
         {% if page.categories.title %}
@@ -18,26 +18,29 @@ layout: default
 
         {% if page.categories.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>{% endif %}
 
-        <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
-        {% for project in site.projects %}
-            {% if project.title %}
-            <div>
-                <div class="uk-card uk-card-body uk-inline uk-border-rounded">
-                    <a class="uk-position-cover" href="{{ project.url }}"></a>
-                    {% if project.icon %}
-                    <span data-uk-icon="icon: {{ project.icon }}; ratio: 2" class=""></span>
-                    <img src="{{project.icon}}" style="height:70px; width:auto;"/>
-                    {% endif %}
-                    <h3 class="uk-card-title uk-margin">{{ project.title }}</h3>
-                    {% if project.excerpt %}
-                    <p>{{ project.excerpt }}</p>
-                    {% endif %}
-                </div>
-            </div>
-            {% endif %}
-        {% endfor %}
-        </div>
-
     </div>
+</div>
+<div class="uk-section">
+  <div class="uk-container">
+    <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+    {% for project in site.projects %}
+        {% if project.title %}
+        <div>
+            <div class="uk-card uk-card-body uk-inline uk-border-rounded">
+                <a class="uk-position-cover" href="{{ project.url }}"></a>
+                {% if project.icon %}
+                <span data-uk-icon="icon: {{ project.icon }}; ratio: 2" class=""></span>
+                <img src="{{project.icon}}" style="height:70px; width:auto;"/>
+                {% endif %}
+                <h3 class="uk-card-title uk-margin">{{ project.title }}</h3>
+                {% if project.excerpt %}
+                <p>{{ project.excerpt }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+  </div>
 </div>
 {% endif %}

@@ -3,12 +3,12 @@
         <div class="uk-navbar-left">
 
             <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
-              {% if site.brand.image %}
-              <img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">
-              {% else %}{{ site.brand.text | escape }}{% endif %}
               {% if site.efi_brand.image %}
               <img src="{{ site.post_assets | absolute_url }}{{ site.efi_brand.image }}" alt="{{ site.efi_brand.text | escape }}">
               {% else %}{{ site.efi_brand.text | escape }}{% endif %}
+              {% if site.brand.image %}
+              <img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">
+              {% else %}{{ site.brand.text | escape }}{% endif %}
             </a>
 
         </div>

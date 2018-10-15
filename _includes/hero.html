@@ -6,6 +6,9 @@
         {% endif %}
         <h1 class="uk-heading-hero uk-text-center uk-margin-remove-top" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">{{ page.hero.title }}</h1>
         {% if page.hero.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
+        {% if page.hero.sub_image %}
+        <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ page.hero.sub_image }}" style="max-height: 50px;" alt="Hero"></p>
+        {% endif %}
 
         {% if page.hero.search %}
         <div class="hero-search">

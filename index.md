@@ -3,6 +3,7 @@ layout: home
 hero:
     subtitle: Computing and analytics for collaborative science
     image: Maniac_Logo2_cropped.svg
+    sub_image: uc_shield_logo.gif
     search: true
 categories:
     columns: 3
