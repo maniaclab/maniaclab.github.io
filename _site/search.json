@@ -1,115 +1,51 @@
 [
   
     {
-      "title"    : "How To Setup Domain SSL With Github Pages",
+      "title"    : "ATLAS",
       "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/assets/",
-      "date"     : "2018-10-15 14:05:03 -0500"
+      "tags"     : "collaborations",
+      "url"      : "/docs/atlas/",
+      "date"     : "2018-10-15 14:33:43 -0500"
     } ,
   
     {
-      "title"    : "Category hosting Setting up new domain and page",
+      "title"    : "LIGO",
       "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/collections/",
-      "date"     : "2018-10-15 14:05:03 -0500"
+      "tags"     : "collaborations",
+      "url"      : "/docs/ligo/",
+      "date"     : "2018-10-15 14:33:43 -0500"
     } ,
   
     {
-      "title"    : "Purchasing domain name and DNS setup",
+      "title"    : "OSG",
       "category" : "",
-      "tags"     : "othertag",
-      "url"      : "/docs/configuration/",
-      "date"     : "2018-10-15 14:05:03 -0500"
+      "tags"     : "projects",
+      "url"      : "/docs/osg/",
+      "date"     : "2018-10-15 14:33:43 -0500"
     } ,
   
     {
-      "title"    : "Cancelling a website subscription",
+      "title"    : "SLATE",
       "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/drafts/",
-      "date"     : "2018-10-15 14:05:03 -0500"
+      "tags"     : "projects",
+      "url"      : "/docs/slate/",
+      "date"     : "2018-10-15 14:33:43 -0500"
     } ,
   
     {
-      "title"    : "Settings up Jekkyl on Github pages",
+      "title"    : "VC3",
       "category" : "",
-      "tags"     : "othertag",
-      "url"      : "/docs/frontmatter/",
-      "date"     : "2018-10-15 14:05:03 -0500"
+      "tags"     : "projects",
+      "url"      : "/docs/vc3/",
+      "date"     : "2018-10-15 14:33:43 -0500"
     } ,
   
     {
-      "title"    : "Creating new page in Jekyll and publishing",
+      "title"    : "VERITAS",
       "category" : "",
-      "tags"     : "featured, othertag",
-      "url"      : "/docs/home/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Getting started with our application",
-      "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/installation/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Updating your billing credit card",
-      "category" : "",
-      "tags"     : "othertag",
-      "url"      : "/docs/pages/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Accepted currencies for product billing",
-      "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/posts/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Getting a JavaScript console error",
-      "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/quickstart/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Upgrading to paid service",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/docs/structure/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Design tips for choosing great images",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/docs/usage/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Understanding company billing and accounts",
-      "category" : "",
-      "tags"     : "featured",
-      "url"      : "/docs/variables/",
-      "date"     : "2018-10-15 14:05:03 -0500"
-    } ,
-  
-    {
-      "title"    : "Selecting the right fonts and colors",
-      "category" : "",
-      "tags"     : "othertag",
-      "url"      : "/docs/windows/",
-      "date"     : "2018-10-15 14:05:03 -0500"
+      "tags"     : "collaborations",
+      "url"      : "/docs/veritas/",
+      "date"     : "2018-10-15 14:33:43 -0500"
     } 
   
 ]

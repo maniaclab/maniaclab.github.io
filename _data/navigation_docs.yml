@@ -1,25 +1,41 @@
-- title: Getting Started
+# - title: Getting Started
+#   docs:
+#   - home
+#   - quickstart
+#   - installation
+#   - windows
+#
+# - title: Account and Billing
+#   docs:
+#   - frontmatter
+#   - posts
+#   - drafts
+#   - pages
+#
+# - title: Customization
+#   docs:
+#   - usage
+#   - structure
+#   - configuration
+#
+# - title: Troubleshooting
+#   docs:
+#   - variables
+#   - collections
+#   - assets
+
+- title: Projects
   docs:
   - home
-  - quickstart
-  - installation
-  - windows
+  - slate
+  - vc3
+  - osg
+  - sand
 
-- title: Account and Billing
+- title: Collaborations
   docs:
-  - frontmatter
-  - posts
-  - drafts
-  - pages
-
-- title: Customization
-  docs:
-  - usage
-  - structure
-  - configuration
-
-- title: Troubleshooting
-  docs:
-  - variables
-  - collections
-  - assets
+  - atlas
+  - ligo
+  - icecube
+  - xenon
+  - vertas
