@@ -4,8 +4,8 @@ title: Team
 permalink: /team/
 categories:
     columns: 3
-    title: Meet our team
-    subtitle: Quick team bios
+    title: Meet the Team
+    subtitle: A little insight of our team members
 ---
 
 ##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.

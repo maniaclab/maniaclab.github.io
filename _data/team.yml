@@ -3,37 +3,37 @@
 - name: Rob Gardner
   title: Research Professor
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/rgardner.jpg
+  icon: /assets/team/rgardner.png
   doc: home
 
 - name: Lincoln Bryant
   title: System Admin
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/lbryant.jpg
+  icon: /assets/team/lbryant.png
   doc: frontmatter
 
 - name: Judith Stephens
   title: System Admin
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/jstephen.jpg
+  icon: /assets/team/jstephen.png
   doc: variables
 
 - name: Ilija Vukotic
   title: Senior Computational Scientist
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/ilija.jpg
+  icon: /assets/team/ilija.png
   doc: variables
 
 - name: Benedikt Riedel
   title: Computational Scientist
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/briedal.jpg
+  icon: /assets/team/breidel.png
   doc: variables
 
 - name: Jeremy Van
   title: Web Developer
   desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/jvan.jpeg
+  icon: /assets/team/jvan.png
   doc: variables
 
 - name: Chris Weaver
