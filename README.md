@@ -1,6 +1,6 @@
 ## Editing Home Page Content
 
-To edit the content on the home page, namely the "Quick Blurb" section below the banner photo, update the `index.md` located in the root directory. As shown below, the you may edit the title and the subtitle.
+To edit the content on the home page, namely the "Quick Blurb" section below the banner photo, update the `index.md` located in the root directory or [here](https://github.com/maniaclab/maniaclab.github.io/edit/master/index.md). As shown below, the you may edit the title and the subtitle.
 
 ```YAML
 ---
@@ -16,7 +16,7 @@ In order to update the content, you may update the lorem-ipsum below the second 
 
 ## Posts (NEWS)
 
-To create a new news page, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
+To create a new news page, you can create a new markdown file inside the `_posts` directory [here](https://github.com/maniaclab/maniaclab.github.io/tree/master/_posts) by following the recommended file naming format:
 ```
 YEAR-MONTH-DAY-title.MARKUP
 ```
@@ -44,7 +44,7 @@ Continued Markdown Content here to be converted to HTML.
 
 ## Adding Projects
 
-To create a new news page, you can create a new markdown file inside the `_projects` directory. You may name the file anything you'd like (i.e. osg.md, slate.md, vc3.md), as long as it is an .md file.
+To create a new news page, you can create a new markdown file inside the `_projects` directory [here](https://github.com/maniaclab/maniaclab.github.io/tree/master/_projects). You may name the file anything you'd like (i.e. osg.md, slate.md, vc3.md), as long as it is an .md file.
 
 Use the following example template:
 
@@ -61,19 +61,22 @@ excerpt: Services Layered At The Edge
 - Where "icon" refers to the location of your project's image.
 
 - Remember to add a photo to the '/assets/projects/' directory, which you'll be able to reference here. The page will still render the markdown with or without the image.
+```
 
-- Once you've created this project's markdown, please also make a copy of this markdown file, and add it to the `/_docs` directory, otherwise it will not come up in the search table of content (TOC) documentation.
+- Once you've created this project's markdown, please also make a copy of this markdown file, and add it to the `/_docs` directory [here](https://github.com/maniaclab/maniaclab.github.io/tree/master/_docs), otherwise it will not come up in the search table of content (TOC) documentation. You may, quite literally, copy and paste the markdown file from `_project` to `_docs`
 
-- Please note, to add the follow lines in the content of your doc copy
+- Please note, to add the follow lines in the content of your doc copy, in order to generate the sidebar table of contents
 
+```YAML
 {:.no_toc}
 * TOC
 {:toc}
 ```
 
+
 ## Adding Collaborations
 
-To create a new news page, you can create a new markdown file inside the `_collaborations` directory. You may name the file anything you'd like (i.e. atlas.md, ligo.md, vertias.md), as long as it is an .md file.
+To create a new news page, you can create a new markdown file inside the `_collaborations` directory [here](https://github.com/maniaclab/maniaclab.github.io/tree/master/_collaborations). You may name the file anything you'd like (i.e. atlas.md, ligo.md, vertias.md), as long as it is an .md file.
 
 Use the following example template:
 
@@ -91,11 +94,13 @@ excerpt: stuff about cern
 - Where "icon" refers to the location of your project's image.
 
 - Remember to add a photo to the '/assets/collaborations/' directory, which you'll be able to reference here. The page will still render the markdown with or without the image.
+```
 
-- Once you've created this collaboration's markdown, please also make a copy of this markdown file, and add it to the `/_docs` directory, otherwise it will not come up in the search table of content (TOC) documentation.
+- Once you've created this collaboration's markdown, please also make a copy of this markdown file, and add it to the `/_docs` directory [here](https://github.com/maniaclab/maniaclab.github.io/tree/master/_docs), otherwise it will not come up in the search table of content (TOC) documentation. You may, quite literally, copy and paste the markdown file from `_collaborations` to `_docs`
 
-- Please note, to add the follow lines in the content of your doc copy
+- Please note, to add the follow lines in the content of your doc copy, in order to generate the sidebar table of contents
 
+```YAML
 {:.no_toc}
 * TOC
 {:toc}
@@ -103,7 +108,7 @@ excerpt: stuff about cern
 
 ## Editing History Timeline
 
-To edit the content on the history timeline, you may add/edit the content located in `/_data/changelog.yml` using the following format:
+To edit the content on the history timeline, you may add/edit the content located in `/_data/changelog.yml` or [here](https://github.com/maniaclab/maniaclab.github.io/blob/master/_data/changelog.yml) using the following format:
 
 ```YAML
 - title: Maniac Lab
