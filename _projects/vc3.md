@@ -3,7 +3,7 @@ layout: post
 title: VC3
 categories: [projects]
 author: Jeremy Van
-icon: /assets/posts/vc3-logo.png
+icon: /assets/projects/vc3-logo.png
 excerpt: Virtual Clusters for Community Computation
 ---
 

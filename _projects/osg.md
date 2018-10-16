@@ -3,7 +3,7 @@ layout: post
 title: OSG
 categories: [projects]
 author: Jeremy Van
-icon: /assets/posts/osg-logo.png
+icon: /assets/projects/osg-logo.png
 excerpt: Open Science Grid
 ---
 

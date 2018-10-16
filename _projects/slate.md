@@ -3,7 +3,7 @@ layout: post
 title: SLATE
 categories: [projects]
 author: Jeremy Van
-icon: /assets/posts/slate-logo.png
+icon: /assets/projects/slate-logo.png
 excerpt: Services Layered At The Edge
 ---
 
