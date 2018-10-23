@@ -4,7 +4,7 @@ hero:
     subtitle: Computating and Analytics for Collaborative Science
     image: Maniac_Logo2_cropped.svg
     sub_image: uc_shield_logo.gif
-    search: true
+    search: false
 categories:
     columns: 3
     title: Meet Our Team

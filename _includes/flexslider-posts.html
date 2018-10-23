@@ -1,0 +1,19 @@
+  <!-- Place somewhere in the <body> of your page -->
+  <div class="flexslider">
+    <ul class="slides">
+      {% for doc in site.docs %}
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="{{ doc.icon }}"/>
+            <div class="headline">
+              <h1 class="flex-caption">{{doc.title}}</h1>
+              <p class="flex-caption">{{ doc.excerpt}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>

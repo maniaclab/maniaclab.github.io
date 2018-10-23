@@ -28,6 +28,32 @@ layout: default
 </div>
 {% endif %}
 
+<div class="uk-section section-hero uk-text-center" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+  <div class="uk-container uk-container-small">
+    {% include flexslider-posts.html %}
+  </div>
+</div>
+
+<div class="uk-section uk-text-center"
+      data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+    <div class="uk-container uk-container-small">
+      <div class="uk-column-1">
+        {% if page.hero.image %}
+        <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ page.hero.image }}" alt="Hero"></p>
+        {% endif %}
+        <h1 class="uk-heading-hero uk-text-center uk-margin-remove-top" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">{{ page.hero.title }}</h1>
+        {% if page.hero.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
+        {% if page.hero.sub_image %}
+        <p class="hero-image uk-text-center">
+          <img src="{{ site.post_assets | absolute_url }}{{ page.hero.sub_image }}" style="max-height: 30px; padding-right: 10px;" alt="Hero">
+          <img src="{{ site.post_assets | absolute_url }}{{ site.efi_brand.image }}" style="max-height: 50px; border-left: 1px solid #a3a3a3; padding-left: 10px;" alt="{{ site.efi_brand.text | escape }}">
+        </p>
+        {% endif %}
+      </div>
+    </div>
+</div>
+
+
 <img src="/assets/maniac_bottom_banner.png"/>
 
 {% if page.section %}

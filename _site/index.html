@@ -23,9 +23,15 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
   <link rel="alternate" type="application/rss+xml" title="Maniac Lab" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/custom.js"></script>
   
 </head>
+
 
     <body>
 
@@ -38,10 +44,7 @@
 
             <a class="uk-navbar-item uk-logo" href="/">
               
-              <img src="http://localhost:4000/assets/posts/efi_logo_orange.png" alt="">
-              
-              
-              <img src="http://localhost:4000/assets/posts/maniaclogo.png" alt="Docs">
+              <img src="http://localhost:4000/assets/posts/Maniac_Logo_extended.png" alt="">
               
             </a>
 
@@ -106,7 +109,7 @@
 </header>
 
 
-    
+    <!-- 
         <div class="uk-section section-hero"
       data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
     <div class="uk-container uk-container-small">
@@ -114,44 +117,134 @@
         <p class="hero-image uk-text-center"><img src="http://localhost:4000/assets/posts/Maniac_Logo2_cropped.svg" alt="Hero"></p>
         
         <h1 class="uk-heading-hero uk-text-center uk-margin-remove-top" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);"></h1>
-        <p class="subtitle uk-text-lead uk-text-center">Computing and analytics for collaborative science</p>
+        <p class="subtitle uk-text-lead uk-text-center">Computating and Analytics for Collaborative Science</p>
         
-        <p class="hero-image uk-text-center"><img src="http://localhost:4000/assets/posts/uc_shield_logo.gif" style="max-height: 50px;" alt="Hero"></p>
+        <p class="hero-image uk-text-center">
+          <img src="http://localhost:4000/assets/posts/uc_shield_logo.gif" style="max-height: 30px; padding-right: 10px;" alt="Hero">
+          <img src="http://localhost:4000/assets/posts/efi_logo.png" style="max-height: 50px; border-left: 1px solid #a3a3a3; padding-left: 10px;" alt="">
+        </p>
         
 
-        
-        <div class="hero-search">
-
-            <!-- Html Elements for Search -->
-            <div class="uk-position-relative">
-                <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
-                    <span data-uk-search-icon></span>
-                    <input id="hero-search" class="uk-search-input" type="search" placeholder="Search for answers...">
-                </form>
-                <ul id="hero-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-            </div>
-
-            <script>
-            SimpleJekyllSearch({
-                searchInput: document.getElementById('hero-search'),
-                resultsContainer: document.getElementById('hero-search-results'),
-                noResultsText: '<li>No results found</li>',
-                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                json: '/search.json'
-            });
-            </script>
-
-        </div>
         
 
     </div>
 </div>
 
-    
+     -->
 
     
 
 
+
+
+<div class="uk-section section-hero uk-text-center" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+  <div class="uk-container uk-container-small">
+      <!-- Place somewhere in the <body> of your page -->
+  <div class="flexslider">
+    <ul class="slides">
+      
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="/assets/img/slideshow/atlas.jpg"/>
+            <div class="headline">
+              <h1 class="flex-caption">ATLAS</h1>
+              <p class="flex-caption">stuff about cern</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="/assets/img/slideshow/ligo.jpg"/>
+            <div class="headline">
+              <h1 class="flex-caption">LIGO</h1>
+              <p class="flex-caption">LIGO AND ICECUBE</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="/assets/img/slideshow/osg_logo.png"/>
+            <div class="headline">
+              <h1 class="flex-caption">OSG</h1>
+              <p class="flex-caption">Open Science Grid</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="/assets/projects/slate-logo.png"/>
+            <div class="headline">
+              <h1 class="flex-caption">SLATE</h1>
+              <p class="flex-caption">Services Layered At The Edge</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="/assets/projects/vc3-logo.png"/>
+            <div class="headline">
+              <h1 class="flex-caption">VC3</h1>
+              <p class="flex-caption">Virtual Clusters for Community Computation</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#">
+          <div class="background"></div>
+          <div class="slidewrap">
+            <img src="/assets/collaborations/veritas.jpg"/>
+            <div class="headline">
+              <h1 class="flex-caption">VERITAS</h1>
+              <p class="flex-caption">Something about VERITAS</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+<div class="uk-section uk-text-center"
+      data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+    <div class="uk-container uk-container-small">
+      <div class="uk-column-1">
+        
+        <p class="hero-image uk-text-center"><img src="http://localhost:4000/assets/posts/Maniac_Logo2_cropped.svg" alt="Hero"></p>
+        
+        <h1 class="uk-heading-hero uk-text-center uk-margin-remove-top" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);"></h1>
+        <p class="subtitle uk-text-lead uk-text-center">Computating and Analytics for Collaborative Science</p>
+        
+        <p class="hero-image uk-text-center">
+          <img src="http://localhost:4000/assets/posts/uc_shield_logo.gif" style="max-height: 30px; padding-right: 10px;" alt="Hero">
+          <img src="http://localhost:4000/assets/posts/efi_logo.png" style="max-height: 50px; border-left: 1px solid #a3a3a3; padding-left: 10px;" alt="">
+        </p>
+        
+      </div>
+    </div>
+</div>
 
 
 <img src="/assets/maniac_bottom_banner.png"/>
@@ -327,5 +420,14 @@
     
 
     </body>
+
+    <!-- Flexslider Scripts
+=================================================-->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/custom.js"></script>
 
 </html>

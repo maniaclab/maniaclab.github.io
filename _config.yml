@@ -25,8 +25,11 @@ brand:
 brand_2:
     image:          Maniac_Logo2_cropped.svg
 
+brand_extended:
+  image:            Maniac_Logo_extended.png
+
 efi_brand:
-  image: efi_logo_orange.png
+  image: efi_logo.png
 
 # Default author settings
 author:

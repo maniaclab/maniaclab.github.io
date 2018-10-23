@@ -3,7 +3,7 @@ layout: doc
 title: ATLAS
 categories: [projects]
 author: Jeremy Van
-icon: /assets/collaborations/atlas_logo.png
+icon: /assets/img/slideshow/atlas.jpg
 excerpt: stuff about cern
 tags: collaborations
 ---

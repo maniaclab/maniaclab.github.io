@@ -3,7 +3,7 @@ layout: doc
 title: LIGO
 categories: [projects]
 author: Jeremy Van
-icon: /assets/collaborations/ligo_logo.png
+icon: /assets/img/slideshow/ligo.jpg
 excerpt: LIGO AND ICECUBE
 tags: collaborations
 ---
