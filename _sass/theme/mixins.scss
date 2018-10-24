@@ -329,7 +329,9 @@ ul.doc-nav {
       padding: 150px;
     }
     .section-hero {
-        background: url('/assets/home_banner.png') no-repeat center top;
+        // background: url('/assets/home_banner.png') no-repeat center top;
+        // background: -webkit-linear-gradient(top, #403f3f 0, #383737 100%);
+        background: #EDEDED;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
