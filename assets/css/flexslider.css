@@ -65,6 +65,10 @@ body { font-family: 'Montserrat', sans-serif; }
 }
 .flex-next {
   right: -70px;
+  /* font-size: 0; */
+}
+.flex-direction-nav {
+  font-size: 0;
 }
 
 .flexslider .slideshow-zoom {
