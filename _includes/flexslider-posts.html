@@ -1,22 +1,22 @@
-  <!-- Place somewhere in the <body> of your page -->
-  <div class="flexslider">
-    <ul class="slides">
-      {% for doc in site.docs %}
-      {% if doc.image %}
-      <li>
-        <a href="{{doc.url}}">
-          <div class="slidewrap" style="background-image: url({{doc.icon}});">
-            <div class="background">
-            <!-- <img src="{{ doc.icon }}"/> -->
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+  {% for doc in site.docs %}
+    {% if doc.image %}
+    <li>
+      <a href="{{doc.url}}">
+        <div class="slidewrap" style="background-image: url({{doc.icon}});">
+          <div class="background">
+        <!-- <img src="{{ doc.icon }}"/> -->
             <div class="headline">
               <h1 class="flex-caption-title">{{doc.title}}</h1>
               <p class="flex-caption">{{ doc.excerpt}}</p>
             </div>
-            </div>
           </div>
-        </a>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+        </div>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>

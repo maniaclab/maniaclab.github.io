@@ -100,15 +100,18 @@ $subnav-item-disabled-color:                     $global-muted-color !default;
 /* Hover + Focus */
 .uk-subnav > * > a:hover,
 .uk-subnav > * > a:focus {
-    color: $subnav-item-hover-color;
-    text-decoration: $subnav-item-hover-text-decoration;
+    // color: $subnav-item-hover-color;
+    color: white;
+    // text-decoration: $subnav-item-hover-text-decoration;
+    text-decoration: underline;
     outline: none;
     @if(mixin-exists(hook-subnav-item-hover)) {@include hook-subnav-item-hover();}
 }
 
 /* Active */
 .uk-subnav > .uk-active > a {
-    color: $subnav-item-active-color;
+    // color: $subnav-item-active-color;
+    color: #FFB547;
     @if(mixin-exists(hook-subnav-item-active)) {@include hook-subnav-item-active();}
 }
 

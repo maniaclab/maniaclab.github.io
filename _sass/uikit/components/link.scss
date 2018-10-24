@@ -37,7 +37,8 @@ a.uk-link-muted,
 
 a.uk-link-muted:hover,
 .uk-link-muted a:hover {
-    color: $link-muted-hover-color;
+    // color: $link-muted-hover-color;
+    color: white;
     @if(mixin-exists(hook-link-muted-hover)) {@include hook-link-muted-hover();}
 }
 

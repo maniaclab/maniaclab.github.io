@@ -66,3 +66,15 @@ body { font-family: 'Montserrat', sans-serif; }
 .flex-next {
   right: -70px;
 }
+
+.flexslider .slideshow-zoom {
+  transition: transform 0.2s;
+}
+
+.flexslider .slideshow-zoom:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background: -webkit-linear-gradient(top, #403f3f 0, #383737 100%);
+}
