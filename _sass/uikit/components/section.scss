@@ -60,12 +60,22 @@ $section-secondary-color-mode:                     light !default;
     @if(mixin-exists(hook-section)) {@include hook-section();}
 }
 
+.section-hero {
+    box-sizing: border-box; /* 1 */
+    padding-top: 0px;
+    padding-bottom: $section-padding-vertical;
+    @if(mixin-exists(hook-section)) {@include hook-section();}
+}
+
 /* Desktop and bigger */
 @media (min-width: $breakpoint-medium) {
 
     .uk-section {
         padding-top: $section-padding-vertical-m;
         padding-bottom: $section-padding-vertical-m;
+    }
+    .section-hero {
+        padding-top: 0px;
     }
 
 }

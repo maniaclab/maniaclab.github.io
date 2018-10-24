@@ -2,18 +2,21 @@
   <div class="flexslider">
     <ul class="slides">
       {% for doc in site.docs %}
+      {% if doc.image %}
       <li>
-        <a href="#">
-          <div class="background"></div>
-          <div class="slidewrap">
-            <img src="{{ doc.icon }}"/>
+        <a href="{{doc.url}}">
+          <div class="slidewrap" style="background-image: url({{doc.icon}});">
+            <div class="background">
+            <!-- <img src="{{ doc.icon }}"/> -->
             <div class="headline">
-              <h1 class="flex-caption">{{doc.title}}</h1>
+              <h1 class="flex-caption-title">{{doc.title}}</h1>
               <p class="flex-caption">{{ doc.excerpt}}</p>
+            </div>
             </div>
           </div>
         </a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

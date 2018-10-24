@@ -1,10 +1,11 @@
 ---
 layout: doc
-title: LIGO
+title: ICECUBE
 categories: [projects]
 author: Jeremy Van
 icon: /assets/img/slideshow/ligo.jpg
-excerpt: LIGO AND ICECUBE
+image: /assets/img/slideshow/ligo.jpg
+excerpt: ICECUBE
 tags: collaborations
 ---
 

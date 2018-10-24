@@ -4,6 +4,7 @@ title: ATLAS
 categories: [projects]
 author: Jeremy Van
 icon: /assets/img/slideshow/atlas.jpg
+image: /assets/img/slideshow/atlas.jpg
 excerpt: stuff about cern
 tags: collaborations
 ---
