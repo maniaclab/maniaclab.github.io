@@ -1,11 +1,11 @@
 ---
 layout: doc
-title: Atlas
+title: UChicago welcomes new students
 categories: [projects]
 author: Jeremy Van
 icon: /assets/img/slideshow/atlas.jpg
 image: /assets/img/slideshow/atlas.jpg
-excerpt: stuff about cern
+excerpt: Orientation Week introduces students to UChicago traditions, community of scholars
 tags: collaborations
 ---
 
