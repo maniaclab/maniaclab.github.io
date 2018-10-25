@@ -10,8 +10,8 @@ categories:
     title: Meet Our Team
     subtitle: Quick Team Bios
 section:
-    title: Quick Blurb
-    subtitle: This section displays optional page content lorem ipsum
+    title: UChicago News
+    subtitle: Orientation Week introduces students to UChicago traditions, community of scholars
 cta:
     title: Didn't find an answer to your question?
     subtitle: Get in touch with us for details on additional services and custom work pricing
