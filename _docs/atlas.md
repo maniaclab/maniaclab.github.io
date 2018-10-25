@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: ATLAS
+title: Atlas
 categories: [projects]
 author: Jeremy Van
 icon: /assets/img/slideshow/atlas.jpg

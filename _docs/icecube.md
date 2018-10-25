@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: ICECUBE
+title: IceCube
 categories: [projects]
 author: Jeremy Van
 icon: /assets/img/slideshow/ligo.jpg

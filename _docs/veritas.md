@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: VERITAS
+title: Veritas
 categories: [projects]
 author: Jeremy Van
 icon: /assets/collaborations/veritas.jpg

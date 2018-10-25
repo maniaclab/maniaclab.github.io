@@ -30,18 +30,21 @@ body {
 .flexslider .headline{
   background: rgba(0,0,0,.4);
   width: 100%;
-  /* color: #155F83; */
   color: white;
   text-transform: capitalize;
-  font-weight: 500;
-  /* opacity: .1; */
-  /* z-index: 2; */
-  /* width: 75%; */
+  font-size: 1em;
+  font-weight: 400;
+  text-shadow: 0 1px 0 #000;
   position: absolute;
   bottom: 0;
-  /* padding: 1em; */
   padding-top: 10px;
   padding-bottom: 25px;
+}
+
+.flexslider .headline .flex-caption-title {
+  font-size: 2.22222222em;
+  font-weight: 200;
+  text-transform: capitalize;
 }
 
 .flexslider .headline .flex-caption-title {
