@@ -24,6 +24,7 @@ body {
   /* background: #800000; */
   /* opacity: 0.2; */
   height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   position: relative;
 }
 .flexslider .slides {
@@ -31,7 +32,7 @@ body {
 }
 
 .flexslider .headline{
-  background: rgba(0,0,0,.4);
+  /* background: rgba(0,0,0,.4); */
   width: 100%;
   color: white;
   text-transform: capitalize;
