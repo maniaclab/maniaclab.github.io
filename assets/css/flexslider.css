@@ -10,6 +10,16 @@ body {
   background: #EDEDED;
 }
 
+h2, .uk-h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.uk-article-content {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .uk-navbar {
   font-weight: 300;
 }
