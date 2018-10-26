@@ -10,7 +10,7 @@ body {
   background: #EDEDED;
 }
 
-h2, .uk-h2 {
+h2, h3, .uk-h2, .uk-h3 {
   font-size: 1.5rem;
   font-weight: 300;
 }
