@@ -10,12 +10,22 @@ body {
   background: #EDEDED;
 }
 
-h2, h3, .uk-h2, .uk-h3 {
+h2, .uk-h2{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h3, .uk-h3 {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
 .uk-article-content {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.tm-timeline-body {
   font-size: 14px;
   font-weight: 200;
 }
