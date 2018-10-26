@@ -2,7 +2,7 @@
 layout: home
 hero:
     subtitle: Computating and Analytics for Collaborative Science
-    image: Maniac_Logo2_cropped.svg
+    image: Maniac_Logo3.svg
     sub_image: uc_shield_logo.gif
     search: false
 categories:

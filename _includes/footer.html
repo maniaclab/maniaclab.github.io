@@ -1,7 +1,19 @@
-<footer class="uk-section uk-text-center uk-text-muted uk-link-muted">
+<footer class="uk-section uk-text-center uk-text-muted uk-link-muted" style="padding-bottom: 0px; padding-top: 15px;">
     <div class="uk-container uk-container-small">
 
-        <div>
+        <div class="footer-top-row">
+          <div class="uk-subnav uk-flex-center">
+            <!-- <div class="shield"></div> -->
+            <a href="#">
+              <img src="/assets/img/logos/Maniac_Logo_M_text_grey.png" class="maniac-logo" alt="Maniac Lab Logo">
+            </a>
+            <a href="https://www.uchicago.edu/" target="_blank" class="shield-logo-links">
+              <img src="/assets/img/logos/shield_uc_logo.png" class="shield-logo" alt="The University of Chicago Logo">
+            </a>
+            <a href="https://efi.uchicago.edu/" target="_blank" class="shield-logo-links">
+              <img src="/assets/img/logos/efi_logo_grey.png" class="shield-logo" alt="Enrico Fermi Institue Logo">
+            </a>
+          </div>
             <ul class="uk-subnav uk-flex-center">
                 {% for link in site.data.navigation_footer %}
                     {% if link.url contains 'http' %}
@@ -20,12 +32,19 @@
                 {% endfor %}
             </ul>
         </div>
-        <div class="uk-margin-medium">
+        <!-- <div class="uk-margin-medium">
             <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
                 {% include social-networks.html %}
             </div>
+        </div> -->
+        <div class="row">
+          <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+              {% include social-networks.html %}
+          </div>
+          <p class="uk-margin-medium uk-text-small copyright">
+            {{ site.footer.copyright }}
+          </p>
         </div>
-        <div class="uk-margin-medium uk-text-small copyright">{{ site.footer.copyright }}</div>
 
     </div>
 </footer>

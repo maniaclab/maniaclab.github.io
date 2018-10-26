@@ -63,7 +63,7 @@ twitter_username:
 
 # Default footer image settings
 footer:
-    copyright:      Made by <a href="https://github.com/maniaclab">Jeremy Van</a>.
+    copyright:      ©2018 The University of Chicago
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:

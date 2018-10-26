@@ -2,6 +2,7 @@
 
 html {
   font-size: 17px;
+  color: #4d4d4d;
 }
 body {
   /* font-family: 'Montserrat', sans-serif; */
@@ -9,6 +10,9 @@ body {
   background: #EDEDED;
 }
 
+.uk-navbar {
+  font-weight: 300;
+}
 .flexslider {
   background: transparent;
   border: 0px solid transparent;
@@ -110,6 +114,45 @@ body {
 
 footer {
   background: -webkit-linear-gradient(top, #403f3f 0, #383737 100%);
+}
+footer .shield {
+  /* text-indent: -9999em; */
+  background: transparent url('https://d3qi0qp55mx5f5.cloudfront.net/shared-resources/i/template/shield.svg') no-repeat center top;
+  background-size: cover;
+  top: 0;
+  height: 120px;
+  width: 7%;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+footer .footer-top-row .shield-logo {
+  max-height: 70px;
+  width: auto;
+  /* top: 30px; */
+}
+footer .shield-logo-links {
+  top: 28px;
+}
+footer .footer-top-row .maniac-logo {
+  max-height: 100px;
+  width: auto;
+}
+.uk-link-muted a {
+  color: #d9d9d9;
+}
+footer .uk-subnav>*>:first-child {
+  color: #d9d9d9;
+}
+footer .uk-subnav>.uk-active>a {
+  color: #d9d9d9;
+}
+
+footer .footer-top-row {
+  border-bottom: 1px solid #1b1b1b;
+}
+footer .row {
+  border-top: 1px solid #4d4d4d;
+  padding: 1em 0 !important;
 }
 
 .sub-hero {
