@@ -10,6 +10,26 @@ body {
   background: #EDEDED;
 }
 
+h2, .uk-h2{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h3, .uk-h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.uk-article-content {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.tm-timeline-body {
+  font-size: 14px;
+  font-weight: 200;
+}
+
 .uk-navbar {
   font-weight: 300;
 }
@@ -115,12 +135,15 @@ body {
 footer {
   background: -webkit-linear-gradient(top, #403f3f 0, #383737 100%);
 }
+footer a {
+  padding: 10px;
+}
 footer .shield {
   /* text-indent: -9999em; */
   background: transparent url('https://d3qi0qp55mx5f5.cloudfront.net/shared-resources/i/template/shield.svg') no-repeat center top;
   background-size: cover;
   top: 0;
-  height: 120px;
+  max-height: 120px;
   width: 7%;
   margin: 0 auto;
   opacity: 0.6;
@@ -162,4 +185,15 @@ footer .row {
   background-attachment: fixed;
   max-width: 100%;
   max-height: 100%;
+}
+
+.box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

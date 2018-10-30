@@ -36,20 +36,43 @@ layout: default
 
 <div class="uk-section uk-text-center sub-hero"
       data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-    <div class="uk-container uk-container-small">
-      <div class="uk-column-1">
+    <div class="uk-container uk-container-small row">
+      <div class="clearfix">
         {% if page.hero.image %}
-        <p class="hero-image uk-text-center"><img src="{{ site.post_assets | absolute_url }}{{ page.hero.image }}" alt="Hero"></p>
+        <div class="box">
+          <p class="hero-image uk-text-center">
+            <img src="{{ site.post_assets | absolute_url }}{{ page.hero.image }}" alt="Hero">
+          </p>
+        </div>
         {% endif %}
-        <h1 class="uk-heading-hero uk-text-center uk-margin-remove-top" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">{{ page.hero.title }}</h1>
-        {% if page.hero.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.hero.subtitle }}</p>{% endif %}
+        <div class="box">
+          <h1 class="uk-heading-hero uk-text-center" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">{{ page.hero.title }}</h1>
+          {% if page.hero.subtitle %}
+          <p class="subtitle uk-text-lead uk-text-center">
+            {{ page.hero.subtitle }}
+          </p>
+          <p class="uk-text-lead uk-text-center">
+            {{ page.hero.description }}
+          </p>
+          {% endif %}
+        </div>
+        <div class="box">
+        {% if page.hero.description %}
+          <img src="/assets/img/maniac_nicholas.jpg" style="max-height: 250px; width:auto;" alt="Hero">
+          <p class="uk-text-lead uk-text-center">
+            {{ page.hero.description }}
+          </p>
+        {% endif %}
+        </div>
+      </div>
+      <!-- <div class="col-lg-6">
         {% if page.hero.sub_image %}
         <p class="hero-image uk-text-center">
           <img src="{{ site.post_assets | absolute_url }}{{ page.hero.sub_image }}" style="max-height: 50px; padding-right: 10px;" alt="Hero">
           <img src="{{ site.post_assets | absolute_url }}{{ site.efi_brand.image }}" style="max-height: 70px; border-left: 1px solid #a3a3a3; padding-left: 10px;" alt="{{ site.efi_brand.text | escape }}">
         </p>
         {% endif %}
-      </div>
+      </div> -->
     </div>
 </div>
 
