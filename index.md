@@ -5,17 +5,17 @@ hero:
     image: Maniac_Logo3.svg
     sub_image: uc_shield_logo.gif
     search: false
-    description: We build advanced cyberinfrastructure ... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    description: We build advanced cyberinfrastructure supporting the largest scientific instruments probing the most fundumental questions of nature.  
 categories:
     columns: 3
     title: Meet Our Team
     subtitle: Quick Team Bios
 section:
-    title: UChicago News
-    subtitle: Orientation Week introduces students to UChicago traditions, community of scholars
+    title: Supporting Collaborative Science
+    subtitle: The MANIAC Lab supports multi-institution scientific collaborations through innovation of data delivery, analytics and high throughput computation.
 cta:
-    title: Didn't find an answer to your question?
-    subtitle: Get in touch with us for details on additional services and custom work pricing
+    title: Collaborate with us
+    subtitle: Get in touch with us to discuss your computing requirements and goals
     button_text: Contact Us   
     button_url: /contact/  
 ---

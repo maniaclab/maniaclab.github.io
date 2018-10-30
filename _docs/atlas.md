@@ -1,11 +1,11 @@
 ---
 layout: doc
-title: UChicago welcomes new students
+title: Innovating Software for High Energy Physics
 categories: [projects]
 author: Jeremy Van
 icon: /assets/img/slideshow/atlas.jpg
 image: /assets/img/slideshow/atlas.jpg
-excerpt: Orientation Week introduces students to UChicago traditions, community of scholars
+excerpt: MANIAC Lab joins Institute for Research and Innovation of Software for High Energy Physics (IRIS-HEP)
 tags: collaborations
 ---
 
