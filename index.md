@@ -1,11 +1,11 @@
 ---
 layout: home
 hero:
-    subtitle: Computating and Analytics for Collaborative Science
+    subtitle: Computing and Analytics for Frontier Science
     image: Maniac_Logo3.svg
     sub_image: uc_shield_logo.gif
     search: false
-    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    description: We build advanced cyberinfrastructure ... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 categories:
     columns: 3
     title: Meet Our Team
