@@ -8,7 +8,7 @@
 
 - name: Lincoln Bryant
   title: System Admin
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  desc: Outside of work, I like to dabble in 3D modeling, functional programming, read science fiction and play computer games.
   icon: /assets/team/lbryant.png
   doc: frontmatter
 
@@ -32,12 +32,12 @@
 
 - name: Jeremy Van
   title: Web Developer
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  desc: When I'm not coding or studying to complete my master's in computer science, I like to make music and train for the marathon.
   icon: /assets/team/jvan.png
   doc: variables
 
 - name: Chris Weaver
   title: Software Engineer
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
   icon: /assets/team/cweaver.png
   doc: variables
