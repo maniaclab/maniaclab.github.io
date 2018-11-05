@@ -37,15 +37,15 @@ layout: default
 <div class="uk-section sub-hero"
       data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
     <div class="uk-container uk-container-small row">
-      <div class="clearfix">
+      <div class="columns">
         {% if page.hero.image %}
-        <div class="box">
+        <div class="column">
           <p class="hero-image uk-text-center">
             <img src="{{ site.post_assets | absolute_url }}{{ page.hero.image }}" alt="Hero">
           </p>
         </div>
         {% endif %}
-        <div class="box">
+        <div class="column">
           <h1 class="uk-heading-hero uk-text-center" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">{{ page.hero.title }}</h1>
           {% if page.hero.subtitle %}
           <p class="subtitle uk-text-lead uk-text-center">
@@ -56,15 +56,20 @@ layout: default
           </p>
           {% endif %}
         </div>
-        <div class="box">
-        {% if page.hero.description %}
-          <img src="/assets/img/maniac_nicholas.jpg" style="max-height: 250px; width:auto;" alt="Hero">
-          <p class="uk-text-lead">
-            {{ page.hero.description }}
-          </p>
-        {% endif %}
-        </div>
       </div>
+      <div class="columns uk-text-center">
+      {% if page.hero.description_2 %}
+        <div class="column">
+          <img src="/assets/img/maniac_nicholas.jpg" style="max-height: 250px; width:auto;" alt="Hero">
+        </div>
+        <div class="column">
+          <p class="uk-text-lead">
+            {{ page.hero.description_2 }}
+          </p>
+        </div>
+      {% endif %}
+      </div>
+
     </div>
 </div>
 

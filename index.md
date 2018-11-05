@@ -5,7 +5,8 @@ hero:
     image: Maniac_Logo3.svg
     sub_image: uc_shield_logo.gif
     search: false
-    description: We build advanced cyberinfrastructure supporting the largest scientific instruments probing the most fundumental questions of nature.  
+    description: We build advanced cyberinfrastructure supporting the largest scientific instruments probing the most fundumental questions of nature.
+    description_2: The Maniac III (Mathematical Analyzer Numerical Integrator and Computer Model III) was a second-generation electronic computer (i.e., using solid state electronics rather than vacuum tubes), built in 1961 for use at the Institute for Computer Research at the University of Chicago.
 categories:
     columns: 3
     title: Meet Our Team
