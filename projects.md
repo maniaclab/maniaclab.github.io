@@ -4,8 +4,8 @@ title: Stay up to date with our projects
 permalink: /projects/
 categories:
     columns: 3
-    title: Browse Projects
-    subtitle: Read about our projects and fellow collaborations.
+    title: Advanced Cyberinfrastructure Development
+    subtitle: Technology to accelerate collaborative science.
 ---
 
 ##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
