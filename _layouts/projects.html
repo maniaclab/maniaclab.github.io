@@ -1,46 +1,30 @@
 ---
 layout: default
 ---
-
-{% if page.categories.columns %}
-    {% assign columns = page.categories.columns %}
-{% else %}
-    {% assign columns = 3 %}
-{% endif %}
-
-{% if page.categories %}
-<div class="uk-section section-projects">
-    <div class="uk-container">
-
-        {% if page.categories.title %}
-            <h2 class="uk-text-center heading-hero-2">{{ page.categories.title }}</h2>
-        {% endif %}
-
-        {% if page.categories.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>{% endif %}
-
-    </div>
-</div>
 <div class="uk-section">
-  <div class="uk-container">
-    <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
-    {% for project in site.projects %}
-        {% if project.title %}
-        <div>
-            <div class="uk-card uk-card-body uk-inline uk-border-rounded">
-                <a class="uk-position-cover" href="{{ project.url }}"></a>
-                {% if project.icon %}
-                <span data-uk-icon="icon: {{ project.icon }}; ratio: 2" class=""></span>
-                <img src="{{project.icon}}" style="height:70px; width:auto;"/>
-                {% endif %}
-                <h3 class="uk-card-title uk-margin">{{ project.title }}</h3>
-                {% if project.excerpt %}
-                <p>{{ project.excerpt }}</p>
-                {% endif %}
+    <div class="uk-container uk-container-xsmall">
+        <h1 class="uk-article-title">Projects</h1>
+        {% for project in site.projects %}
+        <div class="uk-card card-post uk-inline uk-border-rounded uk-width-1-1 uk-margin">
+          <a class="uk-position-cover" href="{{project.url}}"></a>
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <img class="avatar avatar-small" src="{{ project.icon }}" width="70" height="70" data-proofer-ignore="true" />
+              </div>
+              <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">{{ project.title }}</h3>
+              </div>
             </div>
+          </div>
+
+          <div class="uk-card-body">
+            <p>{{ project.excerpt }}</p>
+          </div>
+          <div class="uk-card-footer">
+            <span class="uk-button uk-button-text">Read more &rarr;</span>
+          </div>
         </div>
-        {% endif %}
-    {% endfor %}
+        {% endfor %}
     </div>
-  </div>
 </div>
-{% endif %}
