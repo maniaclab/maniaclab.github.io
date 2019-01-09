@@ -51,15 +51,15 @@ layout: default
           <p class="subtitle uk-text-lead uk-text-center">
             {{ page.hero.subtitle }}
           </p>
-          <p class="uk-text-lead uk-text-center">
+          <p class="uk-text-lead">
             {{ page.hero.description }}
           </p>
           {% endif %}
         </div>
       </div>
-      <div class="columns uk-text-center">
+      <div class="columns">
       {% if page.hero.description_2 %}
-        <div class="column">
+        <div class="column uk-text-center">
           <img src="/assets/img/maniac_nicholas.jpg" style="max-height: 250px; width:auto;" alt="Hero">
         </div>
         <div class="column">
@@ -77,17 +77,17 @@ layout: default
 <img src="/assets/maniac_bottom_banner.png"/>
 
 {% if page.section %}
-<div class="uk-section uk-text-center" style="font-weight:200;">
-    <div class="uk-container uk-container-small">
+<div class="uk-section" style="font-weight:200;">
+  <div class="uk-container uk-container-small" style="max-width: 75%;">
+  {% if page.section.title %}
+    <h2 class="uk-text-center heading-hero-2">{{ page.section.title }}</h2>
+  {% endif %}
 
-        {% if page.section.title %}
-            <h2 class="uk-text-center heading-hero-2">{{ page.section.title }}</h2>
-        {% endif %}
-
-        {% if page.section.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.section.subtitle | escape }}</p>{% endif %}
-
-            <div class="article-content uk-margin-medium-top">{{ content }}</div>
-    </div>
+  {% if page.section.subtitle %}
+    <p class="subtitle uk-text-lead">{{ page.section.subtitle | escape }}</p>
+  {% endif %}
+    <div class="article-content uk-margin-medium-top">{{ content }}</div>
+  </div>
 </div>
 {% endif %}
 
