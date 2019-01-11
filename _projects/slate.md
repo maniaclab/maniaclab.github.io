@@ -4,6 +4,7 @@ title: SLATE
 categories: [projects]
 author: Jeremy Van
 icon: /assets/projects/slate-logo.png
+image: /assets/img/slideshow/atlas.jpg
 excerpt: Services Layered At The Edge
 ---
 ## What is SLATE?
@@ -27,7 +28,7 @@ laboratory data center capabilities to the national cyberinfrastructure ecosyste
 Deploying science services across national and international distributed
 infrastructures is hard! Rolling out hardware, Operating Systems, science
 applications, and science tools at every geographically discrete site requires a
-significant IT presence at each site. The IT personnel have to deal with the 
+significant IT presence at each site. The IT personnel have to deal with the
 hardware, the IT software, AND the science software in order to make a science
 service function. This fact requires a lot of knowledge and time on the order
 of days, weeks, and months. SLATE aims to make the job easier for the local IT

@@ -4,6 +4,7 @@ title: VC3
 categories: [projects]
 author: Jeremy Van
 icon: /assets/projects/vc3-logo.png
+image: /assets/img/slideshow/atlas.jpg
 excerpt: Virtual Clusters for Community Computation
 ---
 
