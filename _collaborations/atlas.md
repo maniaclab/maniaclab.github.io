@@ -3,6 +3,7 @@ layout: collaboration_post
 title: ATLAS
 categories: [projects]
 author: Jeremy Van
+image: /assets/img/slideshow/atlas.jpg
 icon: /assets/collaborations/atlas_logo.png
 excerpt: stuff about cern
 ---

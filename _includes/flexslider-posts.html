@@ -1,11 +1,11 @@
 <!-- Place somewhere in the <body> of your page -->
 <div class="flexslider">
   <ul class="slides">
-  {% for doc in site.docs %}
+  {% for doc in site.collaborations %}
     {% if doc.image %}
     <li>
       <a href="{{doc.url}}">
-        <div class="slidewrap" style="background-image: url({{doc.icon}});">
+        <div class="slidewrap" style="background-image: url({{doc.image}});">
           <div class="background">
         <!-- <img src="{{ doc.icon }}"/> -->
             <div class="headline">

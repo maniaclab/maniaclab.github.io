@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OSG
+title: Open Science Grid
 categories: [projects]
 author: Jeremy Van
 icon: /assets/projects/osg-logo.png

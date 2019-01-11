@@ -4,6 +4,7 @@ title: VERITAS
 categories: [projects]
 author: Jeremy Van
 icon: /assets/collaborations/veritas.jpg
+image: /assets/collaborations/veritas.jpg
 excerpt: Something about VERITAS
 ---
 
