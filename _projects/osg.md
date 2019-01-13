@@ -4,7 +4,7 @@ title: Open Science Grid
 categories: [projects]
 author: Jeremy Van
 icon: /assets/projects/osg-logo.png
-image: /assets/img/slideshow/atlas.jpg
+image: /assets/projects/osg-diagram.png
 excerpt: The OSG provides common service and support for resource providers and scientific institutions using a distributed fabric of high throughput computational services.
 ---
 

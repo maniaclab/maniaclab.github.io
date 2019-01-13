@@ -4,8 +4,8 @@ title: SLATE
 categories: [projects]
 author: Jeremy Van
 icon: /assets/projects/slate-logo.png
-image: /assets/img/slideshow/atlas.jpg
-excerpt: Services Layered At The Edge
+image: /assets/projects/slate-diagram.png
+excerpt: A SLATE edge platform within a campus Science DMZ hosts trusted services operated by a central team which might be operating a network of such services across several campuses.
 ---
 ## What is SLATE?
 

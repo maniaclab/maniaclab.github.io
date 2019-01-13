@@ -4,8 +4,8 @@ title: VC3
 categories: [projects]
 author: Jeremy Van
 icon: /assets/projects/vc3-logo.png
-image: /assets/img/slideshow/atlas.jpg
-excerpt: Virtual Clusters for Community Computation
+image: /assets/projects/vc3-illustration.png
+excerpt: The virtual clusters for community computation (VC3) project aims to make research computing facilities more accessible to use by the broader user communities.
 ---
 
 ## The Cluster Re-Imagined
