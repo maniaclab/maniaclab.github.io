@@ -41,3 +41,15 @@
   desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
   icon: /assets/team/cweaver.png
   doc: variables
+
+- name: David Manglano
+  title: Job title
+  desc: Insert description
+  icon: /assets/team/default.jpg
+  doc: variables
+
+- name: Pascal
+  title: Job title
+  desc: Insert description
+  icon: /assets/team/default.jpg
+  doc: variables
