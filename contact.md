@@ -2,14 +2,13 @@
 layout: contact
 title: Got Any Questions
 permalink: /contact/
-formspree:
-    email: my_name@gmail.com
-    redirect: /thanks/
 ---
+<!-- formspree:
+    email: jeremyvan614@gmail.com
+    redirect: /thanks/  -->
+##### Maniac Lab Group Contact Information
 
-##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
-
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+contact@email.com
 
 ![alt text][logo]
 

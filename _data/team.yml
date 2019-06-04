@@ -2,54 +2,60 @@
 
 - name: Rob Gardner
   title: Research Professor
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  # desc: Insert quick personal blurb here. Job description and/or hobbies.
   icon: /assets/team/rgardner.png
   doc: home
 
 - name: Lincoln Bryant
   title: System Admin
-  desc: Outside of work, I like to dabble in 3D modeling, functional programming, read science fiction and play computer games.
+  # desc: Outside of work, I like to dabble in 3D modeling, functional programming, read science fiction and play computer games.
   icon: /assets/team/lbryant.png
   doc: frontmatter
 
 - name: Judith Stephens
   title: System Admin
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  # desc: Insert quick personal blurb here. Job description and/or hobbies.
   icon: /assets/team/jstephen.png
   doc: variables
 
 - name: Ilija Vukotic
   title: Senior Computational Scientist
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
+  # desc: Insert quick personal blurb here. Job description and/or hobbies.
   icon: /assets/team/ilija.png
   doc: variables
 
-- name: Benedikt Riedel
-  title: Computational Scientist
-  desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/breidel.png
+- name: Pascal
+  title: Senior Computational Scientist
+  # desc: Insert description
+  icon: /assets/team/default.jpg
   doc: variables
 
 - name: Jeremy Van
   title: Web Developer
-  desc: When I'm not coding or studying to complete my master's in computer science, I like to make music and train for the marathon.
+  # desc: When I'm not coding or studying to complete my master's in computer science, I like to make music and train for the marathon.
   icon: /assets/team/jvan.png
   doc: variables
 
 - name: Chris Weaver
   title: Software Engineer
-  desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
+  # desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
   icon: /assets/team/cweaver.png
   doc: variables
 
 - name: David Manglano
-  title: Job title
-  desc: Insert description
+  title: Scientific Programmer
+  # desc: Insert description
+  icon: /assets/team/dmanglano.png
+  doc: variables
+
+- name: David Jordan
+  title: System Admin
+  # desc: Insert description
   icon: /assets/team/default.jpg
   doc: variables
 
-- name: Pascal
+- name: Mark Weinberg
   title: Job title
-  desc: Insert description
+  # desc: Insert description
   icon: /assets/team/default.jpg
   doc: variables

@@ -1,8 +1,15 @@
 # Changelog page source
+- title: SLATE CI
+  label: PROJECT
+  date: June 21, 2018
+  img: ../projects/slate-logo.png
+  list:
+  - Collaboration with UUtah and UMich
+  - Launch SLATE CI website portal
 
 - title: Maniac Lab
   label: GROUP
-  date: Oct 21, 2008
+  date: Oct 21, 2018
   img: prc_building_2.jpg
   list:
   - Moved to PRC and joined EFI
@@ -11,13 +18,13 @@
 - title: VC3
   label: PROJECT
   date: Sep 01, 2016
-  img: testing.png
+  img: ../projects/vc3-logo.png
   list:
   - Virtual Clusters for Community Computation
   - Web Application Launch
 
 - title: MANIAC III
-  label: CONSTRUCTION
+  label: ORIGINS
   date: Jan 01, 1961
   list:
   - A third version MANIAC III built at the Institute for Computer Research at the University of Chicago in 1964.
