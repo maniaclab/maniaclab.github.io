@@ -27,7 +27,7 @@
 - name: Pascal
   title: Senior Computational Scientist
   # desc: Insert description
-  icon: /assets/team/default.jpg
+  icon: /assets/team/pascal.png
   doc: variables
 
 - name: Jeremy Van
