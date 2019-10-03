@@ -3,7 +3,7 @@ layout: team
 title: Team
 permalink: /team/
 categories:
-    columns: 4
+    columns: 3
     title: Lab members
     subtitle: Our group
 ---
