@@ -63,6 +63,12 @@
   icon: /assets/team/neha.jpg
   doc: variables
 
+- name: Sushant Bansal
+  title: Graduate Student in Computer Science (Lab tenure 2018-2019)
+  desc: Sushant worked in the Lab for two years while working towards his Master degreen in Computer Science at the University.  He studied packet loss using PerfSONAR data indexed by Elasticsearch and analyzed with Kibana and Jupyter notebooks.
+  icon: /assets/team/sushant.jpg
+  doc: variables
+
 - name: Suchandra Thapa
   title: Scientific Software Engineer (Lab tenure 2007-2019)
   desc: Suchandra was pivitol in building out the Open Science Grid, establishing its first testing and validation clusters. During his tenure with the Lab, he worked on a myriad of projects including OSG Connect, VC3, XENON workflows.  Suchandra now works at a finance startup in his native Hawaii.
