@@ -2,13 +2,13 @@
 
 - name: Rob Gardner
   title: Research Professor
-  desc: Physicist on the ATLAS experiment at CERN for over 20 years, he joined the EFI in June 2002 building the first Tier2 cluster prototypes, and with the Computation Institute,  the early grid software projects GriPhyN, iVDGL and the Open Science Grid. Principal Investigator of the SLATE project, lead of the IRIS-HEP SSLab, co-manager of USATLAS Facilities and Distributed Computing, Deputy Council Chair, Open Science Grid.   
+  desc: Physicist on the ATLAS experiment at CERN for over 20 years, he joined the EFI in June 2002 building the first Tier2 cluster prototypes, and with the Computation Institute,  the early grid software projects GriPhyN, iVDGL and the Open Science Grid. Principal Investigator of the SLATE project, lead of the IRIS-HEP SSLab, co-manager of USATLAS Facilities and Distributed Computing, Deputy Council Chair of the Open Science Grid.   
   icon: /assets/team/rgardner.jpg
   doc: home
 
 - name: Ilija Vukotic
   title: Senior Computational Scientist
-  desc: Ilija joined the EFI in March 2012 as a Physicist on the ATLAS experiment working on federated data access using Xrootd.  He specializes in data caching caching systems, wide area network analytics, creating machine learning platforms, reinforcement learning for intelligent data delivery systems. He built an ATLAS VR experience with Occulus Rift.  
+  desc: Ilija joined the EFI in March 2012 as a Physicist on the ATLAS experiment working on federated data access using Xrootd.  He specializes in data caching networks, operational intelligence and analytics, creating machine learning platforms, reinforcement learning for intelligent data delivery systems. He built an ATLAS VR experience with Occulus Rift.  
   icon: /assets/team/ilija.png
   doc: variables
 
@@ -47,7 +47,7 @@
 
 - name: Marc Weinberg
   title: Computational Scientist
-  desc: Marc joined the team in March 2019. He is working on IRIS-HEP Data Organization and Management (DOMA), ServiceX project for ATLAS, integration of NSF HPC resources with ATLAS distributed computing systems.
+  desc: Marc joined the team in March 2019. He is working on the IRIS-HEP Data Organization and Management (DOMA) ServiceX project for ATLAS, and the integration of NSF HPC resources (Stampede2 and Frontera at TACC) with ATLAS distributed computing systems.
   icon: /assets/team/Marc-Weinberg.jpg
   doc: variables
 
@@ -71,7 +71,7 @@
 
 - name: Benedikt Riedel
   title: Scientific Software Programmer (Lab tenure 2016-2019)
-  desc: Benedikt worked in the User Support team for the Open Science Grid. In this role, he maintained OSG Connect software infrastructure and supported Xenon1T, VERITAS, and SPT-3G experiment. Prior to this position, he was a member of the IceCube experiment as a postdoctoral fellow at the University of Alberta and graduate student at the University of Wisconsin--Madison, where he earned his Ph.D. in 2014.  He returned to Madison and is now Computing Manager at IceCube Neutrino Observatory and Wisconsin IceCube Particle Astrophysics Center. 
+  desc: Benedikt worked in the User Support team for the Open Science Grid focusing on mid-scale collaborations. In this role, he maintained OSG Connect software infrastructure and supported Xenon1T, VERITAS, and SPT-3G experiment. Prior to this position, he was a member of the IceCube experiment as a postdoctoral fellow at the University of Alberta and graduate student at the University of Wisconsin--Madison, where he earned his Ph.D. in 2014.  He returned to Madison and is now Computing Manager at IceCube Neutrino Observatory and Wisconsin IceCube Particle Astrophysics Center. 
   icon: /assets/team/briedel_BW.jpg
   doc: variables
 
