@@ -9,22 +9,20 @@
 - name: Lincoln Bryant
   title: Scientific Software Engineer
   desc: Working on the IRIS-HEP SSLab, SLATE and advanced cyberinfrastructure powering the Lab. Previously VC3. 
-  # Outside of work, I like to dabble in 3D modeling, functional programming,read science fiction and play computer games.
+# Outside of work, I like to dabble in 3D modeling, functional programming,read science fiction and play computer games.
 #  icon: /assets/team/lbryant.png
   icon: /assets/team/lbryant_BW.jpg
   doc: frontmatter
 
 - name: Judith Stephens
   title: Linux Systems Administrator
-  desc: Working on the Midwest Tier2 Center, cyberinfrastructure at the South Pole Telescope,
-  Rucio systems for XENON. 
+  desc: Working on the Midwest Tier2 Center, cyberinfrastructure at the South Pole Telescope, Rucio systems for XENON. 
   icon: /assets/team/jstephen.png
   doc: variables
 
 - name: Ilija Vukotic
   title: Senior Computational Scientist
-  desc: Physicist on the ATLAS experiment, working on caching systems, networking analytics, creating 
-  machine learning platforms, reinforcement learning for intelligent data delivery systems. 
+  desc: Physicist on the ATLAS experiment, working on caching systems, networking analytics, creating machine learning platforms, reinforcement learning for intelligent data delivery systems. 
   icon: /assets/team/ilija.png
   doc: variables
 
@@ -62,7 +60,6 @@
 
 - name: Mark Weinberg
   title: Computational Scientist
-  desc: Working on IRIS-HEP Data Organization and Management (DOMA), ServiceX project, integration of NSF HPC resources 
-  with ATLAS distributed computing systems.
+  desc: Working on IRIS-HEP Data Organization and Management (DOMA), ServiceX project, integration of NSF HPC resources with ATLAS distributed computing systems.
   icon: /assets/team/Marc-Weinberg.jpg
   doc: variables
