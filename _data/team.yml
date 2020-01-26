@@ -58,20 +58,20 @@
   doc: variables
 
 - name: Suchandra Thapa
-  title: Scientific Software Engineer (2007-2019)
+  title: Scientific Software Engineer (Lab tenure 2007-2019)
   desc: Suchandra was pivitol in building out the Open Science Grid, establishing its first testing and validation clusters. During his tenure with the Lab, he worked on a myriad of projects including OSG Connect, VC3, XENON workflows.  Suchandra now works at a finance startup in his native Hawaii.
   icon: /assets/team/Suchandra_BW.jpg
   doc: variables
 
 - name: Bala Desinghu
-  title: Scientific Software Programmer (2014-2018)
+  title: Scientific Software Programmer (Lab tenure 2014-2018)
   desc: Bala worked in the User Support team for the Open Science Grid, teaching students, postdocs and faculty methods of distributed high-throughput computing.  Bala now holds the position Senior Scientist in the Office of Advanced Research Computing at Rutgers University. 
-  icon: /assets/team/Bala.jpg
+  icon: /assets/team/Bala.png
   doc: variables
 
 - name: Benedikt Riedel
-  title: Scientific Software Programmer (2016-2019)
+  title: Scientific Software Programmer (Lab tenure 2016-2019)
   desc: Benedikt worked in the User Support team for the Open Science Grid. In this role, he maintained OSG Connect software infrastructure and supported Xenon1T, VERITAS, and SPT-3G experiment. Prior to this position, he was a member of the IceCube experiment as a postdoctoral fellow at the University of Alberta and graduate student at the University of Wisconsin--Madison, where he earned his Ph.D. in 2014.  He returned to Madison and is now Computing Manager at IceCube Neutrino Observatory and Wisconsin IceCube Particle Astrophysics Center. 
-  icon: /assets/team/briedel_BW.jpg
+  icon: /assets/team/briedal_BW.jpg
   doc: variables
 
