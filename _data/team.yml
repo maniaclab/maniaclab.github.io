@@ -59,8 +59,8 @@
 
 - name: Neha Lingareddy
   title: Undergraduate in The College
-  desc: Neha is a Third-year majoring in Computer Science at the University.  She built a Kubernetes backend to VC3.  She deployed the reproducible analysis framework REANA on the IRIS-HEP SSLab.  She is working on ServiceX, an intelligent data delivery service to meet the demands of the high-luminosity LHC upgrade at CERN in 2026.
-  icon: /assets/team/neha.png
+  desc: Neha is a Third-year majoring in Computer Science at the University.  She built a Kubernetes backend for VC3, our virtual clustering product.  She deployed the reproducible analysis framework from CERN, REANA, on the IRIS-HEP Scalable Systems Laboratory using Kubernetes and Helm.  She is working on ServiceX, an intelligent data delivery service to meet future demands of the high-luminosity LHC at CERN.
+  icon: /assets/team/neha.jpg
   doc: variables
 
 - name: Suchandra Thapa
