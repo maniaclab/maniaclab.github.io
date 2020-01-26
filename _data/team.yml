@@ -7,8 +7,8 @@
   doc: home
 
 - name: Lincoln Bryant
-  title: Scientific Software Engineer
-  desc: Working on the IRIS-HEP SSLab, SLATE and advanced cyberinfrastructure powering the Lab. Previously VC3. 
+  title: Scientific Systems Engineer
+  desc: Lincoln Bryant has been a staff member at the Enrico Fermi Institute since 2012, working with the ATLAS Midwest Tier 2 Center, the Open Science Grid and VC3. His experience has primarily been in data center operations, batch systems, distributed storage, virtualization, containerization, automation and monitoring.  Now he is mostly working on the IRIS-HEP SSLab, SLATE and advanced cyberinfrastructure powering the Lab.  
 # Outside of work, I like to dabble in 3D modeling, functional programming,read science fiction and play computer games.
 #  icon: /assets/team/lbryant.png
   icon: /assets/team/lbryant_BW.jpg
