@@ -41,19 +41,18 @@
 
 - name: Chris Weaver
   title: Scientific Software Engineer
-  desc: Development of the SLATE platform, federated trust model, the CI Connect platform.  
+  desc: Chris joined our team in 2018. He is the lead developer of the SLATE platform and the team's cybersecurity officer. He recently re-built the CI Connect platform, re-using software and infrastructure he developed for SLATE.  
   icon: /assets/team/cweaver.png
   doc: variables
 
-
 - name: David Jordan
   title: Linux Systems Administrator
-  desc: Working on the Midwest Tier2 Center.
+  desc: David joined us in 2019 and is working on the Midwest Tier2 Center.
   icon: /assets/team/DavidJordan.jpg
   doc: variables
 
-- name: Mark Weinberg
+- name: Marc Weinberg
   title: Computational Scientist
-  desc: Working on IRIS-HEP Data Organization and Management (DOMA), ServiceX project, integration of NSF HPC resources with ATLAS distributed computing systems.
+  desc: Marc has been a member since 2019. He is working on IRIS-HEP Data Organization and Management (DOMA), ServiceX project for ATLAS, integration of NSF HPC resources with ATLAS distributed computing systems.
   icon: /assets/team/Marc-Weinberg.jpg
   doc: variables
