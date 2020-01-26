@@ -1,11 +1,11 @@
 ---
 layout: collaboration_post
-title: ATLAS
+title: ATLAS at the CERN Large Hadron Collider
 categories: [projects]
 author: Jeremy Van
 image: /assets/img/slideshow/atlas.jpg
 icon: /assets/collaborations/atlas_logo.png
-excerpt: We lead the CERN ATLAS Midwest Tier2 Center, providing 30 000 CPU-cores, 10 petabytes of storage, integrated into the global LHC grid, accessible by every member of the international collaboration. 
+excerpt: We lead the ATLAS Midwest Tier2 Center, providing 30 000 CPU-cores, 10 petabytes of storage, integrated into the global LHC grid, accessible by every member of the international collaboration. 
 ---
 
 We also provide a large and fast analytics cluster for the ATLAS Distributed Computing operations team using the "ELK stack" (Elasticsearch, Logstash, Kibana), and a machine learning platform with access to approximately 30 GPU cards in the Lab.
