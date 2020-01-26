@@ -42,15 +42,9 @@
 - name: Chris Weaver
   title: Scientific Software Engineer
   desc: Development of the SLATE platform, federated trust model, the CI Connect platform.  
-  # desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
   icon: /assets/team/cweaver.png
   doc: variables
 
-# - name: David Manglano
-  title: Scientific Programmer
-  # desc: Insert description
-  icon: /assets/team/dmanglano.png
-  doc: variables
 
 - name: David Jordan
   title: Linux Systems Administrator
