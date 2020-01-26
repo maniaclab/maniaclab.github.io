@@ -2,26 +2,29 @@
 
 - name: Rob Gardner
   title: Research Professor
-  desc: Principal Investigator 
+  desc: Physicist on the ATLAS experiment at CERN, Principal Investigator of the SLATE project, lead of IRIS-HEP SSLab, Co-manager of USATLAS Facilities and Distributed Computing, Deputy Council Chair, Open Science Grid   
   icon: /assets/team/rgardner.jpg
   doc: home
 
 - name: Lincoln Bryant
   title: Scientific Software Engineer
-  desc: Working on the IRIS-HEP Scalable Systems Laboratory and SLATE. Previously VC3. 
+  desc: Working on the IRIS-HEP SSLab, SLATE and advanced cyberinfrastructure powering the Lab. Previously VC3. 
   # Outside of work, I like to dabble in 3D modeling, functional programming,read science fiction and play computer games.
-  icon: /assets/team/lbryant.png
+#  icon: /assets/team/lbryant.png
+  icon: /assets/team/lbryant_BW.jpg
   doc: frontmatter
 
 - name: Judith Stephens
   title: Linux Systems Administrator
-  # desc: Insert quick personal blurb here. Job description and/or hobbies.
+  desc: Working on the Midwest Tier2 Center, cyberinfrastructure at the South Pole Telescope,
+  Rucio systems for XENON. 
   icon: /assets/team/jstephen.png
   doc: variables
 
 - name: Ilija Vukotic
   title: Senior Computational Scientist
-  # desc: Insert quick personal blurb here. Job description and/or hobbies.
+  desc: Physicist on the ATLAS experiment, working on caching systems, networking analytics, creating 
+  machine learning platforms, reinforcement learning for intelligent data delivery systems. 
   icon: /assets/team/ilija.png
   doc: variables
 
@@ -33,12 +36,14 @@
 
 - name: Jeremy Van
   title: Web Developer
-  # desc: When I'm not coding or studying to complete my master's in computer science, I like to make music and train for the marathon.
+  desc: Working on the SLATE platform, VC3, CI Connect and other web frameworks connecting Lab resources with researchers.
+  # When I'm not coding or studying to complete my master's in computer science,  I like to make music and train for the marathon.
   icon: /assets/team/jvan.png
   doc: variables
 
 - name: Chris Weaver
   title: Scientific Software Engineer
+  desc: Development of the SLATE platform, federated trust model, the CI Connect platform.  
   # desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
   icon: /assets/team/cweaver.png
   doc: variables
@@ -51,12 +56,13 @@
 
 - name: David Jordan
   title: Linux Systems Administrator
-  # desc: Insert description
-  icon: /assets/team/default.jpg
+  desc: Working on the Midwest Tier2 Center.
+  icon: /assets/team/DavidJordan.jpg
   doc: variables
 
 - name: Mark Weinberg
   title: Computational Scientist
-  # desc: Insert description
-  icon: /assets/team/default.jpg
+  desc: Working on IRIS-HEP Data Organization and Management (DOMA), ServiceX project, integration of NSF HPC resources 
+  with ATLAS distributed computing systems.
+  icon: /assets/team/Marc-Weinberg.jpg
   doc: variables
