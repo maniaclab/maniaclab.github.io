@@ -57,6 +57,12 @@
   icon: /assets/team/DavdJordan.jpg
   doc: variables
 
+- name: Neha Lingareddy
+  title: Undergraduate in The College
+  desc: Neha is a Third-year majoring in Computer Science at the University.  She built a Kubernetes backend to VC3.  She deployed the reproducible analysis framework REANA on the IRIS-HEP SSLab.  She is working on ServiceX, an intelligent data delivery service to meet the demands of the high-luminosity LHC upgrade at CERN in 2026.
+  icon: /assets/team/neha.png
+  doc: variables
+
 - name: Suchandra Thapa
   title: Scientific Software Engineer (Lab tenure 2007-2019)
   desc: Suchandra was pivitol in building out the Open Science Grid, establishing its first testing and validation clusters. During his tenure with the Lab, he worked on a myriad of projects including OSG Connect, VC3, XENON workflows.  Suchandra now works at a finance startup in his native Hawaii.
