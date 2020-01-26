@@ -11,10 +11,7 @@
 
 - name: Ilija Vukotic
   title: Senior Computational Scientist
-  desc: Ilija joined the EFI in March 2012 as a Physicist on the ATLAS experiment working on federated
-  data access using Xrootd.  He specializes in 
-   data caching caching systems, wide area network analytics, creating machine learning platforms, reinforcement learning for 
-   intelligent data delivery systems. He built an ATLAS VR experience with Occulus Rift.  
+  desc: Ilija joined the EFI in March 2012 as a Physicist on the ATLAS experiment working on federated data access using Xrootd.  He specializes in data caching caching systems, wide area network analytics, creating machine learning platforms, reinforcement learning for intelligent data delivery systems. He built an ATLAS VR experience with Occulus Rift.  
   icon: /assets/team/ilija.png
   doc: variables
 
@@ -34,9 +31,7 @@
 
 - name: Jeremy Van
   title: Web Developer
-  desc: Joined the team in April 2017 and to build the VC3 website.  While earning a 
-  Masters degree of Computer Science at the University, he built the SLATE Console 
-  and the CI Connect family of portals (OSG Connect, CMS Connect and others).
+  desc: Joined the team in April 2017 and to build the VC3 website.  While earning a Masters degree of Computer Science at the University, he built the SLATE Console and the CI Connect family of portals (OSG Connect, CMS Connect and others).
   # When I'm not coding or studying to complete my master's in computer science,  I like to make music and train for the marathon.
   icon: /assets/team/jvan.png
   doc: variables
@@ -49,8 +44,7 @@
 
 - name: Pascal Paschos
   title: Senior Computational Scientist
-  desc: Pascal joined the team in February 2019 and began work on data infrastructure for LIGO and IceCube experiments, collaborating with UCSD. He also serves as coordinator of the OSG 
-  Collaborations area, supporting SPT-3G, XENON, KOTO, VERITAS and others. 
+  desc: Pascal joined the team in February 2019 and began work on data infrastructure for LIGO and IceCube experiments, collaborating with UCSD. He also serves as coordinator of the OSG Collaborations area, supporting SPT-3G, XENON, KOTO, VERITAS and others. 
   icon: /assets/team/pascal.png
   doc: variables
 
