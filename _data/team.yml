@@ -2,18 +2,19 @@
 
 - name: Rob Gardner
   title: Research Professor
-  # desc: Insert quick personal blurb here. Job description and/or hobbies.
-  icon: /assets/team/rgardner.png
+  desc: Principal Investigator 
+  icon: /assets/team/rgardner.jpg
   doc: home
 
 - name: Lincoln Bryant
-  title: System Admin
-  # desc: Outside of work, I like to dabble in 3D modeling, functional programming, read science fiction and play computer games.
+  title: Scientific Software Engineer
+  desc: Working on the IRIS-HEP Scalable Systems Laboratory and SLATE. Previously VC3. 
+  # Outside of work, I like to dabble in 3D modeling, functional programming,read science fiction and play computer games.
   icon: /assets/team/lbryant.png
   doc: frontmatter
 
 - name: Judith Stephens
-  title: System Admin
+  title: Linux Systems Administrator
   # desc: Insert quick personal blurb here. Job description and/or hobbies.
   icon: /assets/team/jstephen.png
   doc: variables
@@ -24,9 +25,9 @@
   icon: /assets/team/ilija.png
   doc: variables
 
-- name: Pascal
+- name: Pascal Paschos
   title: Senior Computational Scientist
-  # desc: Insert description
+  desc: Data infrastructure for LIGO and IceCube and the coordinator of the OSG Collaborations area. 
   icon: /assets/team/pascal.png
   doc: variables
 
@@ -37,25 +38,25 @@
   doc: variables
 
 - name: Chris Weaver
-  title: Software Engineer
+  title: Scientific Software Engineer
   # desc: I have no idea how to usefully describe what I do to someone outside besides 'program SLATE stuff'.
   icon: /assets/team/cweaver.png
   doc: variables
 
-- name: David Manglano
+# - name: David Manglano
   title: Scientific Programmer
   # desc: Insert description
   icon: /assets/team/dmanglano.png
   doc: variables
 
 - name: David Jordan
-  title: System Admin
+  title: Linux Systems Administrator
   # desc: Insert description
   icon: /assets/team/default.jpg
   doc: variables
 
 - name: Mark Weinberg
-  title: Job title
+  title: Computational Scientist
   # desc: Insert description
   icon: /assets/team/default.jpg
   doc: variables
