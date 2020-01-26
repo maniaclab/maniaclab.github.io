@@ -22,7 +22,7 @@
 
 - name: Judith Stephens
   title: Linux Systems Administrator
-  desc: Working on the Midwest Tier2 Center since January 2015, cyberinfrastructure at the South Pole Telescope, Rucio systems for XENON. 
+  desc: Working on the Midwest Tier2 Center since January 2015, cyberinfrastructure at the South Pole Telescope, Rucio systems for XENON. She also provides infrastructure support for the OSG Researcher Facilitation team, including OSG Connect services.
   icon: /assets/team/jstephen.png
   doc: variables
 
@@ -53,7 +53,7 @@
 
 - name: David Jordan
   title: Linux Systems Administrator
-  desc: David joined us in May 2019 and is working on the Midwest Tier2 Center.
+  desc: David joined us in May 2019 and is working on the Midwest Tier2 Center, responsible for operations at the three-site federation (UChicago, Indiana, Illinois Campus Cluster). He built our new asset inventory and status monitoring sytems.
   icon: /assets/team/DavdJordan.jpg
   doc: variables
 
