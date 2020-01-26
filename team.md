@@ -5,7 +5,7 @@ permalink: /team/
 categories:
     columns: 3
     title: Lab members
-    subtitle: Our group
+    subtitle: We work
 ---
 
 ##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
