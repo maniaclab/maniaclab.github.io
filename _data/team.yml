@@ -2,13 +2,25 @@
 
 - name: Rob Gardner
   title: Research Professor
-  desc: Physicist on the ATLAS experiment at CERN, Principal Investigator of the SLATE project, lead of IRIS-HEP SSLab, Co-manager of USATLAS Facilities and Distributed Computing, Deputy Council Chair, Open Science Grid   
+  desc: Physicist on the ATLAS experiment at CERN for 20 years, joining the EFI in June 2002
+  building the first Tier2 cluster prototypes and, with the Computation Institute, 
+  the early grid projects GriPhyN and iVDGL.
+  Principal Investigator of the SLATE project, lead of IRIS-HEP SSLab, Co-manager of USATLAS Facilities and Distributed Computing, Deputy Council Chair, Open Science Grid   
   icon: /assets/team/rgardner.jpg
   doc: home
 
+- name: Ilija Vukotic
+  title: Senior Computational Scientist
+  desc: Ilija joined the EFI in March 2012 as a Physicist on the ATLAS experiment working on federated
+  data access using Xrootd.  He specializes in 
+   data caching caching systems, wide area network analytics, creating machine learning platforms, reinforcement learning for 
+   intelligent data delivery systems. He built an ATLAS VR experience with Occulus Rift.  
+  icon: /assets/team/ilija.png
+  doc: variables
+
 - name: Lincoln Bryant
   title: Scientific Systems Engineer
-  desc: Lincoln Bryant has been a staff member at the Enrico Fermi Institute since 2012, working with the ATLAS Midwest Tier 2 Center, the Open Science Grid and VC3. His experience has primarily been in data center operations, batch systems, distributed storage, virtualization, containerization, automation and monitoring.  Now he is mostly working on the IRIS-HEP SSLab, SLATE and advanced cyberinfrastructure powering the Lab.  
+  desc: Lincoln Bryant has been a staff member at the Enrico Fermi Institute since March 2012, working with the ATLAS Midwest Tier 2 Center, the Open Science Grid and VC3. His experience has primarily been in data center operations, batch systems, distributed storage, virtualization, containerization, automation and monitoring.  Now he is mostly working on the IRIS-HEP SSLab, SLATE and advanced cyberinfrastructure powering the Lab.  
 # Outside of work, I like to dabble in 3D modeling, functional programming,read science fiction and play computer games.
 #  icon: /assets/team/lbryant.png
   icon: /assets/team/lbryant_BW.jpg
@@ -20,30 +32,24 @@
   icon: /assets/team/jstephen.png
   doc: variables
 
-- name: Ilija Vukotic
-  title: Senior Computational Scientist
-  desc: Ilija joined the EFI in Physicist on the ATLAS experiment, working on caching systems, networking analytics, creating machine learning platforms, reinforcement learning for intelligent data delivery systems. 
-  icon: /assets/team/ilija.png
-  doc: variables
-
 - name: Jeremy Van
   title: Web Developer
-  desc: Joined the team in April 2017 and went to work the VC3 website while earning his 
-  degree a Masters degree of Computer Science at the University.
-  Recently he built the SLATE Console and the CI Connect family of portals (OSG Connect, CMS Connect and others).
+  desc: Joined the team in April 2017 and to build the VC3 website.  While earning a 
+  Masters degree of Computer Science at the University, he built the SLATE Console 
+  and the CI Connect family of portals (OSG Connect, CMS Connect and others).
   # When I'm not coding or studying to complete my master's in computer science,  I like to make music and train for the marathon.
   icon: /assets/team/jvan.png
   doc: variables
 
 - name: Chris Weaver
   title: Scientific Software Engineer
-  desc: Chris joined our team in April of 2018. He is the lead developer of the SLATE platform and the team's cybersecurity officer. He recently re-built the CI Connect platform, re-using software and infrastructure he developed for SLATE.  
+  desc: Chris joined our team in April 2018. He is the lead developer of the SLATE platform and the team's cybersecurity officer. He recently re-built the CI Connect platform, re-using software and infrastructure he developed for SLATE.  
   icon: /assets/team/cweaver.png
   doc: variables
 
 - name: Pascal Paschos
   title: Senior Computational Scientist
-  desc: Pascal joined the team in 2019 and began work on data infrastructure for LIGO and IceCube experiments, collaborating with UCSD. He also serves as coordinator of the OSG 
+  desc: Pascal joined the team in February 2019 and began work on data infrastructure for LIGO and IceCube experiments, collaborating with UCSD. He also serves as coordinator of the OSG 
   Collaborations area, supporting SPT-3G, XENON, KOTO, VERITAS and others. 
   icon: /assets/team/pascal.png
   doc: variables
