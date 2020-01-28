@@ -3,7 +3,7 @@ layout: collaboration_post
 title: ATLAS at the CERN Large Hadron Collider
 categories: [projects]
 author: Jeremy Van
-image: /assets/img/slideshow/atlas.jpg
+image: /assets/img/slideshow/ATLAS-Event-Display-Hbb-1.png
 icon: /assets/collaborations/atlas_logo.png
 excerpt: We lead the ATLAS Midwest Tier2 Center, providing 30 000 CPU-cores, 10 PB of storage, integrated into the worldwide LHC computing grid, accessible by every member of the international collaboration. 
 ---
