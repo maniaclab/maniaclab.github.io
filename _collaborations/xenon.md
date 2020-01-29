@@ -1,6 +1,6 @@
 ---
 layout: collaboration_post
-title: Managing a Global Data Network for the XENON Dark Matter Search Experiment
+title: A Global Data Network for the XENON
 categories: [projects]
 author: Rob Gardner
 image: /assets/img/slideshow/xenoninhallb.jpg
