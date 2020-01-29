@@ -4,7 +4,7 @@ title: Distributed High Throughput Computing for the VERITAS Telescope
 categories: [projects]
 author: Jeremy Van
 icon: /assets/collaborations/veritas.jpg
-image: /assets/collaborations/veritas.jpg
+image: /assets/collaborations/veritas-logo.png
 excerpt: MANIAC Lab provides storage and workflow cyberinfrastructure for VERITAS (Very Energetic Radiation Imaging Telescope Array System)  
 ---
 
