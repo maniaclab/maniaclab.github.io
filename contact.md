@@ -1,14 +1,16 @@
 ---
 layout: contact
-title: Got Any Questions
+title: Getting here and getting a hold of us
 permalink: /contact/
 ---
 <!-- formspree:
     email: jeremyvan614@gmail.com
     redirect: /thanks/  -->
-##### Maniac Lab Group Contact Information
+##### The MANIAC Lab is located in the Enrico Fermi Institute at the University of Chicago
 
-contact@email.com
+Michelson Center for Physics, 933 East 56th Street, Chicago, IL 60637
+
+Contact us at rwg@uchicago.edu
 
 ![alt text][logo]
 
