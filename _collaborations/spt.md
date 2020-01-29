@@ -1,12 +1,16 @@
 ---
 layout: collaboration_post
-title: LIGO
+title:  Computing for the South Pole Telescope
 categories: [projects]
-author: Jeremy Van
-image: /assets/img/slideshow/ligo.jpg
-icon: /assets/collaborations/ligo_logo.png
-excerpt: LIGO AND ICECUBE
+author: Rob Gardner
+image: /assets/img/slideshow/spt.jpg
+icon: /assets/collaborations/spt_logo.png
+excerpt: MANIAC Lab operates cyberinfrastructure at the South Pole and SPT analysis facilities in Chicago 
 ---
+
+(Photo by Jason Gallicchio)
+
+We also provide a large and fast analytics cluster for the ATLAS Distributed Computing operations team using the "ELK stack" (Elasticsearch, Logstash, Kibana), and a machine learning platform with access to approximately 30 GPU cards in the Lab.
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
 
