@@ -1,11 +1,11 @@
 ---
 layout: collaboration_post
-title: Distributed High Throughput Computing for the VERITAS Telescope
+title: High Throughput Computing for VERITAS
 categories: [projects]
 author: Rob Gardner
 image: /assets/img/slideshow/veritas.jpg
-icon: /assets/collaborations/veritas-logo.jpg
-excerpt: MANIAC Lab provides storage and workflow cyberinfrastructure for VERITAS (Very Energetic Radiation Imaging Telescope Array System)  
+icon: /assets/collaborations/veritas-logo.png
+excerpt: MANIAC Lab provides storage and workflow cyberinfrastructure for VERITAS, the Very Energetic Radiation Imaging Telescope Array System
 ---
 
 Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.

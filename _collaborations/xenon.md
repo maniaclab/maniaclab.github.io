@@ -1,6 +1,6 @@
 ---
 layout: collaboration_post
-title: A Global Data Network for the XENON
+title: A Global Data Network for XENON
 categories: [projects]
 author: Rob Gardner
 image: /assets/img/slideshow/xenoninhallb.jpg
