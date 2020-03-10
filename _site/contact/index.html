@@ -141,10 +141,7 @@
             <h1 class="uk-article-title">Getting here and getting a hold of us</h1>
 
             <div class="article-content">
-                <!-- formspree:
-    email: jeremyvan614@gmail.com
-    redirect: /thanks/  -->
-<h5 id="the-maniac-lab-is-located-in-the-enrico-fermi-institute-at-the-university-of-chicago">The MANIAC Lab is located in the Enrico Fermi Institute at the University of Chicago</h5>
+                <h5 id="the-maniac-lab-is-located-in-the-enrico-fermi-institute-at-the-university-of-chicago">The MANIAC Lab is located in the Enrico Fermi Institute at the University of Chicago</h5>
 
 <p>Michelson Center for Physics, 933 East 56th Street, Chicago, IL 60637.
 Contact us at rwg@uchicago.edu</p>
@@ -156,8 +153,6 @@ Contact us at rwg@uchicago.edu</p>
 
         </article>
 
-        
-        <br>
 
         <div class="iframe-rwd" style="position: relative; padding-bottom: 65.25%; padding-top: 30px; height: 0; overflow: hidden;">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.639190259063!2d-87.60474708416751!3d41.79298897922908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e293f1f8d34f9%3A0x8ee42ebea3b054f2!2sPhysics+Research+Center!5e0!3m2!1sen!2sus!4v1539116687648" width="600" height="450" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen></iframe>
@@ -202,6 +197,44 @@ Contact us at rwg@uchicago.edu</p>
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=&amp;callback=initMap"></script>
 
+
+
+        
+        <h3 class="uk-margin-medium-top">Contact Form</h3>
+        <form class="uk-form-stacked uk-margin-medium-top" method="POST" action="https://formspree.io/xgeygnqe" accept-charset="UTF-8">
+            <div class="uk-margin-medium-bottom">
+                <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Name</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-form-large uk-border-rounded" name="name" type="text" required>
+                </div>
+            </div>
+            <div class="uk-margin-medium-bottom">
+                <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Email</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-form-large uk-border-rounded" name="_replyto" type="email" required>
+                </div>
+            </div>
+            <div class="uk-margin-medium-bottom">
+                <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Subject</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-form-large uk-border-rounded" name="_subject" type="text">
+                </div>
+            </div>
+            <div class="uk-margin-medium-bottom">
+                <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Message</label>
+                <div class="uk-form-controls">
+                    <textarea class="uk-textarea uk-form-large" name="message" rows="5" minlength="10" required></textarea>
+                </div>
+            </div>
+            <div>
+                
+                <input type="hidden" name="_next" value="http://localhost:4000/contact/">
+                
+                <input type="text" name="_gotcha" style="display:none">
+                <input class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-border-rounded" style="width: 30%;" type="submit" value="Send">
+            </div>
+        </form>
+        
 
     </div>
 </div>
