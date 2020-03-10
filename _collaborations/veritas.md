@@ -7,3 +7,4 @@ image: /assets/img/slideshow/veritas.jpg
 icon: /assets/collaborations/veritas-logo.png
 excerpt: MANIAC Lab provides storage and workflow cyberinfrastructure for VERITAS, the Very Energetic Radiation Imaging Telescope Array System
 ---
+MANIAC Lab provides storage and workflow cyberinfrastructure for VERITAS, the Very Energetic Radiation Imaging Telescope Array System
