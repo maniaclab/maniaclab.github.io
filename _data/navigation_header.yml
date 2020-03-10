@@ -2,8 +2,8 @@
 - title: Home
   url: /
 
-- title: News
-  url: /news/
+# - title: News
+#   url: /news/
 
 - title: Projects
   url: /projects/
