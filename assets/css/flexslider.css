@@ -22,12 +22,12 @@ h3, .uk-h3 {
 
 .uk-article-content {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .tm-timeline-body {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .uk-navbar {
@@ -74,7 +74,7 @@ h3, .uk-h3 {
 
 .flexslider .headline .flex-caption-title {
   font-size: 2.22222222em;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
