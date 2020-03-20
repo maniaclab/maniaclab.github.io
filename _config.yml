@@ -15,7 +15,7 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://maniaclab.github.io"
+url:                "https://maniaclab.uchicago.edu"
 
 # Site logo, image or text
 brand:
