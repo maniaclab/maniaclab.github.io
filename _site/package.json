@@ -30,7 +30,7 @@
     "uikit": "^3.0.0-beta.42"
   },
   "devDependencies": {
-    "jshint": "^2.9.5",
+    "jshint": "^2.13.6",
     "ncp": "latest",
     "uglify-js": "^3.2.1",
     "watch": "^1.0.2"
