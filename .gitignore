@@ -1,2 +1,13 @@
 ## Stupid DS_Store
 *DS_Store
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node modules
+node_modules/
+
+# Ruby version
+.ruby-version
