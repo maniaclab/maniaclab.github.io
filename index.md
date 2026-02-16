@@ -6,7 +6,7 @@ hero:
     sub_image: uc_shield_logo.gif
     search: false
     description: We build advanced cyberinfrastructure supporting the largest scientific instruments probing the most fundumental questions of nature.
-    description_2: Our (admittedly frivolous) name is a nod to the University of Chicago’s first computer: MANIAC III. Built in 1961 at the Institute for Computer Research, MANIAC III—short for Mathematical Analyzer, Numerical Integrator, and Computer (Model III)—was a second-generation machine that replaced vacuum tubes with solid-state components. It was developed under the leadership of Nicholas Metropolis (SB 1937, PhD 1941), who carried forward and extended computer designs he had helped build at Los Alamos after World War II.
+    description_2: Our (admittedly frivolous) name is a nod to the University of Chicago’s first computer, MANIAC III. Built in 1961 at the Institute for Computer Research, MANIAC III, short for Mathematical Analyzer, Numerical Integrator, and Computer (Model III), was a second-generation machine that replaced vacuum tubes with solid-state components. It was developed under the leadership of Nicholas Metropolis (SB 1937, PhD 1941), who carried forward and extended computer designs he had helped build at Los Alamos after World War II.
 categories:
     columns: 3
     title: Meet Our Team
