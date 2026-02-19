@@ -11,3 +11,6 @@ node_modules/
 
 # Ruby version
 .ruby-version
+
+# Claude Code local data
+.claude/
