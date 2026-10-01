@@ -28,7 +28,7 @@ current:
 
   - name: Ilija Vukotic
     title: Senior Computational Scientist
-    desc: Ilija joined the EFI in March 2012 as a physicist on ATLAS working on federated data access with XRootD. He builds the ATLAS analytics platform, the ServiceX data delivery service and its successor ServiceY, high-bandwidth data delivery testbeds, and the Lab's AI-assisted operations stack of autonomous monitoring agents, an Analysis Facility assistant and MCP services. He is building AEGIS, a new agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations, and co-leads the Elwood agentic analysis framework.
+    desc: Ilija joined the EFI in March 2012 as a physicist on ATLAS working on federated data access with XRootD. He builds the ATLAS analytics platform, the ServiceX data delivery service and its successor ServiceY, high-bandwidth data delivery testbeds, and ATLAS's new conditions-data caching layer of regional Varnish proxies and a Kubernetes-hosted Frontier service, presented at CHEP 2026, and the Lab's AI-assisted operations stack of autonomous monitoring agents, an Analysis Facility assistant and MCP services. He is building AEGIS, a new agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations, and co-leads the Elwood agentic analysis framework.
     icon: /assets/team/ilija.jpg
 
   - name: Judith Stephen
@@ -38,7 +38,7 @@ current:
 
   - name: Fengping Hu
     title: Senior Scientific Software Developer
-    desc: Fengping joined in August 2021 and is the primary engineer of the Analysis Facility platform, spanning Kubernetes, GitOps with FluxCD, Prometheus and Grafana observability, and the BinderHub and REANA services used in IRIS-HEP, HSF and ATLAS training events. Fengping also leads the Lab's work on the IRIS-HEP Scalable Systems Laboratory and Triton inference-as-a-service, and is a core contributor to Shannon and Elwood, owning the Kubernetes access controls and executor policies that keep AI agents within approved boundaries.
+    desc: Fengping joined in August 2021 and is the primary engineer of the Analysis Facility platform, spanning Kubernetes, GitOps with FluxCD, Prometheus and Grafana observability, and the hosted BinderHub service (binderhub.ssl-hep.org) that has carried HSF-India, CODAS-HEP and PyHEP workshops of up to a hundred participants across the Analysis Facility and the National Research Platform, presented at CHEP 2026. Fengping also leads the Lab's work on the IRIS-HEP Scalable Systems Laboratory and Triton inference-as-a-service, and is a core contributor to Shannon and Elwood, owning the Kubernetes access controls and executor policies that keep AI agents within approved boundaries.
     icon: /assets/team/fengping.jpg
 
   - name: Farnaz Golnaraghi
