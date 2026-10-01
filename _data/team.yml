@@ -52,15 +52,15 @@ current:
     icon: /assets/team/djordan.jpg
 
   - name: Aidan Rosberg
-    title: Research Computing Engineer
+    title: DevOps Systems Administrator
     affiliation: Indiana University
-    desc: Based at Indiana University, Aidan is the infrastructure owner of the RP1 research and integration platform, covering Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, and REANA, and bridges the UChicago and Indiana sites of the Midwest Tier2 Center.
+    desc: Based at Indiana University, Aidan is the infrastructure owner of the RP1 research and integration platform, covering Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, and REANA. He works on integrating heterogeneous computing resources into the platform, including interfaces and MCP services that connect it to DOE computing facilities, and bridges the UChicago and Indiana sites of the Midwest Tier2 Center.
     icon: /assets/team/aidan.jpg
 
   - name: Fred Luehring
     title: Senior Scientist
     affiliation: Indiana University
-    desc: Fred leads the Indiana University site of the Midwest Tier2 Center and co-manages the US ATLAS Tier2 facilities program. A long-standing member of the ATLAS collaboration, he works with the Lab on facility operations, procurement and planning across the MWT2 federation.
+    desc: Fred leads the Indiana University site of the Midwest Tier2 Center and is co-manager of Tier2 Facilities in the U.S. ATLAS Operations Program. A long-standing member of the ATLAS collaboration, he works with the Lab on facility operations, procurement and planning across the MWT2 federation.
     icon: /assets/team/fred.jpg
 
 former:
