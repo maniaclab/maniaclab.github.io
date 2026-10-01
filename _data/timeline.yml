@@ -7,7 +7,7 @@
 
 chart:
   start: 2000
-  end: 2029          # right edge of the chart
+  end: 2031          # right edge of the chart
   today: 2026-10
 
 lanes:
@@ -59,7 +59,7 @@ lanes:
         start: 2002-06
         end: 2023-08
         approx: true
-      - title: Broadening the Discovery Potential of the LHC
+      - title: Broadening LHC Discovery Potential
         full: "Broadening the Discovery Potential of the LHC: Instrumentation, Algorithms, and Training for Physics with the ATLAS Experiment and Direct Axion Detection (UChicago ATLAS group grant)"
         sponsor: NSF, PI David W. Miller
         start: 2023-09
@@ -195,13 +195,38 @@ lanes:
         open: true
         url: https://github.com/maniaclab/aegis
 
+# LHC context: shaded bands for runs, a marker for the Higgs discovery.
+lhc:
+  - label: LHC Run 1
+    start: 2010-03
+    end: 2013-02
+    note: First 7 TeV collisions, 30 March 2010, to the end of Run 1 in February 2013
+  - label: Higgs discovery
+    date: 2012-07
+    note: Higgs boson discovery announced by ATLAS and CMS, 4 July 2012
+  - label: LHC Run 2
+    start: 2015-06
+    end: 2018-12
+    note: 13 TeV collisions from June 2015 to December 2018
+  - label: LHC Run 3
+    start: 2022-07
+    end: 2026-06
+    note: 13.6 TeV collisions from July 2022; Run 3 concluded in 2026 ahead of Long Shutdown 3
+  - label: HL-LHC start (scheduled)
+    date: 2030-06
+    note: High-Luminosity LHC operations scheduled to begin in 2030 after Long Shutdown 3
+
 milestones:
   - date: 2002-06
     label: Rob Gardner joins the EFI
   - date: 2005-06
     label: Midwest Tier2 Center founded by Chicago and Indiana
+  - date: 2005-07
+    label: Open Science Grid launched; the Lab is a founding member
   - date: 2011-06
     label: Illinois joins the Midwest Tier2 Center
+  - date: 2018-09
+    label: IRIS-HEP institute launched; the Lab hosts its Scalable Systems Laboratory
   - date: 2018-10
     label: Lab moves to the Michelson Center and joins the EFI
   - date: 2021-08

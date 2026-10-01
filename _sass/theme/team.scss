@@ -145,3 +145,12 @@
 .collab-card { display: block; color: inherit; }
 .collab-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-decoration: none; }
 .collab-icon { width: 40px; height: 40px; object-fit: contain; flex: 0 0 auto; }
+
+.tl-lhc-band rect { fill: #C68220; opacity: 0.09; }
+.tl-lhc-band text { fill: #C68220; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.tl-lhc-band:hover rect { opacity: 0.18; }
+.tl-lhc-marker line { stroke: #C68220; stroke-width: 1.2; stroke-dasharray: 2 3; }
+.tl-lhc-marker polygon { fill: #C68220; }
+.tl-lhc-marker text { fill: #C68220; font-size: 11px; font-weight: 600; }
+.tl-swatch.tl-lhc-swatch { background: #C68220; opacity: 0.18; }
+.tl-swatch.tl-higgs-swatch { width: 10px; height: 10px; background: #C68220; border-radius: 0; transform: rotate(45deg); }

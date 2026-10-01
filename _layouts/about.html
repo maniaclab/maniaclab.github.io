@@ -6,10 +6,10 @@ layout: default
 {% assign y1 = tl.chart.end %}
 {% assign years = y1 | minus: y0 %}
 {% assign ppy = 36 %}                      {%- comment -%} pixels per year {%- endcomment -%}
-{% assign label_w = 230 %}
+{% assign label_w = 250 %}
 {% assign row_h = 24 %}
 {% assign lane_h = 34 %}
-{% assign top = 44 %}
+{% assign top = 70 %}
 {% assign chart_w = years | times: ppy %}
 {% assign total_w = label_w | plus: chart_w | plus: 20 %}
 {%- comment -%} count rows to size the SVG {%- endcomment -%}
@@ -30,6 +30,35 @@ layout: default
 
         <div class="timeline-scroll uk-visible@s">
         <svg class="timeline-chart" viewBox="0 0 {{ total_w }} {{ total_h }}" width="{{ total_w }}" role="img" aria-label="Timeline of MANIAC Lab projects and awards, {{ y0 }} to {{ y1 }}">
+            <!-- LHC runs and Higgs discovery -->
+            {% for e in tl.lhc %}
+                {% if e.start %}
+                    {% assign bsy = e.start | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+                    {% assign bsm = e.start | slice: 5, 2 | plus: 0 | minus: 1 | times: 3 %}
+                    {% assign bx1 = label_w | plus: bsy | plus: bsm %}
+                    {% assign bey = e.end | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+                    {% assign bem = e.end | slice: 5, 2 | plus: 0 | times: 3 %}
+                    {% assign bx2 = label_w | plus: bey | plus: bem %}
+                    {% assign bwid = bx2 | minus: bx1 %}
+                    {% assign bmid = bx1 | plus: bx2 | divided_by: 2 %}
+                    <g class="tl-lhc-band">
+                        <title>{{ e.label | escape }}: {{ e.note | escape }}</title>
+                        <rect x="{{ bx1 }}" y="{{ top | minus: 8 }}" width="{{ bwid }}" height="{{ total_h | minus: top | minus: 22 }}"/>
+                        <text x="{{ bmid }}" y="{{ top | minus: 42 }}" text-anchor="middle">{{ e.label | escape }}</text>
+                    </g>
+                {% else %}
+                    {% assign hy = e.date | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+                    {% assign hm = e.date | slice: 5, 2 | plus: 0 | minus: 1 | times: 3 %}
+                    {% assign hx = label_w | plus: hy | plus: hm %}
+                    <g class="tl-lhc-marker">
+                        <title>{{ e.label | escape }}: {{ e.note | escape }}</title>
+                        <line x1="{{ hx }}" y1="{{ top | minus: 8 }}" x2="{{ hx }}" y2="{{ total_h | minus: 30 }}"/>
+                        <polygon points="{{ hx }},{{ top | minus: 64 }} {{ hx | plus: 5 }},{{ top | minus: 58 }} {{ hx }},{{ top | minus: 52 }} {{ hx | minus: 5 }},{{ top | minus: 58 }}"/>
+                        <text x="{{ hx | plus: 9 }}" y="{{ top | minus: 55 }}">{{ e.label | escape }}</text>
+                    </g>
+                {% endif %}
+            {% endfor %}
+
             <!-- year grid -->
             {% for i in (0..years) %}
                 {% assign yr = y0 | plus: i %}
@@ -101,6 +130,8 @@ layout: default
             <li><span class="tl-swatch tl-bar tl-bar-current"></span> Current initiative</li>
             <li><span class="tl-swatch tl-dot"></span> Lab milestone (hover for details)</li>
             <li><span class="tl-swatch tl-today-swatch"></span> Today</li>
+            <li><span class="tl-swatch tl-lhc-swatch"></span> LHC run</li>
+            <li><span class="tl-swatch tl-higgs-swatch"></span> Higgs discovery, July 2012</li>
         </ul>
 
         <ol class="tl-milestone-list uk-text-small">
