@@ -54,7 +54,12 @@ layout: default
                         <title>{{ e.label | escape }}: {{ e.note | escape }}</title>
                         <line x1="{{ hx }}" y1="{{ top | minus: 8 }}" x2="{{ hx }}" y2="{{ total_h | minus: 30 }}"/>
                         <polygon points="{{ hx }},{{ top | minus: 64 }} {{ hx | plus: 5 }},{{ top | minus: 58 }} {{ hx }},{{ top | minus: 52 }} {{ hx | minus: 5 }},{{ top | minus: 58 }}"/>
+                        {% assign right_edge = label_w | plus: chart_w | minus: 140 %}
+                        {% if hx > right_edge %}
+                        <text x="{{ hx | minus: 9 }}" y="{{ top | minus: 55 }}" text-anchor="end">{{ e.label | escape }}</text>
+                        {% else %}
                         <text x="{{ hx | plus: 9 }}" y="{{ top | minus: 55 }}">{{ e.label | escape }}</text>
+                        {% endif %}
                     </g>
                 {% endif %}
             {% endfor %}
