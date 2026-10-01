@@ -1,21 +1,82 @@
-# Categories home page navigation
+# Projects shown on /projects/.
+#
+#   current: active projects, rendered as cards with an optional outbound link
+#   past:    completed projects, rendered as a compact list
+#
+# Fields: title, tagline (one line), desc (2-4 sentences), url + link_text
+# (optional), icon (a UIkit icon name: https://getuikit.com/docs/icon),
+# years (past projects only).
 
-- title: SLATE
-  desc: Service Layer At The Edge
-  icon: settings
-  project: slate
+current:
 
-- title: VC3
-  desc: Virtual Clusters for Community Computation
-  icon: credit-card
-  project: vc3
+  - title: Analysis Facility at UChicago
+    tagline: Interactive and batch computing for ATLAS physicists
+    icon: laptop
+    desc: A Kubernetes-based facility serving U.S. ATLAS physicists and their collaborators, with JupyterHub and BinderHub notebooks, Dask clusters, HTCondor batch that flocks onto the Midwest Tier2 Center, GPUs for machine learning and inference, and petabyte-scale Ceph storage with XCache data delivery. More than 850 registered users; an AI assistant and autonomous monitoring agents support users and operators.
+    url: https://af.uchicago.edu
+    link_text: af.uchicago.edu
 
-- title: SAND
-  desc: Something About Something Here
-  icon: cog
-  project: sand
+  - title: Midwest Tier2 Center
+    tagline: ATLAS production computing across UChicago, Indiana and Illinois
+    icon: server
+    desc: MWT2 is one of the largest Tier2 centers in the Worldwide LHC Computing Grid, federating data centers at the University of Chicago, Indiana University and the Illinois Campus Cluster. It provides more than 40,000 CPU cores and 25 PB of storage for ATLAS simulation, reconstruction and analysis, and hosts the LOCALGROUPDISK and analytics services used by the U.S. ATLAS community.
+    url: https://maniaclab.uchicago.edu/collaborations/atlas/
+    link_text: More on our ATLAS work
 
-- title: OSG
-  desc: Open Science Gateway
-  icon: cog
-  project: osg
+  - title: RP1
+    tagline: R&D and integration platform for ATLAS computing
+    icon: cog
+    desc: RP1 is the incubator where new patterns are validated before they move into the production Analysis Facility. It is a multi-site Kubernetes platform spanning UChicago and Indiana University with a BinderHub front door, Keycloak identity, Dask Gateway and TaskVine scheduling, Kueue, and the ServiceX and Coffea analysis stack, all managed as declarative infrastructure with FluxCD.
+    url: https://rp1.hl-lhc.io
+    link_text: rp1.hl-lhc.io
+
+  - title: ServiceX and ServiceY
+    tagline: Columnar data delivery for high energy physics analysis
+    icon: cloud-download
+    desc: ServiceX, developed with IRIS-HEP, transforms experiment data into analysis-ready columnar arrays on demand and runs in production on the Analysis Facility. ServiceY is the Lab's next-generation delivery service, demonstrated at 300 Gbps on the FABRIC testbed, designed for the data rates of the High-Luminosity LHC.
+    url: https://github.com/ssl-hep/ServiceX
+    link_text: ServiceX on GitHub
+
+  - title: Open Data Facility
+    tagline: A U.S. home for ATLAS Open Data
+    icon: world
+    desc: The Open Data Facility mirrors ATLAS Open Data in the United States and offers several ways to work with it, from BinderHub and JupyterHub notebooks to reproducible REANA workflows, all running on RP1. It supports education, outreach and AI-era research on open physics data, and is being developed with the CLARIPHY community.
+
+  - title: Elwood
+    tagline: Agentic analysis framework for high energy physics
+    icon: bolt
+    desc: Elwood orchestrates AI agents that carry out physics analysis workflows on the Analysis Facility, from Rucio data discovery through ServiceX delivery and Coffea processing to pyhf statistical inference. It is designed for facility reach and operates under Shannon, the Lab's governance framework for AI-assisted operations, where AI proposes and humans decide. Elwood is part of the IRIS-HEP agentic-analysis roadmap and the CLARIPHY community effort on AI agentic analysis systems.
+
+  - title: AEGIS
+    tagline: AI Experimental Grid Infrastructure Sentinel
+    icon: search
+    desc: AEGIS is an agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations. Agents reason over monitoring data, job and transfer analytics and site status to detect problems, explain them and propose actions to operators, improving the monitoring and operation of the distributed computing systems used by ATLAS and potentially other LHC experiments.
+    url: https://github.com/maniaclab/aegis
+    link_text: AEGIS on GitHub
+
+past:
+
+  - title: SLATE
+    tagline: Services Layer At The Edge
+    years: 2017–2023
+    desc: An NSF-funded project with the University of Michigan and the University of Utah that built a Kubernetes-based edge platform so central teams could deploy and operate science services (data caches, gateways, workflow services) inside campus Science DMZs. SLATE patterns live on in the Analysis Facility and RP1.
+
+  - title: VC3
+    tagline: Virtual Clusters for Community Computation
+    years: 2016–2019
+    desc: A DOE-funded project with Notre Dame and Brookhaven, VC3 let users allocate virtual clusters on top of existing HPC and HTC facilities and bring self-configuring workloads to them, driven by LHC analysis requirements.
+
+  - title: Open Science Grid and PATh
+    tagline: High-throughput computing for mid-scale collaborations
+    years: 2006–2026
+    desc: MANIAC Lab was a founding member of the Open Science Grid and ran its user support and OSG Connect services for many years. Under the NSF PATh project the Lab supported mid-scale physics collaborations, including SPT-3G, XENON, KOTO, VERITAS, LIGO, IceCube and the EIC, running high-throughput computing on the OSG Open Science Pool.
+
+  - title: SOTERIA
+    tagline: Secure science registries
+    years: 2021–2025
+    desc: An NSF project led by the Lab that provided trusted container and software registries for the science community, so that research platforms could run vetted, signed images.
+
+  - title: FABRIC Across Borders
+    tagline: International testbed networking
+    years: 2020–2025
+    desc: With the FABRIC team, FAB extended the FABRIC programmable research network testbed to international partners, including CERN, and the Lab used it for high-bandwidth data delivery experiments such as ServiceY.

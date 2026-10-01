@@ -99,9 +99,5 @@ sass:
   style:            compressed
 
 collections:
-  docs:
-    output: true
-  projects:
-    output: true
   collaborations:
     output: true

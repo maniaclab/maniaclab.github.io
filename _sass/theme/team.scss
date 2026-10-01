@@ -40,3 +40,103 @@
 .team-card-former .uk-card-title {
     font-size: 1.15rem;
 }
+
+// Projects page
+
+.project-card {
+    text-align: left;
+}
+
+.project-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.project-icon {
+    color: #C68220;
+    flex: 0 0 auto;
+}
+
+.project-tagline {
+    color: #C68220;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.project-tagline-inline {
+    color: #767676;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-left: 6px;
+}
+
+.project-desc {
+    color: #155F83;
+}
+
+.project-link {
+    margin-top: 4px;
+}
+
+.uk-description-list dt {
+    font-size: 1.1rem;
+    text-transform: none;
+}
+
+.uk-description-list dd {
+    color: #155F83;
+}
+
+// About page timeline
+
+.timeline-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 24px;
+}
+
+.timeline-chart {
+    display: block;
+    min-width: 900px;
+    max-width: 100%;
+    height: auto;
+    font-family: inherit;
+}
+
+.tl-grid { stroke: #e3e3e3; stroke-width: 1; }
+.tl-grid-major { stroke: #c9c9c9; }
+.tl-year { fill: #767676; font-size: 12px; }
+.tl-lane { fill: #800000; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; }
+.tl-lane-rule { stroke: #800000; stroke-width: 1; opacity: 0.35; }
+.tl-label { fill: #333; font-size: 12.5px; }
+.tl-row a { cursor: pointer; }
+.tl-row:hover .tl-label, .tl-row a:hover .tl-label { fill: #800000; }
+.tl-bar { fill: #155F83; }
+.tl-row:hover .tl-bar { fill: #0f4a66; }
+.tl-bar-approx { fill: #155F83; opacity: 0.4; }
+.tl-bar-current { fill: #C68220; }
+.tl-row:hover .tl-bar-current { fill: #a86a16; }
+.tl-today { stroke: #800000; stroke-width: 1.5; stroke-dasharray: 4 3; }
+.tl-milestone line { stroke: #800000; stroke-width: 1.5; }
+.tl-milestone circle { fill: #fff; stroke: #800000; stroke-width: 2; }
+.tl-milestone:hover circle { fill: #800000; }
+
+.tl-legend {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+}
+.tl-swatch { display: inline-block; width: 22px; height: 10px; border-radius: 3px; vertical-align: middle; margin-right: 6px; background: #155F83; }
+.tl-swatch.tl-bar-approx { background: #155F83; opacity: 0.4; }
+.tl-swatch.tl-bar-current { background: #C68220; }
+.tl-swatch.tl-dot { width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2px solid #800000; }
+.tl-swatch.tl-today-swatch { width: 2px; height: 14px; background: #800000; border-radius: 0; }
+
+.tl-milestone-list { margin-top: 14px; color: #555; column-count: 2; column-gap: 32px; }
+.tl-milestone-list li { break-inside: avoid; }
+@media (max-width: 639px) { .tl-milestone-list { column-count: 1; } }

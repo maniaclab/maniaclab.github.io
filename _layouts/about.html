@@ -1,42 +1,138 @@
 ---
 layout: default
 ---
+{% assign tl = site.data.timeline %}
+{% assign y0 = tl.chart.start %}
+{% assign y1 = tl.chart.end %}
+{% assign years = y1 | minus: y0 %}
+{% assign ppy = 36 %}                      {%- comment -%} pixels per year {%- endcomment -%}
+{% assign label_w = 230 %}
+{% assign row_h = 24 %}
+{% assign lane_h = 34 %}
+{% assign top = 44 %}
+{% assign chart_w = years | times: ppy %}
+{% assign total_w = label_w | plus: chart_w | plus: 20 %}
+{%- comment -%} count rows to size the SVG {%- endcomment -%}
+{% assign nrows = 0 %}{% assign nlanes = 0 %}
+{% for lane in tl.lanes %}{% assign nlanes = nlanes | plus: 1 %}{% assign nrows = nrows | plus: lane.items.size %}{% endfor %}
+{% assign body_h = nrows | times: row_h %}
+{% assign lanes_h = nlanes | times: lane_h %}
+{% assign total_h = top | plus: body_h | plus: lanes_h | plus: 40 %}
+{% assign ty = tl.chart.today | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+{% assign tm = tl.chart.today | slice: 5, 2 | plus: 0 | minus: 1 | times: 3 %}
+{% assign today_x = label_w | plus: ty | plus: tm %}
 
 <div class="uk-section">
-    <div class="uk-container uk-container-xsmall">
+    <div class="uk-container uk-container-small">
 
-        <article class="uk-article">
+        <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+        <div class="article-content">
+            {{ content }}
+        </div>
 
-            <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+    </div>
+</div>
 
-            <div class="article-content">
-                {{ content }}
-            </div>
+<div class="uk-section team-former">
+    <div class="uk-container">
 
-            <div class="tm-timeline uk-margin-large-top">
-                {% for version in site.data.changelog %}
-                <div class="tm-timeline-entry">
-                    <div class="tm-timeline-time">
-                        <h5>{{ version.date }}</h5>
-                    </div>
-                    <div class="tm-timeline-body">
-                        <h3>{{ version.title }} <span class="uk-label">{{ version.label }}</span></h3>
-                        <ul class="uk-list">
-                            {% for item in version.list %}
-                            <li>{{ item }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% if version.img %}
-                        <div class="timeline-img" style="padding: 15px;">
-                          <img src="/assets/about/{{version.img}}" alt="{{version.img}}" style="display: block; margin: 0 auto;">
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
+        <h2 class="uk-text-center heading-hero-2">{{ page.timeline.title | default: "Projects and Awards" }}</h2>
+        {% if page.timeline.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.timeline.subtitle | escape }}</p>{% endif %}
+
+        <div class="timeline-scroll uk-visible@s">
+        <svg class="timeline-chart" viewBox="0 0 {{ total_w }} {{ total_h }}" width="{{ total_w }}" role="img" aria-label="Timeline of MANIAC Lab projects and awards, {{ y0 }} to {{ y1 }}">
+            <!-- year grid -->
+            {% for i in (0..years) %}
+                {% assign yr = y0 | plus: i %}
+                {% assign gx = label_w | plus: i | times: 1 %}{% assign gx = i | times: ppy | plus: label_w %}
+                {% assign m5 = yr | modulo: 5 %}
+                <line x1="{{ gx }}" y1="{{ top | minus: 8 }}" x2="{{ gx }}" y2="{{ total_h | minus: 30 }}" class="tl-grid{% if m5 == 0 %} tl-grid-major{% endif %}"/>
+                {% if m5 == 0 %}<text x="{{ gx }}" y="{{ top | minus: 16 }}" class="tl-year" text-anchor="middle">{{ yr }}</text>{% endif %}
+            {% endfor %}
+
+            <!-- lanes and bars -->
+            {% assign y = top %}
+            {% for lane in tl.lanes %}
+                <text x="0" y="{{ y | plus: 22 }}" class="tl-lane">{{ lane.name | escape }}</text>
+                <line x1="0" y1="{{ y | plus: 30 }}" x2="{{ total_w }}" y2="{{ y | plus: 30 }}" class="tl-lane-rule"/>
+                {% assign y = y | plus: lane_h %}
+                {% for item in lane.items %}
+                    {% assign sy = item.start | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+                    {% assign sm = item.start | slice: 5, 2 | plus: 0 | minus: 1 | times: 3 %}
+                    {% assign x1 = label_w | plus: sy | plus: sm %}
+                    {% if item.open %}
+                        {% assign x2 = label_w | plus: chart_w %}
+                        {% assign period = item.start | slice: 0, 4 | append: " to present" %}
+                    {% else %}
+                        {% assign ey = item.end | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+                        {% assign em = item.end | slice: 5, 2 | plus: 0 | times: 3 %}
+                        {% assign x2 = label_w | plus: ey | plus: em %}
+                        {% assign period = item.start | slice: 0, 4 | append: " to " | append: item.end | slice: 0, 4 %}
+                        {% assign e4 = item.end | slice: 0, 4 %}
+                        {% assign s4 = item.start | slice: 0, 4 %}
+                        {% assign period = s4 | append: " to " | append: e4 %}
+                    {% endif %}
+                    {% assign bw = x2 | minus: x1 %}
+                    {% assign cls = "tl-bar" %}
+                    {% if lane.current %}{% assign cls = cls | append: " tl-bar-current" %}{% endif %}
+                    {% if item.approx %}{% assign cls = cls | append: " tl-bar-approx" %}{% endif %}
+                    {% assign tip = item.full | default: item.title | append: ". " | append: item.sponsor | append: ". " | append: period | append: "." %}
+                    <g class="tl-row">
+                        <title>{{ tip | escape }}</title>
+                        {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{% endif %}
+                        <text x="{{ label_w | minus: 12 }}" y="{{ y | plus: 16 }}" class="tl-label" text-anchor="end">{{ item.title | escape }}</text>
+                        <rect x="{{ x1 }}" y="{{ y | plus: 5 }}" width="{{ bw }}" height="{{ row_h | minus: 10 }}" rx="4" class="{{ cls }}"/>
+                        {% if item.open %}<polygon points="{{ x2 }},{{ y | plus: 5 }} {{ x2 | plus: 8 }},{{ y | plus: 12 }} {{ x2 }},{{ y | plus: 19 }}" class="{{ cls }}"/>{% endif %}
+                        {% if item.url %}</a>{% endif %}
+                    </g>
+                    {% assign y = y | plus: row_h %}
                 {% endfor %}
-            </div>
+            {% endfor %}
 
-        </article>
+            <!-- today -->
+            <line x1="{{ today_x }}" y1="{{ top | minus: 8 }}" x2="{{ today_x }}" y2="{{ total_h | minus: 30 }}" class="tl-today"/>
+
+            <!-- milestones -->
+            {% for m in tl.milestones %}
+                {% assign my = m.date | slice: 0, 4 | plus: 0 | minus: y0 | times: ppy %}
+                {% assign mm = m.date | slice: 5, 2 | plus: 0 | minus: 1 | times: 3 %}
+                {% assign mx = label_w | plus: my | plus: mm %}
+                <g class="tl-milestone">
+                    <title>{{ m.date | slice: 0, 4 }}: {{ m.label | escape }}</title>
+                    <line x1="{{ mx }}" y1="{{ total_h | minus: 30 }}" x2="{{ mx }}" y2="{{ total_h | minus: 16 }}"/>
+                    <circle cx="{{ mx }}" cy="{{ total_h | minus: 12 }}" r="5"/>
+                </g>
+            {% endfor %}
+        </svg>
+        </div>
+
+        <ul class="tl-legend uk-text-small uk-text-muted">
+            <li><span class="tl-swatch tl-bar"></span> Award period</li>
+            <li><span class="tl-swatch tl-bar tl-bar-approx"></span> Continuous funding line, individual awards not all shown</li>
+            <li><span class="tl-swatch tl-bar tl-bar-current"></span> Current initiative</li>
+            <li><span class="tl-swatch tl-dot"></span> Lab milestone (hover for details)</li>
+            <li><span class="tl-swatch tl-today-swatch"></span> Today</li>
+        </ul>
+
+        <ol class="tl-milestone-list uk-text-small">
+            {% for m in tl.milestones %}<li><strong>{{ m.date | slice: 0, 4 }}</strong> {{ m.label | escape }}</li>{% endfor %}
+        </ol>
+
+        <!-- small-screen fallback -->
+        <div class="uk-hidden@s">
+            {% for lane in tl.lanes %}
+            <h4>{{ lane.name | escape }}</h4>
+            <ul class="uk-list uk-list-divider uk-text-small">
+                {% for item in lane.items %}
+                <li>
+                    <strong>{% if item.url %}<a href="{{ item.url }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</strong>
+                    <span class="team-tenure">{{ item.start | slice: 0, 4 }}{% if item.open %} to present{% else %} to {{ item.end | slice: 0, 4 }}{% endif %}</span><br>
+                    {{ item.full | default: item.title | escape }}. {{ item.sponsor | escape }}.
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
 
     </div>
 </div>
