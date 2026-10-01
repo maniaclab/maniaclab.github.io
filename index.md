@@ -12,8 +12,8 @@ categories:
     title: Meet Our Team
     subtitle: Quick Team Bios
 section:
-    title: Accelerating Collaborative Science
-    subtitle: The MANIAC Lab supports multi-institution scientific collaborations through innovation of intelligent data delivery services, scalable analysis systems, machine learning platforms, data analytics and high throughput computation.
+    title: Cyberinfrastructure for AI-native Science
+    subtitle: MANIAC Lab builds and operates the computing that takes physicists from petabytes to published results. We run the Analysis Facility at UChicago and the Midwest Tier2 Center on the Worldwide LHC Computing Grid, deliver data in analysis-ready columns with ServiceX, and are building agentic systems for the next decade of discovery, Elwood for analysis and AEGIS for operations, governed by Shannon so that AI proposes and humans decide.
 cta:
     title: Collaborating with the MANIAC Lab
     subtitle: We work with researchers and scientific collaborations at every scale and at any institution. 
