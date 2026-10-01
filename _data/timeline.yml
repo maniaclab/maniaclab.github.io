@@ -53,6 +53,24 @@ lanes:
 
   - name: ATLAS
     items:
+      - title: UChicago ATLAS group grant
+        full: UChicago ATLAS group NSF grant (PI Young-Kee Kim, later David W. Miller); Gardner funded continuously since 2002. Distinct from the US ATLAS Operations Program.
+        sponsor: NSF, Division of Physics
+        start: 2002-06
+        end: 2023-08
+        approx: true
+      - title: Broadening the Discovery Potential of the LHC
+        full: "Broadening the Discovery Potential of the LHC: Instrumentation, Algorithms, and Training for Physics with the ATLAS Experiment and Direct Axion Detection (UChicago ATLAS group grant)"
+        sponsor: NSF, PI David W. Miller
+        start: 2023-09
+        end: 2027-07
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2310094
+      - title: Building for Discoveries at the LHC
+        full: "Building for Discoveries at the LHC: Instrumentation, Algorithms, and Physics Analysis with the ATLAS Experiment and the HL-LHC (UChicago ATLAS group grant)"
+        sponsor: NSF, PI David W. Miller
+        start: 2026-08
+        end: 2027-07
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2609380
       - title: TeraPort
         full: "Acquisition of TeraPort: A Grid Enabled Analysis Platform with Optical Connectivity"
         sponsor: NSF, PI Gardner
@@ -70,6 +88,7 @@ lanes:
         sponsor: NSF through Stony Brook
         start: 2017-02
         end: 2023-01
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1624739
       - title: US ATLAS Operations
         full: "US ATLAS Operations: Discovery and Measurement (ATLAS 3)"
         sponsor: NSF through Stony Brook
