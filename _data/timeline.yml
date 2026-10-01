@@ -77,6 +77,12 @@ lanes:
         start: 2003-09
         end: 2007-08
         url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0321253
+      - title: ATLAS Physics Analysis Instrument
+        full: "MRI-R2 Consortium: Development of the U.S. ATLAS Physics Analysis Instrument (APAI), the Tier3 analysis facility consortium of nine NSF-funded ATLAS universities"
+        sponsor: NSF MRI-R2, led by CSU Fresno; UChicago Tier3 site, Gardner
+        start: 2010-03
+        end: 2013-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0959141
       - title: US ATLAS Operations
         full: US ATLAS Operations Program, five-year cooperative agreements since 2005
         sponsor: NSF through Stony Brook and BNL
