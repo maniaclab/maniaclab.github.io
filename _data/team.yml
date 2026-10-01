@@ -27,7 +27,7 @@ current:
     icon: /assets/team/giordon-2026.jpg
 
   - name: Ilija Vukotic
-    title: Research Professional
+    title: Senior Computational Scientist
     desc: Ilija joined the EFI in March 2012 as a physicist on ATLAS working on federated data access with XRootD. He builds the ATLAS analytics platform, the ServiceX data delivery service and its successor ServiceY, high-bandwidth data delivery testbeds, and ATLAS's new conditions-data caching layer of regional Varnish proxies and a Kubernetes-hosted Frontier service, presented at CHEP 2026, and the Lab's AI-assisted operations stack of autonomous monitoring agents, an Analysis Facility assistant and MCP services. He is building AEGIS, a new agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations, and co-leads the Elwood agentic analysis framework.
     icon: /assets/team/ilija-2026.jpg
 
