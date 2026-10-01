@@ -54,7 +54,7 @@ current:
   - name: Aidan Rosberg
     title: DevOps Systems Administrator
     affiliation: Indiana University
-    desc: Based at Indiana University, Aidan is the infrastructure owner of the RP1 research and integration platform, covering Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, and REANA. He works on integrating heterogeneous computing resources into the platform, including interfaces and MCP services that connect it to DOE computing facilities, and bridges the UChicago and Indiana sites of the Midwest Tier2 Center.
+    desc: Based at Indiana University, Aidan is responsible for the IU site of the Midwest Tier2 Center federation and is the infrastructure owner of the RP1 research and integration platform (Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, REANA). Within the U.S. ATLAS Operations Program he works on integrating heterogeneous computing resources, in particular HPC facilities, into ATLAS distributed computing, and on the closely related AI/ML operations effort, including agentic tooling and MCP interfaces to DOE computing resources.
     icon: /assets/team/aidan.jpg
 
   - name: Fred Luehring
