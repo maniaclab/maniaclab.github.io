@@ -1,13 +1,11 @@
 ---
 layout: projects
-title: Stay up to date with our projects
+title: Projects
 permalink: /projects/
 categories:
-    columns: 3
-    title: Advanced Cyberinfrastructure Development
-    subtitle: Technology to accelerate collaborative science.
+    title: Projects
+    subtitle: Cyberinfrastructure and software we build and operate to accelerate collaborative science.
+past:
+    title: Past Projects
+    subtitle: Completed projects whose ideas and software carry on in our current work.
 ---
-
-##### Morbi varius in accumsan blandit, elit ligula velit, luctus mattis ante nulla nulla.
-
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.

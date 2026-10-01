@@ -1,38 +1,54 @@
 ---
 layout: default
 ---
+
 <div class="uk-section">
-    <div class="uk-container uk-container-sm">
-        <h1 class="uk-article-title">Projects</h1>
-        {% for project in site.projects %}
-        <div class="uk-card card-post uk-inline uk-border-rounded uk-width-1-1 uk-margin">
-          <div class="uk-grid">
-            <div class="uk-width-1-2">
-              <a class="uk-position-cover" href="{{project.url}}"></a>
-              <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                  <div class="uk-width-auto">
-                    <img class="avatar avatar-small" src="{{ project.icon }}" width="70" height="70" data-proofer-ignore="true" />
-                  </div>
-                  <div class="uk-width-expand">
-                    <h3 class="uk-card-title uk-margin-remove-bottom">{{project.title}}</h3>
-                  </div>
+    <div class="uk-container">
+
+        {% if page.categories.title %}
+            <h2 class="uk-text-center heading-hero-2">{{ page.categories.title }}</h2>
+        {% endif %}
+        {% if page.categories.subtitle %}
+            <p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>
+        {% endif %}
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-margin-medium-top" data-uk-grid>
+        {% for item in site.data.projects.current %}
+            <div>
+                <div class="uk-card uk-card-body uk-border-rounded project-card">
+                    <div class="project-head">
+                        {% if item.icon %}<span class="project-icon" data-uk-icon="icon: {{ item.icon }}; ratio: 1.6"></span>{% endif %}
+                        <h3 class="uk-card-title uk-margin-remove">{{ item.title | escape }}</h3>
+                    </div>
+                    {% if item.tagline %}<div class="project-tagline">{{ item.tagline | escape }}</div>{% endif %}
+                    {% if item.desc %}<p class="project-desc">{{ item.desc | escape }}</p>{% endif %}
+                    {% if item.url %}
+                    <a class="uk-button uk-button-text project-link" href="{{ item.url }}"{% if item.url contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ item.link_text | default: "Learn more" | escape }} &rarr;</a>
+                    {% endif %}
                 </div>
-              </div>
-              <div class="uk-card-body">
-                <p>{{project.excerpt}}</p>
-              </div>
-              <div class="uk-card-footer">
-                <span class="uk-button uk-button-text">Read more &rarr;</span>
-              </div>
             </div>
-            <div class="uk-width-1-2">
-              <div class="uk-width-auto">
-                <img class="avatar avatar-small" src="{{project.image}}" data-proofer-ignore="true" />
-              </div>
-            </div>
-          </div>
-        </div>
         {% endfor %}
+        </div>
+
     </div>
 </div>
+
+{% if site.data.projects.past and site.data.projects.past.size > 0 %}
+<div class="uk-section team-former">
+    <div class="uk-container uk-container-small">
+
+        <h2 class="uk-text-center heading-hero-2">{{ page.past.title | default: "Past Projects" }}</h2>
+        {% if page.past.subtitle %}
+            <p class="subtitle uk-text-lead uk-text-center">{{ page.past.subtitle | escape }}</p>
+        {% endif %}
+
+        <dl class="uk-description-list uk-description-list-divider uk-margin-medium-top">
+        {% for item in site.data.projects.past %}
+            <dt>{{ item.title | escape }}{% if item.tagline %} <span class="project-tagline-inline">{{ item.tagline | escape }}</span>{% endif %}{% if item.years %} <span class="team-tenure">{{ item.years | escape }}</span>{% endif %}</dt>
+            <dd>{{ item.desc | escape }}</dd>
+        {% endfor %}
+        </dl>
+
+    </div>
+</div>
+{% endif %}

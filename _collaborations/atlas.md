@@ -1,14 +1,14 @@
 ---
 layout: collaboration_post
 title: Cyberinfrastructure for the Large Hadron Collider
-categories: [projects]
+categories: [collaborations]
 author: Rob Gardner
 image: /assets/img/slideshow/ATLAS-Event-Display-Hbb-1.png
 icon: /assets/collaborations/ATLAS-Logo-Square-Blue-CMYK.png
-excerpt: We lead the ATLAS Midwest Tier2 Center, providing 30 000 CPU-cores, 10 PB of storage, integrated into the worldwide LHC computing grid, accessible by every member of the international collaboration. 
+excerpt: We lead the ATLAS Midwest Tier2 Center, providing more than 40,000 CPU cores and 25 PB of storage integrated into the Worldwide LHC Computing Grid, and operate the Analysis Facility at UChicago for U.S. ATLAS physicists.
 ---
-We lead the ATLAS Midwest Tier2 Center, as of February 2026 providing 50 000 CPU-cores, 26 PB of storage, integrated into the worldwide LHC computing grid, accessible by every member of the international ATLAS collaboration. 
+We lead the ATLAS Midwest Tier2 Center (MWT2), which federates data centers at the University of Chicago, Indiana University and the Illinois Campus Cluster. As of 2026 it provides more than 40,000 CPU cores and 25 PB of storage, integrated into the Worldwide LHC Computing Grid and accessible to every member of the international ATLAS Collaboration.
 
-We also provide a large and fast analytics cluster for the ATLAS Distributed Computing operations team using the "ELK stack" (Elasticsearch, Logstash, Kibana), and a machine learning platform with access to approximately 30 GPU cards in the Lab.
+The Analysis Facility at UChicago offers U.S. ATLAS physicists and their collaborators interactive notebooks, Dask clusters, GPUs and HTCondor batch computing alongside production services such as ServiceX, XCache and REANA. It serves more than 850 registered users and is the testbed for our agentic analysis and operations work.
 
-Finally the ATLAS Analysis Facility at UChicago offers physicists a mix of traditional batch computing alongside of forward-looking technologies like Kubernetes, Jupyter and Dask. Access is granted to U.S. ATLAS physicists and their collaborators, including students and members of the international ATLAS Collaboration.
+We also operate a large analytics cluster for the ATLAS Distributed Computing operations team, built on Elasticsearch and Kibana, and are developing AEGIS, an agentic operations platform that provides operational intelligence for ATLAS computing operations. Our R&D platform, RP1, validates new patterns before they move into production.
