@@ -45,7 +45,7 @@ current:
   - title: Elwood
     tagline: Agentic analysis framework for high energy physics
     icon: bolt
-    desc: Elwood orchestrates AI agents that carry out physics analysis workflows on the Analysis Facility, from Rucio data discovery through ServiceX delivery and Coffea processing to pyhf statistical inference. It is designed for facility reach and governance under the Lab's Shannon principles, where AI proposes and humans decide, and is the basis of our DOE Genesis Mission pilot work.
+    desc: Elwood orchestrates AI agents that carry out physics analysis workflows on the Analysis Facility, from Rucio data discovery through ServiceX delivery and Coffea processing to pyhf statistical inference. It is designed for facility reach and operates under Shannon, the Lab's governance framework for AI-assisted operations, where AI proposes and humans decide. Elwood is part of the IRIS-HEP agentic-analysis roadmap and the CLARIPHY community effort on AI agentic analysis systems.
 
   - title: AEGIS
     tagline: AI Experimental Grid Infrastructure Sentinel
