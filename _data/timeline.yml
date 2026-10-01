@@ -152,6 +152,12 @@ lanes:
         sponsor: MANIAC Lab
         start: 2026-03
         open: true
+      - title: Pile cluster for SBND
+        full: Pile cluster for the UChicago SBND group (Kubernetes, HTCondor, Globus endpoint)
+        sponsor: MANIAC Lab with the UChicago neutrino group
+        start: 2026-05
+        open: true
+        url: /collaborations/sbnd/
       - title: Open Data Facility
         full: Open Data Facility on RP1
         sponsor: MANIAC Lab with CLARIPHY
