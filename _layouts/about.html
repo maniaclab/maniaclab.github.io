@@ -23,20 +23,9 @@ layout: default
 {% assign today_x = label_w | plus: ty | plus: tm %}
 
 <div class="uk-section">
-    <div class="uk-container uk-container-small">
-
-        <h1 class="uk-article-title">{{ page.title | escape }}</h1>
-        <div class="article-content">
-            {{ content }}
-        </div>
-
-    </div>
-</div>
-
-<div class="uk-section team-former">
     <div class="uk-container">
 
-        <h2 class="uk-text-center heading-hero-2">{{ page.timeline.title | default: "Projects and Awards" }}</h2>
+        <h2 class="uk-text-center heading-hero-2">{{ page.title | escape }}</h2>
         {% if page.timeline.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.timeline.subtitle | escape }}</p>{% endif %}
 
         <div class="timeline-scroll uk-visible@s">

@@ -3,6 +3,7 @@ layout: collaboration_post
 title: Computing for the South Pole Telescope
 categories: [collaborations]
 author: Rob Gardner
+order: 3
 image: /assets/img/slideshow/spt.jpg
 icon: /assets/collaborations/spt-logo-9.jpg
 excerpt: MANIAC Lab operates cyberinfrastructure for the South Pole Telescope at the Pole and in Chicago, supporting SPT-3G data processing and analysis.

@@ -3,6 +3,7 @@ layout: collaboration_post
 title: Analysis Computing for SBND
 categories: [collaborations]
 author: Rob Gardner
+order: 2
 image: /assets/img/slideshow/sbnd.jpg
 excerpt: MANIAC Lab operates the Pile cluster for University of Chicago physicists on SBND, the Short-Baseline Near Detector at Fermilab, with HTCondor batch, interactive login nodes and a Globus data transfer endpoint on a Kubernetes substrate.
 ---
