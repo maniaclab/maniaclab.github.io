@@ -16,6 +16,13 @@ current:
     url: https://af.uchicago.edu
     link_text: af.uchicago.edu
 
+  - title: IRIS-HEP Scalable Systems Laboratory
+    tagline: Where analysis systems for the HL-LHC are built and tested
+    icon: database
+    desc: MANIAC Lab hosts the Scalable Systems Laboratory (SSL) of IRIS-HEP, the NSF Institute for Research and Innovation in Software for High Energy Physics. The SSL is the institute's testbed for new analysis systems, where ServiceX, Coffea, Dask and inference services are integrated at scale, benchmarked against the data rates of the High-Luminosity LHC, and taught in IRIS-HEP, HSF and ATLAS training events. The Lab leads the SSL and contributes to the IRIS-HEP Analysis Systems area and its agentic-analysis roadmap.
+    url: https://iris-hep.org/ssl.html
+    link_text: iris-hep.org/ssl
+
   - title: Midwest Tier2 Center
     tagline: ATLAS production computing across UChicago, Indiana and Illinois
     icon: server
@@ -34,8 +41,8 @@ current:
     tagline: Columnar data delivery for high energy physics analysis
     icon: cloud-download
     desc: ServiceX, developed with IRIS-HEP, transforms experiment data into analysis-ready columnar arrays on demand and runs in production on the Analysis Facility. ServiceY is the Lab's next-generation delivery service, demonstrated at 300 Gbps on the FABRIC testbed, designed for the data rates of the High-Luminosity LHC.
-    url: https://github.com/ssl-hep/ServiceX
-    link_text: ServiceX on GitHub
+    url: https://iris-hep.org/projects/servicex.html
+    link_text: ServiceX at IRIS-HEP
 
   - title: Open Data Facility
     tagline: A U.S. home for ATLAS Open Data

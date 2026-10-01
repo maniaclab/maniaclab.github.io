@@ -52,3 +52,32 @@ layout: default
     </div>
 </div>
 {% endif %}
+
+{% assign collabs = site.collaborations | sort: "order" %}
+{% if collabs.size > 0 %}
+<div class="uk-section">
+    <div class="uk-container">
+
+        <h2 class="uk-text-center heading-hero-2">{{ page.collaborations.title | default: "Experiments and Communities We Serve" }}</h2>
+        {% if page.collaborations.subtitle %}
+            <p class="subtitle uk-text-lead uk-text-center">{{ page.collaborations.subtitle | escape }}</p>
+        {% endif %}
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-margin-medium-top" data-uk-grid>
+        {% for c in collabs %}
+            <div>
+                <a class="uk-card uk-card-body uk-card-small uk-border-rounded project-card collab-card uk-link-reset" href="{{ c.url | relative_url }}">
+                    <div class="project-head">
+                        {% if c.icon %}<img src="{{ c.icon | relative_url }}" alt="" class="collab-icon">{% endif %}
+                        <h4 class="uk-card-title uk-margin-remove">{{ c.title | escape }}</h4>
+                    </div>
+                    <p class="project-desc team-desc-small">{{ c.excerpt | strip_html | escape }}</p>
+                    <span class="uk-button uk-button-text project-link">Read more &rarr;</span>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endif %}

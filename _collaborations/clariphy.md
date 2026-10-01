@@ -3,6 +3,7 @@ layout: collaboration_post
 title: AI-native Research with CLARIPHY
 categories: [collaborations]
 author: Rob Gardner
+order: 5
 excerpt: MANIAC Lab is part of CLARIPHY, the Community Laboratory for AI-native Research in Physics, contributing agentic analysis tooling, open data infrastructure and workshop hosting.
 ---
 CLARIPHY, the Community Laboratory for AI-native Research in Physics, is a national collaboration of universities and laboratories working to build an AI-native research ecosystem for nuclear and particle physics. Its community whitepaper, "Building an AI-native Research Ecosystem for Experimental Particle Physics" (arXiv:2602.17582), organizes the field's AI vision around four grand challenges; Rob Gardner is a co-author.

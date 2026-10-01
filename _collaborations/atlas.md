@@ -3,6 +3,7 @@ layout: collaboration_post
 title: Cyberinfrastructure for the Large Hadron Collider
 categories: [collaborations]
 author: Rob Gardner
+order: 1
 image: /assets/img/slideshow/ATLAS-Event-Display-Hbb-1.png
 icon: /assets/collaborations/ATLAS-Logo-Square-Blue-CMYK.png
 excerpt: We lead the ATLAS Midwest Tier2 Center, providing more than 40,000 CPU cores and 25 PB of storage integrated into the Worldwide LHC Computing Grid, and operate the Analysis Facility at UChicago for U.S. ATLAS physicists.

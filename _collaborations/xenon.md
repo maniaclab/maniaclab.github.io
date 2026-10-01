@@ -3,6 +3,7 @@ layout: collaboration_post
 title: A Global Data Network for XENON
 categories: [collaborations]
 author: Rob Gardner
+order: 4
 image: /assets/img/slideshow/xenoninhallb.jpg
 icon: /assets/collaborations/logo_xenon.png
 excerpt: MANIAC Lab operates the Rucio global data management service for the XENON dark matter experiment at Gran Sasso, Italy.

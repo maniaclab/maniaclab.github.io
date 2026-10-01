@@ -140,3 +140,8 @@
 .tl-milestone-list { margin-top: 14px; color: #555; column-count: 2; column-gap: 32px; }
 .tl-milestone-list li { break-inside: avoid; }
 @media (max-width: 639px) { .tl-milestone-list { column-count: 1; } }
+
+// Collaboration cards on the Projects page
+.collab-card { display: block; color: inherit; }
+.collab-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-decoration: none; }
+.collab-icon { width: 40px; height: 40px; object-fit: contain; flex: 0 0 auto; }
