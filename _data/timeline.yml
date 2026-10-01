@@ -1,0 +1,175 @@
+# About-page timeline. Rendered by _layouts/about.html as an SVG chart
+# (lanes x years) with a list fallback on small screens.
+#
+# Dates are YYYY-MM. `end` may be omitted for ongoing work (`open: true`).
+# `approx: true` draws a lighter bar for a funding line whose individual
+# awards are not all documented. `url` links to the public award record.
+
+chart:
+  start: 2000
+  end: 2029          # right edge of the chart
+  today: 2026-10
+
+lanes:
+
+  - name: Grid and high-throughput computing
+    items:
+      - title: GriPhyN
+        full: "GriPhyN: Towards Petascale Virtual-Data Grids"
+        sponsor: NSF (PI Paul Avery, Florida; UChicago through Ian Foster)
+        start: 2000-09
+        end: 2007-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0086044
+      - title: Grid Telemetry
+        full: "ITR/AP: Grid Telemetry (started at Indiana, moved to UChicago in 2002)"
+        sponsor: NSF, PI Gardner
+        start: 2001-09
+        end: 2006-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0241939
+      - title: iVDGL
+        full: "iVDGL: An International Virtual-Data Grid Laboratory for Data Intensive Science"
+        sponsor: NSF, co-PI Gardner
+        start: 2001-09
+        end: 2010-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0122557
+      - title: Open Science Grid
+        full: Open Science Grid (UChicago funded from 2006; founding member)
+        sponsor: NSF through UW–Madison
+        start: 2006-01
+        end: 2023-05
+        approx: true
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1148698
+      - title: CESAR
+        full: "CESAR: Data Infrastructure for Open Science in Support of LIGO and IceCube"
+        sponsor: NSF, PI Gardner
+        start: 2018-10
+        end: 2021-09
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1841487
+      - title: PATh
+        full: Partnership to Advance Throughput Computing (mid-scale collaboration support)
+        sponsor: NSF through UW–Madison
+        start: 2020-10
+        end: 2026-05
+
+  - name: ATLAS
+    items:
+      - title: TeraPort
+        full: "Acquisition of TeraPort: A Grid Enabled Analysis Platform with Optical Connectivity"
+        sponsor: NSF, PI Gardner
+        start: 2003-09
+        end: 2007-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0321253
+      - title: US ATLAS Operations
+        full: US ATLAS Operations Program, five-year cooperative agreements since 2005
+        sponsor: NSF through Stony Brook and BNL
+        start: 2005-01
+        end: 2017-01
+        approx: true
+      - title: US ATLAS Operations
+        full: "US ATLAS Operations (ATLAS 2), with subawards to Indiana and Illinois"
+        sponsor: NSF through Stony Brook
+        start: 2017-02
+        end: 2023-01
+      - title: US ATLAS Operations
+        full: "US ATLAS Operations: Discovery and Measurement (ATLAS 3)"
+        sponsor: NSF through Stony Brook
+        start: 2022-02
+        end: 2027-01
+
+  - name: Platforms and software
+    items:
+      - title: DASPOS
+        full: Data and Software Preservation for Open Science
+        sponsor: NSF
+        start: 2012-09
+        end: 2017-08
+      - title: VC3
+        full: Virtual Clusters for Community Computation
+        sponsor: DOE
+        start: 2016-03
+        end: 2019-02
+      - title: SLATE
+        full: "SLATE and the Mobility of Capability (CIF21 DIBBs)"
+        sponsor: NSF, PI Gardner
+        start: 2017-07
+        end: 2023-06
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724821
+      - title: SAND
+        full: Scientific Analysis of Network Data
+        sponsor: NSF through Nebraska
+        start: 2018-08
+        end: 2020-07
+      - title: IRIS-HEP
+        full: Institute for Research and Innovation in Software for High Energy Physics
+        sponsor: NSF through Princeton
+        start: 2018-09
+        end: 2024-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836650
+      - title: IRIS-HEP renewal
+        full: IRIS-HEP renewal (UChicago subaward from September 2024)
+        sponsor: NSF through Princeton
+        start: 2024-09
+        end: 2028-08
+
+  - name: Networking and security
+    items:
+      - title: Science DMZ
+        full: "CC*IIE: A Performant and Reliable Science DMZ for National and International Collaboration"
+        sponsor: NSF, PI Gardner
+        start: 2014-10
+        end: 2016-09
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1440785
+      - title: FABRIC Across Borders
+        full: "IRNC Testbed: FAB, FABRIC Across Borders"
+        sponsor: NSF, PI Gardner
+        start: 2020-09
+        end: 2025-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2029176
+      - title: SOTERIA
+        full: "CICI UCSS: Securing an Open and Trustworthy Ecosystem (secure science registries)"
+        sponsor: NSF, PI Gardner
+        start: 2021-09
+        end: 2025-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2115148
+
+  - name: Current initiatives
+    current: true
+    items:
+      - title: Analysis Facility at UChicago
+        full: Analysis Facility at UChicago for U.S. ATLAS physicists
+        sponsor: US ATLAS Operations and IRIS-HEP
+        start: 2021-08
+        open: true
+        url: https://af.uchicago.edu
+      - title: RP1
+        full: RP1 research and integration platform
+        sponsor: with Indiana University
+        start: 2025-10
+        open: true
+        url: https://rp1.hl-lhc.io
+      - title: Elwood and Shannon
+        full: Elwood agentic analysis framework and the Shannon governance framework
+        sponsor: MANIAC Lab
+        start: 2026-03
+        open: true
+      - title: Open Data Facility
+        full: Open Data Facility on RP1
+        sponsor: MANIAC Lab with CLARIPHY
+        start: 2026-05
+        open: true
+      - title: AEGIS
+        full: AEGIS agentic operations platform for ATLAS Distributed Computing
+        sponsor: MANIAC Lab
+        start: 2026-09
+        open: true
+        url: https://github.com/maniaclab/aegis
+
+milestones:
+  - date: 2002-06
+    label: Rob Gardner joins the EFI
+  - date: 2018-10
+    label: Lab moves to the Michelson Center and joins the EFI
+  - date: 2021-08
+    label: Analysis Facility launches
+  - date: 2026-08
+    label: Giordon Stark joins

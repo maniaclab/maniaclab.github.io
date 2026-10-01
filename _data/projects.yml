@@ -58,20 +58,25 @@ past:
 
   - title: SLATE
     tagline: Services Layer At The Edge
+    years: 2017–2023
     desc: An NSF-funded project with the University of Michigan and the University of Utah that built a Kubernetes-based edge platform so central teams could deploy and operate science services (data caches, gateways, workflow services) inside campus Science DMZs. SLATE patterns live on in the Analysis Facility and RP1.
 
   - title: VC3
     tagline: Virtual Clusters for Community Computation
-    desc: With Notre Dame and Brookhaven, VC3 let users allocate virtual clusters on top of existing HPC and HTC facilities and bring self-configuring workloads to them, driven by LHC analysis requirements.
+    years: 2016–2019
+    desc: A DOE-funded project with Notre Dame and Brookhaven, VC3 let users allocate virtual clusters on top of existing HPC and HTC facilities and bring self-configuring workloads to them, driven by LHC analysis requirements.
 
   - title: Open Science Grid and PATh
     tagline: High-throughput computing for mid-scale collaborations
+    years: 2006–2026
     desc: MANIAC Lab was a founding member of the Open Science Grid and ran its user support and OSG Connect services for many years. Under the NSF PATh project the Lab supported mid-scale physics collaborations, including SPT-3G, XENON, KOTO, VERITAS, LIGO, IceCube and the EIC, running high-throughput computing on the OSG Open Science Pool.
 
   - title: SOTERIA
     tagline: Secure science registries
+    years: 2021–2025
     desc: An NSF project led by the Lab that provided trusted container and software registries for the science community, so that research platforms could run vetted, signed images.
 
   - title: FABRIC Across Borders
     tagline: International testbed networking
+    years: 2020–2025
     desc: With the FABRIC team, FAB extended the FABRIC programmable research network testbed to international partners, including CERN, and the Lab used it for high-bandwidth data delivery experiments such as ServiceY.
