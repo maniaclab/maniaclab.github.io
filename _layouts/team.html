@@ -2,44 +2,72 @@
 layout: default
 ---
 
-{% if page.categories.columns %}
-    {% assign columns = page.categories.columns %}
-{% else %}
-    {% assign columns = 3 %}
-{% endif %}
+{% assign columns = page.categories.columns | default: 3 %}
+{% assign former_columns = page.former.columns | default: 4 %}
 
-{% if page.categories %}
 <div class="uk-section">
     <div class="uk-container">
 
         {% if page.categories.title %}
             <h2 class="uk-text-center heading-hero-2">{{ page.categories.title }}</h2>
         {% endif %}
-
-        {% if page.categories.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>{% endif %}
+        {% if page.categories.subtitle %}
+            <p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>
+        {% endif %}
 
         <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
-        {% for item in site.data.team %}
-            {% if item.name %}
-            {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
-            {% assign doc = site.docs | where:"url", doc_url | first %}
+        {% for item in site.data.team.current %}
             <div>
-                <div class="uk-card uk-card-body uk-inline uk-border-rounded">
-                    <!-- <a class="uk-position-cover" href="{{ doc.url }}"></a> -->
+                <div class="uk-card uk-card-body uk-inline uk-border-rounded team-card">
                     {% if item.icon %}
-                    <!-- <span data-uk-icon="icon: {{ item.icon }}; ratio: 2" class=""></span> -->
-                    <img src="{{item.icon}}" style="height:200px; width:auto; border-radius: 100%;"/>
+                    <img src="{{ item.icon | relative_url }}" alt="Portrait of {{ item.name | escape }}" class="team-portrait" loading="lazy">
                     {% endif %}
-                    <h3 class="uk-card-title uk-margin">{{ item.name }}</h3>
+                    <h3 class="uk-card-title uk-margin">{{ item.name | escape }}</h3>
                     {% if item.title %}
-                    <label style="color: #C68220; font-weight: 500;">{{ item.title }}</label>
+                    <div class="team-title">{{ item.title | escape }}</div>
+                    {% endif %}
+                    {% if item.affiliation %}
+                    <div class="team-affiliation">{{ item.affiliation | escape }}</div>
                     {% endif %}
                     {% if item.desc %}
-                    <p style="color: #155F83;">"{{ item.desc }}"</p>
+                    <p class="team-desc">{{ item.desc | escape }}</p>
                     {% endif %}
                 </div>
             </div>
-            {% endif %}
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% if site.data.team.former and site.data.team.former.size > 0 %}
+<div class="uk-section uk-section-muted team-former">
+    <div class="uk-container">
+
+        <h2 class="uk-text-center heading-hero-2">{{ page.former.title | default: "Former Team Members" }}</h2>
+        {% if page.former.subtitle %}
+            <p class="subtitle uk-text-lead uk-text-center">{{ page.former.subtitle | escape }}</p>
+        {% endif %}
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-{{ former_columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+        {% for item in site.data.team.former %}
+            <div>
+                <div class="uk-card uk-card-body uk-card-small uk-inline uk-border-rounded team-card team-card-former">
+                    {% if item.icon %}
+                    <img src="{{ item.icon | relative_url }}" alt="Portrait of {{ item.name | escape }}" class="team-portrait team-portrait-small" loading="lazy">
+                    {% endif %}
+                    <h4 class="uk-card-title uk-margin-small">{{ item.name | escape }}</h4>
+                    {% if item.title %}
+                    <div class="team-title">{{ item.title | escape }}</div>
+                    {% endif %}
+                    {% if item.tenure %}
+                    <div class="team-tenure">{{ item.tenure | escape }}</div>
+                    {% endif %}
+                    {% if item.desc %}
+                    <p class="team-desc team-desc-small">{{ item.desc | escape }}</p>
+                    {% endif %}
+                </div>
+            </div>
         {% endfor %}
         </div>
 

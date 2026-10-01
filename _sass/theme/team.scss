@@ -1,0 +1,42 @@
+// Team page: current members (large cards) and former members (compact cards).
+
+.team-portrait {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-portrait-small {
+    width: 120px;
+    height: 120px;
+}
+
+.team-title {
+    color: #C68220;
+    font-weight: 500;
+}
+
+.team-affiliation,
+.team-tenure {
+    color: #767676;
+    font-size: 0.875rem;
+    margin-top: 2px;
+}
+
+.team-desc {
+    color: #155F83;
+}
+
+.team-desc-small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.team-former {
+    background: #f6f6f6;
+}
+
+.team-card-former .uk-card-title {
+    font-size: 1.15rem;
+}
