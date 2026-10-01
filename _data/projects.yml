@@ -33,7 +33,7 @@ current:
   - title: Midwest Tier2 Center
     tagline: ATLAS production computing across UChicago, Indiana and Illinois
     icon: server
-    desc: Founded in 2005 by the University of Chicago and Indiana University, and later joined by the University of Illinois at Urbana-Champaign (Mark Neubauer, local PI) through the Illinois Campus Cluster, MWT2 is one of the largest Tier2 centers in the Worldwide LHC Computing Grid. It provides more than 40,000 CPU cores and 25 PB of storage for ATLAS simulation, reconstruction and analysis, and hosts the LOCALGROUPDISK and analytics services used by the U.S. ATLAS community.
+    desc: Founded in 2005 by the University of Chicago and Indiana University, and joined in 2011 by the University of Illinois at Urbana-Champaign (Mark Neubauer, local PI) through the Illinois Campus Cluster, MWT2 is one of the largest Tier2 centers in the Worldwide LHC Computing Grid. It provides more than 40,000 CPU cores and 25 PB of storage for ATLAS simulation, reconstruction and analysis, and hosts the LOCALGROUPDISK and analytics services used by the U.S. ATLAS community.
     url: https://maniaclab.uchicago.edu/collaborations/atlas/
     link_text: More on our ATLAS work
 
