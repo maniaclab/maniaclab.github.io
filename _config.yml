@@ -33,13 +33,13 @@ efi_brand:
 
 # Default author settings
 author:
-    name:       Jeremy Van
+    name:       MANIAC Lab
     github:     maniaclab    # Github username for avatar
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
-    jeremy:
-        name:       Jeremy Van
+    maniaclab:
+        name:       MANIAC Lab
         github:     maniaclab    # Github username for avatar
 
 # Social icons displayed in footer
@@ -63,14 +63,7 @@ twitter_username:
 
 # Default footer image settings
 footer:
-    copyright:      ©2020 The University of Chicago
-
-# Disqus comments shortname, requires Disqus account https://disqus.com/
-disqus:
-    shortname:      # 1234
-
-# Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics:
+    copyright:      The University of Chicago
 
 # Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
 google_maps_api_key:
@@ -97,6 +90,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - README.md
 
 sass:
   style:            compressed

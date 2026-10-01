@@ -15,3 +15,6 @@ node_modules/
 # Claude Code local data
 .claude/
 .bundle/
+
+# Bundler local install
+vendor/
