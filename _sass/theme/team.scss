@@ -179,3 +179,31 @@
 .contact-map { position: relative; width: 100%; padding-bottom: 56%; overflow: hidden; background: #eee; }
 .contact-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .contact-send { min-width: 160px; }
+
+// Project pages (collection: _projects, layout: project_page)
+.project-hero { background: #f6f6f6; border-bottom: 1px solid #e5e5e5; }
+.project-hero-kicker { color: #767676; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.project-hero-kicker a { color: #767676; }
+.project-hero-title { color: #800000; margin: 6px 0 4px; font-size: 2.4rem; }
+.project-hero-tagline { color: #C68220; font-weight: 500; font-size: 1.25rem; margin: 0 0 10px; }
+.project-hero-lead { color: #155F83; font-size: 1.15rem; line-height: 1.55; max-width: 60rem; margin: 0; }
+.project-facts { margin-top: 18px; }
+.project-fact { border-left: 3px solid #C68220; padding-left: 12px; }
+.project-fact-value { color: #800000; font-weight: 600; font-size: 1.15rem; line-height: 1.3; }
+.project-fact-label { color: #555; font-size: 0.85rem; }
+.project-article h2 { color: #800000; font-size: 1.5rem; margin-top: 2.2rem; }
+.project-article h3 { color: #C68220; font-size: 1.15rem; margin-top: 1.6rem; }
+.project-article p, .project-article li { color: #333; }
+.project-article .uk-table th { color: #800000; }
+.project-article .uk-table td { font-size: 0.9rem; }
+.project-article code { background: #f3f3f3; color: #800000; padding: 1px 5px; border-radius: 4px; font-size: 0.85em; }
+.project-article pre { background: #1e1e1e; color: #f3f3f3; border-radius: 6px; padding: 12px 14px; font-size: 0.82rem; overflow-x: auto; }
+.project-article pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+.project-figure { margin: 18px 0 8px; }
+.project-figure-wide { margin: 0; border: 1px solid #e5e5e5; border-radius: 10px; padding: 14px 18px 10px; background: #fff; }
+.project-figure img, .project-figure svg { width: 100%; height: auto; display: block; }
+.project-figure figcaption { color: #767676; font-size: 0.85rem; margin-top: 6px; }
+.project-side-title { color: #800000; font-size: 1rem; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+.project-side-list > li { margin-bottom: 8px; }
+.project-side-note, .project-side-text { color: #555; font-size: 0.85rem; line-height: 1.45; }
+.project-side-text { margin: 0; }
