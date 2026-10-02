@@ -98,6 +98,7 @@ layout: default
                     {% assign bw = x2 | minus: x1 %}
                     {% assign cls = "tl-bar" %}
                     {% if lane.current %}{% assign cls = cls | append: " tl-bar-current" %}{% endif %}
+                    {% if lane.team %}{% assign cls = cls | append: " tl-bar-team" %}{% endif %}
                     {% if item.approx %}{% assign cls = cls | append: " tl-bar-approx" %}{% endif %}
                     {% assign tip = item.full | default: item.title | append: ". " | append: item.sponsor | append: ". " | append: period | append: "." %}
                     <g class="tl-row">
@@ -133,6 +134,7 @@ layout: default
             <li><span class="tl-swatch tl-bar"></span> Award period</li>
             <li><span class="tl-swatch tl-bar tl-bar-approx"></span> Continuous funding line, individual awards not all shown</li>
             <li><span class="tl-swatch tl-bar tl-bar-current"></span> Current initiative</li>
+            <li><span class="tl-swatch tl-bar tl-bar-team"></span> Team member, from join date</li>
             <li><span class="tl-swatch tl-dot"></span> Lab milestone (hover for details)</li>
             <li><span class="tl-swatch tl-today-swatch"></span> Today</li>
             <li><span class="tl-swatch tl-lhc-swatch"></span> LHC run</li>
