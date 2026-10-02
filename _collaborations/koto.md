@@ -6,7 +6,7 @@ author: Rob Gardner
 order: 5
 image: /assets/img/slideshow/koto.jpg
 icon: /assets/collaborations/koto-logo.png
-excerpt: We connect the University of Chicago KOTO group, led by Yau Wah, to the Open Science Pool and to campus storage, so the search for the rare kaon decay K_L to pi0 nu nubar at J-PARC can run its simulation and analysis at scale.
+excerpt: We connect the University of Chicago KOTO group, led by Yau Wah, to the Open Science Pool and to campus storage, so the search for an ultra-rare neutral kaon decay at J-PARC can run its simulation and analysis at scale.
 ---
 KOTO is the J-PARC E14 experiment in Tokai, Japan, a search for the ultra-rare CP-violating decay of the long-lived neutral kaon, K<sub>L</sub> &rarr; &pi;<sup>0</sup>&nu;&nu;&#773;, whose Standard Model rate is so small and so precisely predicted that any excess would point to new physics. The collaboration brings together about fifty researchers from ten institutions in Japan, Korea, Taiwan and the United States. The University of Chicago group is led by Yau Wah, who has worked on rare kaon decays for three decades and is the Lab's local partner for KOTO computing.
 
