@@ -117,6 +117,11 @@ past:
     years: 2016–2019
     desc: A DOE-funded project with Notre Dame and Brookhaven, VC3 let users allocate virtual clusters on top of existing HPC and HTC facilities and bring self-configuring workloads to them, driven by LHC analysis requirements.
 
+  - title: DASPOS
+    tagline: Data and Software Preservation for Open Science
+    years: 2012–2017
+    desc: An NSF project led by Notre Dame (Michael Hildreth) with Douglas Thain, Mark Neubauer and the Lab, DASPOS was an early exploration of how to preserve HEP data, software and the context needed to understand, trust and reuse them, from container strategies and workflow capture to data citation, with workshops that drew digital librarians and other data-intensive sciences into the conversation. Its ideas carry on in REANA and the Open Data Facility.
+
   - title: Open Science Grid and PATh
     tagline: High-throughput computing for mid-scale collaborations
     years: 2006–2026

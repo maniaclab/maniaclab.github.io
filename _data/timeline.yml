@@ -104,10 +104,11 @@ lanes:
   - name: Platforms and software
     items:
       - title: DASPOS
-        full: Data and Software Preservation for Open Science
-        sponsor: NSF
+        full: "DASPOS, Data and Software Preservation for Open Science, with Notre Dame (lead), Illinois and UChicago"
+        sponsor: NSF, PI Michael Hildreth (Notre Dame); co-PIs Gardner, Douglas Thain, Mark Neubauer, Jaroslaw Nabrzyski
         start: 2012-09
         end: 2017-08
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1247316
       - title: VC3
         full: Virtual Clusters for Community Computation
         sponsor: DOE
