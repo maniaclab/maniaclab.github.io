@@ -166,3 +166,16 @@
 .project-group-credit { color: #767676; font-size: 0.75rem; margin-top: 6px; }
 .project-group-head .project-group-title { margin-top: 0; }
 .project-group-lead { font-size: 1.1rem; }
+
+// Contact page
+.contact-headline { color: #800000; font-size: 1.4rem; font-weight: 600; margin: 8px 0 4px; }
+.channel-card .project-head h3 { font-size: 1.15rem; }
+.channel-code { background: #1e1e1e; color: #f3f3f3; font-size: 0.72rem; padding: 10px 12px; border-radius: 6px; white-space: pre-wrap; word-break: break-all; margin: 8px 0; }
+.channel-links { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
+.channel-links .project-link { margin-top: 0; }
+.contact-h3 { color: #800000; margin-bottom: 6px; }
+.contact-address { color: #155F83; line-height: 1.6; }
+.contact-photo { width: 100%; display: block; margin: 12px 0 16px; }
+.contact-map { position: relative; width: 100%; padding-bottom: 56%; overflow: hidden; background: #eee; }
+.contact-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.contact-send { min-width: 160px; }
