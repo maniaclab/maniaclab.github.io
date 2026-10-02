@@ -28,13 +28,13 @@ current:
     icon: /assets/team/giordon-2026.jpg
 
   - name: Ilija Vukotic
-    title: Senior Computational Scientist
+    title: Senior Computational Scientist, Enrico Fermi Institute
     desc: Ilija joined the EFI in March 2012 as a physicist on ATLAS working on federated data access with XRootD. He builds the ATLAS analytics platform, the ServiceX data delivery service and its successor ServiceY, high-bandwidth data delivery testbeds, and ATLAS's new conditions-data caching layer of regional Varnish proxies and a Kubernetes-hosted Frontier service, presented at CHEP 2026, and the Lab's AI-assisted operations stack of autonomous monitoring agents, an Analysis Facility assistant and MCP services. He is building AEGIS, a new agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations, and co-leads the Elwood agentic analysis framework.
     icon: /assets/team/ilija-atlas.jpg
 
   - name: Fred Luehring
     title: Senior Scientist
-    affiliation: Indiana University
+    affiliation: Department of Physics, Indiana University
     desc: Fred leads the Indiana University site of the Midwest Tier2 Center and is co-manager of Tier2 Facilities in the U.S. ATLAS Operations Program. A long-standing member of the ATLAS collaboration, he works with the Lab on facility operations, procurement and planning across the MWT2 federation.
     icon: /assets/team/fred-atlas.jpg
 
