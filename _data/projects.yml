@@ -3,13 +3,56 @@
 #   current: active projects, rendered as cards with an optional outbound link
 #   past:    completed projects, rendered as a compact list
 #
-# Fields: title, tagline (one line), desc (2-4 sentences), url + link_text
+# Fields: title, group (agentic | facilities), tagline (one line), desc (2-4 sentences), url + link_text
 # (optional), icon (a UIkit icon name: https://getuikit.com/docs/icon),
 # years (past projects only).
 
 current:
 
+  - title: Elwood
+    group: agentic
+    tagline: Agentic analysis framework for high energy physics
+    icon: bolt
+    desc: Elwood orchestrates AI agents that carry out physics analysis workflows on the Analysis Facility, from Rucio data discovery through ServiceX delivery and Coffea processing to pyhf statistical inference. It is designed for facility reach and operates under Shannon, the Lab's governance framework for AI-assisted operations, where AI proposes and humans decide. Elwood is part of the IRIS-HEP agentic-analysis roadmap and the CLARIPHY community effort on AI agentic analysis systems.
+
+  - title: AEGIS
+    group: agentic
+    tagline: AI Experimental Grid Infrastructure Sentinel
+    icon: search
+    desc: AEGIS is an agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations. Agents reason over monitoring data, job and transfer analytics and site status to detect problems, explain them and propose actions to operators, improving the monitoring and operation of the distributed computing systems used by ATLAS and potentially other LHC experiments.
+    url: https://github.com/maniaclab/aegis
+    link_text: AEGIS on GitHub
+
+  - title: Shannon
+    group: agentic
+    tagline: Governance for AI-assisted operations
+    icon: lock
+    desc: Shannon is the Lab's framework for letting agents help run a facility without being handed the keys. Principles, scoped policies and runbooks live in a git repository and are reviewed as pull requests; a runbook is the atomic unit of trust, stating what an agent may do on its own and what needs a human. Autonomy is earned up a ladder from observe to operate, promoted by evaluation against fault scenarios, and enforced twice, inside the agent by policy awareness and outside it by Kubernetes RBAC, scoped service accounts and sandboxes.
+
+  - title: AF MCP Gateway
+    group: agentic
+    tagline: The USB-C port of the facility
+    icon: link
+    desc: One credential-brokered Model Context Protocol endpoint through which any agent on a physicist's laptop reaches the Analysis Facility. The broker authenticates with Keycloak or x509, mints short-lived credentials, applies policy and audits every call, so raw tokens never reach the assistant. It fronts Rucio, AMI, PanDA, HTCondor, Jupyter and GitLab for roughly 800 users, with a self-service portal for identity linking and tokens.
+    url: https://github.com/maniaclab/af-mcp-platform
+    link_text: af-mcp-platform on GitHub
+
+  - title: USATLAS Marketplace
+    group: agentic
+    tagline: Facility know-how your agent can install
+    icon: cloud-download
+    desc: A plugin registry for agent runtimes, added in one line, that packages what a generic model cannot know. Three plugins so far. analysis-facilities, with skills for HTCondor, JupyterLab, XCache, Rucio, ServiceX and Triton at UChicago, BNL and SLAC; atlas, with subagents and more than 25 skills for Rucio, AMI, pyhf, TRExFitter and TopCPToolkit; and hep-python-tools for good-practice Python. Together with the facility's managed settings and context files, it is the portable "playbook" layer of our agentic work.
+    url: https://github.com/usatlas/marketplace
+    link_text: usatlas/marketplace on GitHub
+
+  - title: Conditions Data Caching for ATLAS
+    group: agentic
+    tagline: A new global delivery model for detector conditions
+    icon: cloud-upload
+    desc: Every ATLAS job needs calibration and alignment data from the conditions database at CERN, at peaks above 20,000 requests a minute. With the ATLAS computing team we replaced the mesh of site-level Squid proxies with high-capacity regional Varnish caches behind location-aware DNS, and re-architected the Frontier launchpad on redundant Kubernetes clusters. The result is 30 percent faster delivery with a third of the servers, a sustained cache hit rate above 99 percent, and a year of uninterrupted operation. Metrics flow to Elasticsearch at UChicago, where an on-premise AI agent flags anomalous traffic. Presented at CHEP 2026.
+
   - title: Analysis Facility at UChicago
+    group: facilities
     tagline: Interactive and batch computing for ATLAS physicists
     icon: laptop
     desc: A Kubernetes-based facility serving U.S. ATLAS physicists and their collaborators, with JupyterHub and BinderHub notebooks, Dask clusters, HTCondor batch that flocks onto the Midwest Tier2 Center, GPUs for machine learning and inference, and petabyte-scale Ceph storage with XCache data delivery. More than 850 registered users; an AI assistant and autonomous monitoring agents support users and operators.
@@ -17,6 +60,7 @@ current:
     link_text: af.uchicago.edu
 
   - title: IRIS-HEP Scalable Systems Laboratory
+    group: facilities
     tagline: Where analysis systems for the HL-LHC are built and tested
     icon: database
     desc: MANIAC Lab hosts the Scalable Systems Laboratory (SSL) of IRIS-HEP, the NSF Institute for Research and Innovation in Software for High Energy Physics. The SSL is the institute's testbed for new analysis systems, where ServiceX, Coffea, Dask and inference services are integrated at scale, benchmarked against the data rates of the High-Luminosity LHC, and taught in IRIS-HEP, HSF and ATLAS training events. The Lab leads the SSL and contributes to the IRIS-HEP Analysis Systems area and its agentic-analysis roadmap.
@@ -24,6 +68,7 @@ current:
     link_text: iris-hep.org/ssl
 
   - title: Hosted BinderHub for HEP Training
+    group: facilities
     tagline: Zero-install, GPU-capable notebooks for workshops of 25 to 100 people
     icon: play-circle
     desc: Built in the IRIS-HEP Scalable Systems Laboratory, binderhub.ssl-hep.org turns any Git repository into a reproducible JupyterLab session with guaranteed CPU, memory and GPU, pre-pulled images that cut ten-minute cold starts to seconds, Keycloak single sign-on with self-service groups for workshop leads, and multi-cluster federation that places sessions on the UChicago Analysis Facility, the SSL River cluster or the National Research Platform. It has served HSF-India, CODAS-HEP and PyHEP workshops, with Dask Gateway scale-out to HTCondor workers next. Presented at CHEP 2026.
@@ -31,6 +76,7 @@ current:
     link_text: binderhub.ssl-hep.org
 
   - title: Midwest Tier2 Center
+    group: facilities
     tagline: ATLAS production computing across UChicago, Indiana and Illinois
     icon: server
     desc: Founded in 2005 by the University of Chicago and Indiana University, and joined in 2011 by the University of Illinois at Urbana-Champaign (Mark Neubauer, local PI) through the Illinois Campus Cluster, MWT2 is one of the largest Tier2 centers in the Worldwide LHC Computing Grid. It provides more than 40,000 CPU cores and 25 PB of storage for ATLAS simulation, reconstruction and analysis, and hosts the LOCALGROUPDISK and analytics services used by the U.S. ATLAS community.
@@ -38,6 +84,7 @@ current:
     link_text: More on our ATLAS work
 
   - title: RP1
+    group: facilities
     tagline: R&D and integration platform for ATLAS computing
     icon: cog
     desc: RP1 is the incubator where new patterns are validated before they move into the production Analysis Facility. It is a multi-site Kubernetes platform spanning UChicago and Indiana University with a BinderHub front door, Keycloak identity, Dask Gateway and TaskVine scheduling, Kueue, and the ServiceX and Coffea analysis stack, all managed as declarative infrastructure with FluxCD.
@@ -45,6 +92,7 @@ current:
     link_text: rp1.hl-lhc.io
 
   - title: ServiceX and ServiceY
+    group: facilities
     tagline: Columnar data delivery for high energy physics analysis
     icon: cloud-download
     desc: ServiceX, developed with IRIS-HEP, transforms experiment data into analysis-ready columnar arrays on demand and runs in production on the Analysis Facility. ServiceY is the Lab's next-generation delivery service, demonstrated at 300 Gbps on the FABRIC testbed, designed for the data rates of the High-Luminosity LHC.
@@ -52,26 +100,10 @@ current:
     link_text: ServiceX at IRIS-HEP
 
   - title: Open Data Facility
+    group: facilities
     tagline: A U.S. home for ATLAS Open Data
     icon: world
     desc: The Open Data Facility mirrors ATLAS Open Data in the United States and offers several ways to work with it, from BinderHub and JupyterHub notebooks to reproducible REANA workflows, all running on RP1. It supports education, outreach and AI-era research on open physics data, and is being developed with the CLARIPHY community.
-
-  - title: Elwood
-    tagline: Agentic analysis framework for high energy physics
-    icon: bolt
-    desc: Elwood orchestrates AI agents that carry out physics analysis workflows on the Analysis Facility, from Rucio data discovery through ServiceX delivery and Coffea processing to pyhf statistical inference. It is designed for facility reach and operates under Shannon, the Lab's governance framework for AI-assisted operations, where AI proposes and humans decide. Elwood is part of the IRIS-HEP agentic-analysis roadmap and the CLARIPHY community effort on AI agentic analysis systems.
-
-  - title: Conditions Data Caching for ATLAS
-    tagline: A new global delivery model for detector conditions
-    icon: cloud-upload
-    desc: Every ATLAS job needs calibration and alignment data from the conditions database at CERN, at peaks above 20,000 requests a minute. With the ATLAS computing team we replaced the mesh of site-level Squid proxies with high-capacity regional Varnish caches behind location-aware DNS, and re-architected the Frontier launchpad on redundant Kubernetes clusters. The result is 30 percent faster delivery with a third of the servers, a sustained cache hit rate above 99 percent, and a year of uninterrupted operation. Metrics flow to Elasticsearch at UChicago, where an on-premise AI agent flags anomalous traffic. Presented at CHEP 2026.
-
-  - title: AEGIS
-    tagline: AI Experimental Grid Infrastructure Sentinel
-    icon: search
-    desc: AEGIS is an agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations. Agents reason over monitoring data, job and transfer analytics and site status to detect problems, explain them and propose actions to operators, improving the monitoring and operation of the distributed computing systems used by ATLAS and potentially other LHC experiments.
-    url: https://github.com/maniaclab/aegis
-    link_text: AEGIS on GitHub
 
 past:
 

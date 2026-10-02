@@ -1,22 +1,19 @@
-<!-- Place somewhere in the <body> of your page -->
 <div class="flexslider">
   <ul class="slides">
-  {% for doc in site.collaborations %}
-    {% if doc.image %}
+  {% for slide in site.data.hero %}
     <li>
-      <a href="{{doc.url}}">
-        <div class="slidewrap" style="background-image: url({{doc.image}});">
+      <a href="{{ slide.url | relative_url }}">
+        <div class="slidewrap" style="background-image: url({{ slide.image | relative_url }});">
           <div class="background">
-        <!-- <img src="{{ doc.icon }}"/> -->
             <div class="headline">
-              <h2 class="flex-caption-title">{{doc.title}}</h2>
-              <p class="flex-caption">{{ doc.excerpt}}</p>
+              <h2 class="flex-caption-title">{{ slide.title | escape }}</h2>
+              <p class="flex-caption">{{ slide.caption | escape }}</p>
+              {% if slide.credit %}<p class="flex-credit">{{ slide.credit | escape }}</p>{% endif %}
             </div>
           </div>
         </div>
       </a>
     </li>
-    {% endif %}
   {% endfor %}
   </ul>
 </div>

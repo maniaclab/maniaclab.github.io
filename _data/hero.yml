@@ -1,0 +1,35 @@
+# Home-page hero carousel. One entry per slide, in order.
+# Fields: title, caption (one or two sentences), image (under /assets/img/slideshow/),
+# url (where the slide links), credit (optional small print).
+
+- title: AI and Facilities for Frontier Science
+  caption: Trustworthy agentic systems acting on and through the cyberinfrastructure of large experiments. Earned autonomy for operations; one credential-brokered gateway for physicists.
+  image: /assets/img/slideshow/ai-and-facilities.jpg
+  url: /projects/
+  credit: AI-generated illustration
+
+- title: One Conversation, the Whole Analysis
+  caption: Elwood lets an analyzer describe the physics while agents run the loop, from dataset discovery through HTCondor to the fit, grounded in facility context and gated by humans.
+  image: /assets/img/slideshow/elwood-one-conversation.jpg
+  url: /projects/
+  credit: AI-generated illustration
+
+- title: Cyberinfrastructure for the Large Hadron Collider
+  caption: We lead the ATLAS Midwest Tier2 Center, more than 40,000 CPU cores and 25 PB on the Worldwide LHC Computing Grid, and operate the Analysis Facility at UChicago for U.S. ATLAS physicists.
+  image: /assets/img/slideshow/ATLAS-Event-Display-Hbb-1.png
+  url: /collaborations/atlas/
+
+- title: Analysis Computing for SBND
+  caption: The Pile cluster serves University of Chicago physicists on the Short-Baseline Near Detector at Fermilab, with HTCondor batch, login nodes and a Globus data transfer endpoint on Kubernetes.
+  image: /assets/img/slideshow/sbnd.jpg
+  url: /collaborations/sbnd/
+
+- title: Computing for the South Pole Telescope
+  caption: MANIAC Lab operates cyberinfrastructure for the South Pole Telescope at the Pole and in Chicago, supporting SPT-3G data processing and analysis.
+  image: /assets/img/slideshow/spt.jpg
+  url: /collaborations/spt/
+
+- title: A Global Data Network for XENON
+  caption: MANIAC Lab operates the Rucio global data management service for the XENON dark matter experiment at Gran Sasso, Italy.
+  image: /assets/img/slideshow/xenoninhallb.jpg
+  url: /collaborations/xenon/
