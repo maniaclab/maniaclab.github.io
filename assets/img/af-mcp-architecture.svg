@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
   <title id="t">AF MCP Platform architecture</title>
   <desc id="d">AI assistants and the portal authenticate with the facility's Keycloak and present their own bearer token to the broker. The broker's four subsystems (identity, authorization, credential, audit) sit between every tool call and the backend MCP servers. Credential services mint HTCondor tokens, Kerberos tickets and VOMS proxies on the user's behalf. Raw credentials never reach the assistant.</desc>
   <defs>
@@ -8,69 +8,89 @@
   <style>
     .box{fill:#fff;stroke:#bbb;stroke-width:1.2;rx:8}
     .lab{font-size:13px;fill:#222;font-weight:600}
-    .sub{font-size:11px;fill:#666}
+    .sub{font-size:10.5px;fill:#666}
     .flow{stroke:#555;stroke-width:1.6;fill:none;marker-end:url(#arr)}
-    .cred{stroke:#C68220;stroke-width:1.6;fill:none;stroke-dasharray:5 4;marker-end:url(#arr2)}
-    .zone{font-size:11px;fill:#800000;font-weight:600;letter-spacing:.08em}
+    .cred{stroke:#C68220;stroke-width:1.6;fill:none;stroke-dasharray:5 4}
+    .credarr{stroke:#C68220;stroke-width:1.6;fill:none;stroke-dasharray:5 4;marker-end:url(#arr2)}
+    .zone{font-size:10.5px;fill:#800000;font-weight:700;letter-spacing:.08em}
+    .zonesub{font-size:10px;fill:#800000;font-weight:400;letter-spacing:.02em}
+    .note{font-size:10.5px;fill:#C68220;font-style:italic}
+    .colrule{stroke:#e5e5e5;stroke-width:1}
   </style>
 
-  <!-- clients -->
-  <text class="zone" x="30" y="34">ON THE PHYSICIST'S LAPTOP</text>
-  <rect class="box" x="30" y="46" width="200" height="64"/>
-  <text class="lab" x="44" y="72">AI assistant</text>
-  <text class="sub" x="44" y="90">Claude Code, Claude Desktop, Gemini and more</text>
-  <rect class="box" x="250" y="46" width="200" height="64"/>
-  <text class="lab" x="264" y="72">Self-service portal</text>
-  <text class="sub" x="264" y="90">link identities, mint tokens, see your catalog</text>
+  <!-- left column: zone labels -->
+  <line class="colrule" x1="176" y1="40" x2="176" y2="610"/>
+  <text class="zone" x="20" y="78">ON THE</text><text class="zone" x="20" y="92">PHYSICIST'S LAPTOP</text>
+  <text class="zone" x="20" y="238">ONE ENDPOINT</text><text class="zonesub" x="20" y="252">mcp.af.uchicago.edu</text>
+  <text class="zone" x="20" y="418">BACKEND</text><text class="zone" x="20" y="432">MCP SERVERS</text><text class="zonesub" x="20" y="446">added by configuration,</text><text class="zonesub" x="20" y="458">not code</text>
+  <text class="zone" x="20" y="562">CREDENTIAL</text><text class="zone" x="20" y="576">SERVICES</text><text class="zonesub" x="20" y="590">mint on the user's behalf;</text><text class="zonesub" x="20" y="602">the assistant never sees these</text>
 
-  <!-- keycloak -->
-  <rect class="box" x="700" y="46" width="230" height="64"/>
-  <text class="lab" x="714" y="72">Facility Keycloak</text>
-  <text class="sub" x="714" y="90">OIDC login; groups and POSIX identity</text>
-  <path class="flow" d="M450 70 H698"/>
-  <text class="sub" x="470" y="62">each caller logs in and gets its own bearer token</text>
+  <!-- row A: clients and Keycloak -->
+  <rect class="box" x="196" y="48" width="230" height="70"/>
+  <text class="lab" x="210" y="74">AI assistant</text>
+  <text class="sub" x="210" y="92">Claude Code, Claude Desktop, Gemini,</text><text class="sub" x="210" y="105">any MCP client</text>
+  <rect class="box" x="446" y="48" width="230" height="70"/>
+  <text class="lab" x="460" y="74">Self-service portal</text>
+  <text class="sub" x="460" y="92">link identities, mint tokens,</text><text class="sub" x="460" y="105">see your tool catalog</text>
+  <rect class="box" x="850" y="48" width="230" height="70"/>
+  <text class="lab" x="864" y="74">Facility Keycloak</text>
+  <text class="sub" x="864" y="92">OIDC login; groups and</text><text class="sub" x="864" y="105">POSIX identity</text>
+  <path class="flow" d="M676 83 H848"/>
+  <text class="sub" x="762" y="72" text-anchor="middle">each caller logs in and</text>
+  <text class="sub" x="762" y="98" text-anchor="middle">gets its own bearer token</text>
+
+  <!-- arrows clients -> broker -->
+  <path class="flow" d="M311 118 V168"/>
+  <path class="flow" d="M561 118 V168"/>
+  <text class="sub" x="436" y="147" text-anchor="middle">bearer token on every call</text>
 
   <!-- broker -->
-  <text class="zone" x="30" y="156">ONE ENDPOINT  ·  mcp.af.uchicago.edu</text>
-  <rect x="30" y="168" width="900" height="150" fill="#fbf7f1" stroke="#C68220" stroke-width="1.5" rx="10"/>
-  <text class="lab" x="46" y="194" font-size="15">AF Credential Broker and MCP aggregator</text>
-  <text class="sub" x="46" y="212">validates the bearer itself, re-resolves groups live from Keycloak, applies policy, mints the user's downstream credential, writes the audit record, then forwards the tool call</text>
+  <rect x="196" y="170" width="884" height="166" fill="#fbf7f1" stroke="#C68220" stroke-width="1.5" rx="10"/>
+  <text class="lab" x="212" y="196" font-size="15">AF Credential Broker and MCP aggregator</text>
+  <text class="sub" x="212" y="214">validates the bearer itself, re-resolves groups live from Keycloak, applies policy, mints the user's downstream credential,</text>
+  <text class="sub" x="212" y="227">writes the audit record, then forwards the tool call</text>
   <g>
-    <rect class="box" x="46" y="232" width="200" height="66"/><text class="lab" x="60" y="256">Identity</text><text class="sub" x="60" y="274">who is calling; JWT or broker PAT</text>
-    <rect class="box" x="266" y="232" width="200" height="66"/><text class="lab" x="280" y="256">Authorization</text><text class="sub" x="280" y="274">groups to permissions; tools you lack are invisible</text>
-    <rect class="box" x="486" y="232" width="200" height="66"/><text class="lab" x="500" y="256">Credential</text><text class="sub" x="500" y="274">short-lived, per user, per backend</text>
-    <rect class="box" x="706" y="232" width="208" height="66"/><text class="lab" x="720" y="256">Audit</text><text class="sub" x="720" y="274">one record per call; usage per user</text>
+    <rect class="box" x="212" y="246" width="200" height="74"/><text class="lab" x="226" y="270">Identity</text><text class="sub" x="226" y="288">who is calling;</text><text class="sub" x="226" y="301">JWT or broker-issued PAT</text>
+    <rect class="box" x="430" y="246" width="200" height="74"/><text class="lab" x="444" y="270">Authorization</text><text class="sub" x="444" y="288">groups to permissions;</text><text class="sub" x="444" y="301">tools you lack are invisible</text>
+    <rect class="box" x="648" y="246" width="200" height="74"/><text class="lab" x="662" y="270">Credential</text><text class="sub" x="662" y="288">short-lived, per user,</text><text class="sub" x="662" y="301">per backend</text>
+    <rect class="box" x="866" y="246" width="198" height="74"/><text class="lab" x="880" y="270">Audit</text><text class="sub" x="880" y="288">one record per call;</text><text class="sub" x="880" y="301">usage per user</text>
   </g>
-  <path class="flow" d="M130 110 V166"/>
-  <path class="flow" d="M350 110 V166"/>
 
-  <!-- backends -->
-  <text class="zone" x="30" y="364">BACKEND MCP SERVERS  ·  added by configuration, not code</text>
-  <g>
-    <rect class="box" x="30" y="376" width="160" height="56"/><text class="lab" x="44" y="400">rucio-mcp</text><text class="sub" x="44" y="418">datasets, files, replicas</text>
-    <rect class="box" x="205" y="376" width="160" height="56"/><text class="lab" x="219" y="400">ami-mcp</text><text class="sub" x="219" y="418">dataset metadata</text>
-    <rect class="box" x="380" y="376" width="160" height="56"/><text class="lab" x="394" y="400">condor-mcp</text><text class="sub" x="394" y="418">batch jobs on the AF</text>
-    <rect class="box" x="555" y="376" width="160" height="56"/><text class="lab" x="569" y="400">jupyterlab-mcp</text><text class="sub" x="569" y="418">your notebook servers</text>
-    <rect class="box" x="730" y="376" width="200" height="56"/><text class="lab" x="744" y="400">filesystem-mcp  ·  more</text><text class="sub" x="744" y="418">your AF files; ServiceX, PanDA next</text>
-  </g>
-  <path class="flow" d="M110 318 V374"/>
-  <path class="flow" d="M285 318 V374"/>
-  <path class="flow" d="M460 318 V374"/>
-  <path class="flow" d="M635 318 V374"/>
-  <path class="flow" d="M830 318 V374"/>
+  <!-- arrows broker -> backends -->
+  <path class="flow" d="M278 336 V396"/>
+  <path class="flow" d="M456 336 V396"/>
+  <path class="flow" d="M634 336 V396"/>
+  <path class="flow" d="M812 336 V396"/>
+  <path class="flow" d="M990 336 V396"/>
+  <text class="sub" x="1080" y="370" text-anchor="end">tool calls, with the user's credential attached</text>
 
-  <!-- credential services -->
-  <text class="zone" x="30" y="480">CREDENTIAL SERVICES  ·  mint on the user's behalf; the assistant never sees these</text>
+  <!-- row B: backends -->
   <g>
-    <rect class="box" x="30" y="492" width="200" height="50"/><text class="lab" x="44" y="513">voms-token-service</text><text class="sub" x="44" y="530">x509/VOMS proxies for the grid</text>
-    <rect class="box" x="250" y="492" width="200" height="50"/><text class="lab" x="264" y="513">condor-token-service</text><text class="sub" x="264" y="530">HTCondor IDTOKENs</text>
-    <rect class="box" x="470" y="492" width="200" height="50"/><text class="lab" x="484" y="513">krb5-token-service</text><text class="sub" x="484" y="530">CERN Kerberos tickets</text>
-    <rect class="box" x="690" y="492" width="240" height="50"/><text class="lab" x="704" y="513">ATLAS IAM tokens via Keycloak</text><text class="sub" x="704" y="530">after you link your CERN account</text>
+    <rect class="box" x="196" y="398" width="164" height="64"/><text class="lab" x="208" y="422">rucio-mcp</text><text class="sub" x="208" y="439">datasets, files,</text><text class="sub" x="208" y="452">replicas</text>
+    <rect class="box" x="374" y="398" width="164" height="64"/><text class="lab" x="386" y="422">ami-mcp</text><text class="sub" x="386" y="439">dataset metadata</text>
+    <rect class="box" x="552" y="398" width="164" height="64"/><text class="lab" x="564" y="422">condor-mcp</text><text class="sub" x="564" y="439">batch jobs on the AF</text>
+    <rect class="box" x="730" y="398" width="164" height="64"/><text class="lab" x="742" y="422">jupyterlab-mcp</text><text class="sub" x="742" y="439">your notebook servers</text>
+    <rect class="box" x="908" y="398" width="172" height="64"/><text class="lab" x="920" y="422">filesystem-mcp, more</text><text class="sub" x="920" y="439">your AF files;</text><text class="sub" x="920" y="452">ServiceX and PanDA next</text>
   </g>
-  <path d="M586 298 V340 H945 V468 H130" fill="none" stroke="#C68220" stroke-width="1.6" stroke-dasharray="5 4"/>
-  <path class="cred" d="M130 468 V490"/>
-  <path class="cred" d="M350 468 V490"/>
-  <path class="cred" d="M570 468 V490"/>
-  <path class="cred" d="M810 468 V490"/>
-  <text class="sub" x="606" y="334" fill="#C68220">credentials minted for the user, returned to the broker</text>
+
+  <!-- credential bus: from the Credential subsystem, along the right margin, into the services row -->
+  <path class="cred" d="M848 283 H857 V350 H1092 V500 H300"/>
+  <path class="credarr" d="M300 500 V540"/>
+  <path class="credarr" d="M522 500 V540"/>
+  <path class="credarr" d="M744 500 V540"/>
+  <path class="credarr" d="M966 500 V540"/>
+  <text class="note" x="411" y="492" text-anchor="middle">minted on the user's behalf</text>
+  <text class="note" x="855" y="492" text-anchor="middle">returned only to the broker</text>
+
+  <!-- row C: credential services -->
+  <g>
+    <rect class="box" x="196" y="542" width="208" height="58"/><text class="lab" x="208" y="565">voms-token-service</text><text class="sub" x="208" y="582">x509/VOMS proxies for the grid</text>
+    <rect class="box" x="418" y="542" width="208" height="58"/><text class="lab" x="430" y="565">condor-token-service</text><text class="sub" x="430" y="582">HTCondor IDTOKENs</text>
+    <rect class="box" x="640" y="542" width="208" height="58"/><text class="lab" x="652" y="565">krb5-token-service</text><text class="sub" x="652" y="582">CERN Kerberos tickets</text>
+    <rect class="box" x="862" y="542" width="218" height="58"/><text class="lab" x="874" y="565">ATLAS IAM via Keycloak</text><text class="sub" x="874" y="582">after you link your CERN account</text>
+  </g>
+
+  <!-- legend -->
+  <line class="flow" x1="196" y1="626" x2="236" y2="626"/><text class="sub" x="244" y="630">tool calls</text>
+  <line class="cred" x1="330" y1="626" x2="370" y2="626"/><text class="sub" x="378" y="630">credentials minted for the user (never shown to the assistant)</text>
 </svg>
