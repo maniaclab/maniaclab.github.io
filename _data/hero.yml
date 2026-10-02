@@ -21,6 +21,12 @@
   image: /assets/img/slideshow/ATLAS-Event-Display-Hbb-1.png
   url: /collaborations/atlas/
 
+- title: High-Throughput Computing for KOTO
+  caption: We connect the University of Chicago KOTO group, led by Yau Wah, to the Open Science Pool and to campus storage for the search for an ultra-rare neutral kaon decay at J-PARC.
+  image: /assets/img/slideshow/koto.jpg
+  url: /collaborations/koto/
+  credit: Photo KOTO collaboration, J-PARC
+
 - title: Analysis Computing for SBND
   caption: The Pile cluster serves University of Chicago physicists on the Short-Baseline Near Detector at Fermilab, with HTCondor batch, login nodes and a Globus data transfer endpoint on Kubernetes.
   image: /assets/img/slideshow/sbnd.jpg
@@ -35,9 +41,3 @@
   caption: MANIAC Lab operates the Rucio global data management service for the XENON dark matter experiment at Gran Sasso, Italy.
   image: /assets/img/slideshow/xenoninhallb.jpg
   url: /collaborations/xenon/
-
-- title: High-Throughput Computing for KOTO
-  caption: We connect the University of Chicago KOTO group, led by Yau Wah, to the Open Science Pool and to campus storage for the search for an ultra-rare neutral kaon decay at J-PARC.
-  image: /assets/img/slideshow/koto.jpg
-  url: /collaborations/koto/
-  credit: Photo KOTO collaboration, J-PARC

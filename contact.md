@@ -13,9 +13,9 @@ channels:
       link_text: rwg@uchicago.edu
     - title: Use the Analysis Facility
       icon: users
-      desc: Documentation for the UChicago Analysis Facility, and a browser assistant that already knows the facility, its storage, schedulers and data. Login required for Analysis Facility users.
-      url: https://af.uchicago.edu/docs/
-      link_text: af.uchicago.edu/docs
+      desc: The U.S. ATLAS analysis support documentation covers the UChicago Analysis Facility alongside the BNL and SLAC facilities, and a browser assistant already knows the UChicago facility, its storage, schedulers and data. Login required for the assistant.
+      url: https://usatlas.github.io/af-docs/
+      link_text: usatlas.github.io/af-docs
       url2: https://af.uchicago.edu/chat
       link_text2: AF assistant
     - title: Plug your agent in
