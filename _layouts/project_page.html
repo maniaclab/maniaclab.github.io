@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<div class="uk-section uk-section-small project-hero">
+    <div class="uk-container">
+        <div class="project-hero-kicker"><a href="{{ '/projects/' | relative_url }}">Projects</a> &rsaquo; {{ page.group_title | default: "Agentic Systems" | escape }}</div>
+        <h1 class="project-hero-title">{{ page.title | escape }}</h1>
+        {% if page.tagline %}<p class="project-hero-tagline">{{ page.tagline | escape }}</p>{% endif %}
+        {% if page.lead %}<p class="project-hero-lead">{{ page.lead | escape }}</p>{% endif %}
+        {% if page.facts %}
+        <div class="project-facts" data-uk-grid>
+            {% for f in page.facts %}
+            <div class="uk-width-1-2@s uk-width-1-4@m">
+                <div class="project-fact">
+                    <div class="project-fact-value">{{ f.value | escape }}</div>
+                    <div class="project-fact-label">{{ f.label | escape }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% if page.figure %}
+<div class="uk-section uk-section-small uk-padding-remove-bottom">
+    <div class="uk-container">
+        <figure class="project-figure project-figure-wide">
+            <img src="{{ page.figure.src | relative_url }}" alt="{{ page.figure.alt | escape }}">
+            {% if page.figure.caption %}<figcaption>{{ page.figure.caption | escape }}</figcaption>{% endif %}
+        </figure>
+    </div>
+</div>
+{% endif %}
+
+<div class="uk-section uk-section-small">
+    <div class="uk-container">
+        <div data-uk-grid>
+            <div class="uk-width-2-3@m">
+                <article class="uk-article project-article">
+                    {{ content }}
+                </article>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="project-side" data-uk-sticky="offset: 100; bottom: true; media: @m">
+                    {% if page.links %}
+                    <div class="uk-card uk-card-body uk-card-small uk-border-rounded project-card">
+                        <h4 class="project-side-title">Links</h4>
+                        <ul class="uk-list project-side-list">
+                        {% for l in page.links %}
+                            <li><a href="{{ l.url }}"{% if l.url contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ l.title | escape }}</a>{% if l.note %}<div class="project-side-note">{{ l.note | escape }}</div>{% endif %}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% if page.people %}
+                    <div class="uk-card uk-card-body uk-card-small uk-border-rounded project-card uk-margin-top">
+                        <h4 class="project-side-title">People</h4>
+                        <ul class="uk-list project-side-list">
+                        {% for p in page.people %}
+                            <li>{% if p.url %}<a href="{{ p.url }}"{% if p.url contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ p.name | escape }}</a>{% else %}{{ p.name | escape }}{% endif %}<div class="project-side-note">{{ p.role | escape }}</div></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% if page.status %}
+                    <div class="uk-card uk-card-body uk-card-small uk-border-rounded project-card uk-margin-top">
+                        <h4 class="project-side-title">Status</h4>
+                        <p class="project-side-text">{{ page.status | escape }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

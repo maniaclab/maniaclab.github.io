@@ -29,13 +29,13 @@ current:
     icon: lock
     desc: Shannon is the Lab's framework for letting agents help run a facility without being handed the keys. Principles, scoped policies and runbooks live in a git repository and are reviewed as pull requests; a runbook is the atomic unit of trust, stating what an agent may do on its own and what needs a human. Autonomy is earned up a ladder from observe to operate, promoted by evaluation against fault scenarios, and enforced twice, inside the agent by policy awareness and outside it by Kubernetes RBAC, scoped service accounts and sandboxes.
 
-  - title: AF MCP Gateway
+  - title: AF MCP Platform
     group: agentic
     tagline: The USB-C port of the facility
     icon: link
-    desc: One credential-brokered Model Context Protocol endpoint through which any agent on a physicist's laptop reaches the Analysis Facility. The broker authenticates with Keycloak or x509, mints short-lived credentials, applies policy and audits every call, so raw tokens never reach the assistant. It fronts Rucio, AMI, PanDA, HTCondor, Jupyter and GitLab for roughly 800 users, with a self-service portal for identity linking and tokens.
-    url: https://github.com/maniaclab/af-mcp-platform
-    link_text: af-mcp-platform on GitHub
+    desc: One credential-brokered Model Context Protocol endpoint through which any AI assistant on a physicist's laptop reaches the Analysis Facility. The broker authenticates every caller against the facility's Keycloak, mints short-lived per-user credentials, applies policy and audits every call, so raw grid credentials never reach the assistant. Built by Giordon Stark, it fronts Rucio, AMI, HTCondor, JupyterLab and the AF filesystem for about 800 users, with a self-service portal, and any analysis facility can deploy it.
+    url: /projects/af-mcp-platform/
+    link_text: Project page
 
   - title: USATLAS Marketplace
     group: agentic
