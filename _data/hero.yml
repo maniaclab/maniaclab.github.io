@@ -5,12 +5,14 @@
 - title: AI and Facilities for Frontier Science
   caption: Trustworthy agentic systems acting on and through the cyberinfrastructure of large experiments. Earned autonomy for operations; one credential-brokered gateway for physicists.
   image: /assets/img/slideshow/ai-and-facilities.jpg
+  dark: true
   url: /projects/
   credit: AI-generated illustration
 
 - title: One Conversation, the Whole Analysis
   caption: Elwood lets an analyzer describe the physics while agents run the loop, from dataset discovery through HTCondor to the fit, grounded in facility context and gated by humans.
   image: /assets/img/slideshow/elwood-one-conversation.jpg
+  dark: true
   url: /projects/
   credit: AI-generated illustration
 

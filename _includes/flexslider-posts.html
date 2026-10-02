@@ -4,7 +4,7 @@
     <li>
       <a href="{{ slide.url | relative_url }}">
         <div class="slidewrap" style="background-image: url({{ slide.image | relative_url }});">
-          <div class="background">
+          <div class="background{% if slide.dark %} background-dark{% endif %}">
             <div class="headline">
               <h2 class="flex-caption-title">{{ slide.title | escape }}</h2>
               <p class="flex-caption">{{ slide.caption | escape }}</p>
