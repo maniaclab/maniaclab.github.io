@@ -19,7 +19,7 @@ current:
   - name: Rob Gardner
     title: Research Professor, Enrico Fermi Institute
     desc: Rob is a physicist on the ATLAS experiment at CERN and the Principal Investigator of the MANIAC Lab. He joined the EFI in 2002 to build the first ATLAS Tier2 prototypes and was a founding member of the Open Science Grid, following the GriPhyN and iVDGL projects. He leads the Analysis Facility at UChicago and the Midwest Tier2 Center, serves in the leadership of the U.S. ATLAS Software and Computing Operations Program, and is a member of IRIS-HEP, where the Lab hosts the Scalable Systems Laboratory. From 2020 to 2023 he served as Deputy Dean for Computing and IT in the Physical Sciences Division at the University of Chicago. He was formerly co-manager of U.S. ATLAS computing facility operations, led the NSF SOTERIA project on secure science registries, and was the UChicago PI for the NSF projects PATh, through which the Lab supported mid-scale physics collaborations running high-throughput computing on the OSG Open Science Pool, and FABRIC Across Borders (FAB). He is a co-author of the CLARIPHY community whitepaper on AI-native research in physics.
-    icon: /assets/team/rgardner-2026.jpg
+    icon: /assets/team/rgardner-atlas.jpg
 
   - name: Giordon Stark
     title: Research Assistant Professor, Enrico Fermi Institute
@@ -29,39 +29,39 @@ current:
   - name: Ilija Vukotic
     title: Senior Computational Scientist
     desc: Ilija joined the EFI in March 2012 as a physicist on ATLAS working on federated data access with XRootD. He builds the ATLAS analytics platform, the ServiceX data delivery service and its successor ServiceY, high-bandwidth data delivery testbeds, and ATLAS's new conditions-data caching layer of regional Varnish proxies and a Kubernetes-hosted Frontier service, presented at CHEP 2026, and the Lab's AI-assisted operations stack of autonomous monitoring agents, an Analysis Facility assistant and MCP services. He is building AEGIS, a new agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations, and co-leads the Elwood agentic analysis framework.
-    icon: /assets/team/ilija-2026.jpg
+    icon: /assets/team/ilija-atlas.jpg
 
   - name: Judith Stephen
     title: Senior Cyberinfrastructure Engineer
     desc: Judith has run core infrastructure for the Midwest Tier2 Center since January 2015 and leads its day-to-day operations, covering dCache storage, OpenStack, bare-metal provisioning with Foreman and Puppet, grid middleware and security. She also supports the South Pole Telescope, XENON data management with Rucio, and the Lab's OSG and PATh services.
-    icon: /assets/team/jstephen-2026.jpg
+    icon: /assets/team/jstephen-atlas.jpg
 
   - name: Fengping Hu
     title: Senior Research Platform Engineer
     desc: Fengping joined in August 2021 and is the primary engineer of the Analysis Facility platform, spanning Kubernetes, GitOps with FluxCD, Prometheus and Grafana observability, and the hosted BinderHub service (binderhub.ssl-hep.org) that has carried HSF-India, CODAS-HEP and PyHEP workshops of up to a hundred participants across the Analysis Facility and the National Research Platform, presented at CHEP 2026. Fengping also leads the Lab's work on the IRIS-HEP Scalable Systems Laboratory and Triton inference-as-a-service, and is a core contributor to Shannon and Elwood, owning the Kubernetes access controls and executor policies that keep AI agents within approved boundaries.
-    icon: /assets/team/fengping.jpg
+    icon: /assets/team/fengping-atlas.jpg
 
   - name: Farnaz Golnaraghi
     title: HPC Systems Administrator
     desc: Farnaz joined in December 2021 and owns the physical infrastructure of the Analysis Facility and the Midwest Tier2 Center, from servers and Ceph storage to firmware and hardware lifecycle. She operates ServiceX for IRIS-HEP, maintains the OSG access-point backups, and develops JupyterHub environments and AI-assistant tooling for facility users.
-    icon: /assets/team/farnaz.jpg
+    icon: /assets/team/farnaz-atlas.jpg
 
   - name: David Jordan
     title: Cyberinfrastructure Engineer
     desc: David joined in May 2019 and keeps the Midwest Tier2 Center and Analysis Facility hardware running across the UChicago data centers, including inventory, networking, Ceph storage monitoring, and the HTCondor flocking that lets Analysis Facility jobs spill over onto MWT2 worker nodes. He also contributes to the RP1 research platform.
-    icon: /assets/team/djordan.jpg
+    icon: /assets/team/djordan-atlas.jpg
 
   - name: Aidan Rosberg
     title: DevOps Systems Engineer
     affiliation: Indiana University
     desc: Based at Indiana University, Aidan is responsible for the IU site of the Midwest Tier2 Center federation and is the infrastructure owner of the RP1 research and integration platform (Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, REANA). Within the U.S. ATLAS Operations Program he works on integrating heterogeneous computing resources, in particular HPC facilities, into ATLAS distributed computing, and on the closely related AI/ML operations effort, including agentic tooling and MCP interfaces to DOE computing resources.
-    icon: /assets/team/aidan.jpg
+    icon: /assets/team/aidan-atlas.jpg
 
   - name: Fred Luehring
     title: Senior Scientist
     affiliation: Indiana University
     desc: Fred leads the Indiana University site of the Midwest Tier2 Center and is co-manager of Tier2 Facilities in the U.S. ATLAS Operations Program. A long-standing member of the ATLAS collaboration, he works with the Lab on facility operations, procurement and planning across the MWT2 federation.
-    icon: /assets/team/fred.jpg
+    icon: /assets/team/fred-atlas.jpg
 
 former:
 
