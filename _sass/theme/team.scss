@@ -214,3 +214,7 @@
 // Home page: the MANIAC III historic photo
 .maniac-historic-photo { max-height: 380px; width: auto; max-width: 100%; border-radius: 6px; }
 @media (max-width: 639px) { .maniac-historic-photo { max-height: 280px; } }
+
+// Navbar search results
+.search-section { color: #767676; font-size: 0.75rem; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+#navbar-search-results li:last-child { padding-bottom: 20px; border-bottom: solid 1px #e5e5e5; }

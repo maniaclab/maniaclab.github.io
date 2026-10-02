@@ -49,7 +49,7 @@ current:
     group: agentic
     tagline: A new global delivery model for detector conditions
     icon: cloud-upload
-    desc: Every ATLAS job needs calibration and alignment data from the conditions database at CERN, at peaks above 20,000 requests a minute. With the ATLAS computing team we replaced the mesh of site-level Squid proxies with high-capacity regional Varnish caches behind location-aware DNS, and re-architected the Frontier launchpad on redundant Kubernetes clusters. The result is 30 percent faster delivery with a third of the servers, a sustained cache hit rate above 99 percent, and a year of uninterrupted operation. Metrics flow to Elasticsearch at UChicago, where an on-premise AI agent flags anomalous traffic. Presented at CHEP 2026.
+    desc: Every ATLAS job needs calibration and alignment data from the conditions database at CERN, at peaks above 20,000 requests a minute. With the ATLAS computing team we replaced the mesh of site-level Squid proxies with high-capacity regional Varnish caches behind location-aware DNS, and re-architected the Frontier launchpad on redundant Kubernetes clusters. The result is 30 percent faster delivery with a third of the servers, a sustained cache hit rate above 99 percent, and a year of uninterrupted operation. Metrics flow to Elasticsearch at UChicago, where an on-premise AI agent flags anomalous traffic.
 
   - title: Analysis Facility at UChicago
     group: facilities
@@ -79,7 +79,7 @@ current:
     group: facilities
     tagline: Zero-install, GPU-capable notebooks for workshops of 25 to 100 people
     icon: play-circle
-    desc: Built in the IRIS-HEP Scalable Systems Laboratory, binderhub.ssl-hep.org turns any Git repository into a reproducible JupyterLab session with guaranteed CPU, memory and GPU, pre-pulled images that cut ten-minute cold starts to seconds, Keycloak single sign-on with self-service groups for workshop leads, and multi-cluster federation that places sessions on the UChicago Analysis Facility, the SSL River cluster or the National Research Platform. It has served HSF-India, CODAS-HEP and PyHEP workshops, with Dask Gateway scale-out to HTCondor workers next. Presented at CHEP 2026.
+    desc: Built in the IRIS-HEP Scalable Systems Laboratory, binderhub.ssl-hep.org turns any Git repository into a reproducible JupyterLab session with guaranteed CPU, memory and GPU, pre-pulled images that cut ten-minute cold starts to seconds, Keycloak single sign-on with self-service groups for workshop leads, and multi-cluster federation that places sessions on the UChicago Analysis Facility, the SSL River cluster or the National Research Platform. It has served HSF-India, CODAS-HEP and PyHEP workshops, with Dask Gateway scale-out to HTCondor workers next.
     url: https://binderhub.ssl-hep.org
     link_text: binderhub.ssl-hep.org
 
