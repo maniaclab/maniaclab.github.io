@@ -41,6 +41,12 @@ current:
     desc: Fengping joined in August 2021 and is the primary engineer of the Analysis Facility platform, spanning Kubernetes, GitOps with FluxCD, Prometheus and Grafana observability, and the hosted BinderHub service (binderhub.ssl-hep.org) that has carried HSF-India, CODAS-HEP and PyHEP workshops of up to a hundred participants across the Analysis Facility and the National Research Platform, presented at CHEP 2026. Fengping also leads the Lab's work on the IRIS-HEP Scalable Systems Laboratory and Triton inference-as-a-service, and is a core contributor to Shannon and Elwood, owning the Kubernetes access controls and executor policies that keep AI agents within approved boundaries.
     icon: /assets/team/fengping-atlas.jpg
 
+  - name: Aidan Rosberg
+    title: DevOps Systems Engineer
+    affiliation: Indiana University
+    desc: Based at Indiana University, Aidan is responsible for the IU site of the Midwest Tier2 Center federation and is the infrastructure owner of the RP1 research and integration platform (Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, REANA). Within the U.S. ATLAS Operations Program he works on integrating heterogeneous computing resources, in particular HPC facilities, into ATLAS distributed computing, and on the closely related AI/ML operations effort, including agentic tooling and MCP interfaces to DOE computing resources.
+    icon: /assets/team/aidan-atlas.jpg
+
   - name: Farnaz Golnaraghi
     title: HPC Systems Administrator
     desc: Farnaz joined in December 2021 and owns the physical infrastructure of the Analysis Facility and the Midwest Tier2 Center, from servers and Ceph storage to firmware and hardware lifecycle. She operates ServiceX for IRIS-HEP, maintains the OSG access-point backups, and develops JupyterHub environments and AI-assistant tooling for facility users.
@@ -50,12 +56,6 @@ current:
     title: Cyberinfrastructure Engineer
     desc: David joined in May 2019 and keeps the Midwest Tier2 Center and Analysis Facility hardware running across the UChicago data centers, including inventory, networking, Ceph storage monitoring, and the HTCondor flocking that lets Analysis Facility jobs spill over onto MWT2 worker nodes. He also contributes to the RP1 research platform.
     icon: /assets/team/djordan-atlas.jpg
-
-  - name: Aidan Rosberg
-    title: DevOps Systems Engineer
-    affiliation: Indiana University
-    desc: Based at Indiana University, Aidan is responsible for the IU site of the Midwest Tier2 Center federation and is the infrastructure owner of the RP1 research and integration platform (Kubernetes, Keycloak identity, Dask Gateway, JupyterHub and BinderHub, REANA). Within the U.S. ATLAS Operations Program he works on integrating heterogeneous computing resources, in particular HPC facilities, into ATLAS distributed computing, and on the closely related AI/ML operations effort, including agentic tooling and MCP interfaces to DOE computing resources.
-    icon: /assets/team/aidan-atlas.jpg
 
   - name: Fred Luehring
     title: Senior Scientist
