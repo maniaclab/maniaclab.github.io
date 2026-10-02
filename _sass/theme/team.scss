@@ -117,6 +117,8 @@
 .tl-row:hover .tl-bar { fill: #0f4a66; }
 .tl-bar-approx { fill: #155F83; opacity: 0.4; }
 .tl-bar-current { fill: #C68220; }
+.tl-bar-team { fill: #5B8E7D; }
+.tl-row:hover .tl-bar-team { fill: #477060; }
 .tl-row:hover .tl-bar-current { fill: #a86a16; }
 .tl-today { stroke: #800000; stroke-width: 1.5; stroke-dasharray: 4 3; }
 .tl-milestone line { stroke: #800000; stroke-width: 1.5; }
@@ -134,6 +136,7 @@
 .tl-swatch { display: inline-block; width: 22px; height: 10px; border-radius: 3px; vertical-align: middle; margin-right: 6px; background: #155F83; }
 .tl-swatch.tl-bar-approx { background: #155F83; opacity: 0.4; }
 .tl-swatch.tl-bar-current { background: #C68220; }
+.tl-swatch.tl-bar-team { background: #5B8E7D; }
 .tl-swatch.tl-dot { width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2px solid #800000; }
 .tl-swatch.tl-today-swatch { width: 2px; height: 14px; background: #800000; border-radius: 0; }
 
@@ -207,3 +210,7 @@
 .project-side-list > li { margin-bottom: 8px; }
 .project-side-note, .project-side-text { color: #555; font-size: 0.85rem; line-height: 1.45; }
 .project-side-text { margin: 0; }
+
+// Home page: the MANIAC III historic photo
+.maniac-historic-photo { max-height: 380px; width: auto; max-width: 100%; border-radius: 6px; }
+@media (max-width: 639px) { .maniac-historic-photo { max-height: 280px; } }

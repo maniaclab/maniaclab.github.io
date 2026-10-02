@@ -196,6 +196,64 @@ lanes:
         open: true
         url: https://github.com/maniaclab/aegis
 
+  - name: Team, from join date
+    team: true
+    items:
+      - title: Rob Gardner
+        full: Rob Gardner, Research Professor, Enrico Fermi Institute; Principal Investigator. Joined UChicago in 2002
+        sponsor: Joined 2002
+        start: 2002-07
+        open: true
+        url: /team/
+      - title: Fred Luehring
+        full: Fred Luehring, Senior Scientist, Indiana University; leads the IU site of the Midwest Tier2 Center since its founding
+        sponsor: With MWT2 since 2005
+        start: 2005-09
+        open: true
+        url: /team/
+      - title: Ilija Vukotic
+        full: Ilija Vukotic, Senior Computational Scientist. Joined March 2012
+        sponsor: Joined 2012
+        start: 2012-03
+        open: true
+        url: /team/
+      - title: Judith Stephen
+        full: Judith Stephen, Senior Cyberinfrastructure Engineer. Joined January 2015
+        sponsor: Joined 2015
+        start: 2015-01
+        open: true
+        url: /team/
+      - title: David Jordan
+        full: David Jordan, Cyberinfrastructure Engineer. Joined May 2019
+        sponsor: Joined 2019
+        start: 2019-05
+        open: true
+        url: /team/
+      - title: Fengping Hu
+        full: Fengping Hu, Senior Research Platform Engineer. Joined August 2021
+        sponsor: Joined 2021
+        start: 2021-08
+        open: true
+        url: /team/
+      - title: Farnaz Golnaraghi
+        full: Farnaz Golnaraghi, HPC Systems Administrator. Joined December 2021
+        sponsor: Joined 2021
+        start: 2021-12
+        open: true
+        url: /team/
+      - title: Aidan Rosberg
+        full: Aidan Rosberg, DevOps Systems Engineer, Indiana University. Joined the MWT2 team in early 2024
+        sponsor: Joined 2024
+        start: 2024-03
+        open: true
+        url: /team/
+      - title: Giordon Stark
+        full: Giordon Stark, Research Assistant Professor, Enrico Fermi Institute. Joined August 2026
+        sponsor: Joined 2026
+        start: 2026-08
+        open: true
+        url: /team/
+
 # LHC context: shaded bands for runs, a marker for the Higgs discovery.
 lhc:
   - label: LHC Run 1
