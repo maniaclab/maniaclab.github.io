@@ -9,6 +9,9 @@ groups:
     - key: agentic
       title: Agentic Systems
       subtitle: AI that helps run the facility and AI that carries a physicist's analysis, built on facility context and earned trust.
+      image: /assets/img/agentic-intelligence-poster.jpg
+      image_alt: Poster reading Agentic Intelligence for HEP Infrastructure, two physicists at laptops in front of the ATLAS detector
+      image_credit: AI-generated illustration, G. Stark
     - key: facilities
       title: Facilities and Platforms
       subtitle: The infrastructure we build and operate, and the testbeds where new patterns are proven.
