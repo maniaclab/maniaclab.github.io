@@ -18,7 +18,7 @@
   <text class="zone" x="30" y="34">ON THE PHYSICIST'S LAPTOP</text>
   <rect class="box" x="30" y="46" width="200" height="64"/>
   <text class="lab" x="44" y="72">AI assistant</text>
-  <text class="sub" x="44" y="90">Claude Code, Claude Desktop, Gemini, any MCP client</text>
+  <text class="sub" x="44" y="90">Claude Code, Claude Desktop, Gemini and more</text>
   <rect class="box" x="250" y="46" width="200" height="64"/>
   <text class="lab" x="264" y="72">Self-service portal</text>
   <text class="sub" x="264" y="90">link identities, mint tokens, see your catalog</text>
@@ -72,5 +72,5 @@
   <path class="cred" d="M350 468 V490"/>
   <path class="cred" d="M570 468 V490"/>
   <path class="cred" d="M810 468 V490"/>
-  <text class="sub" x="600" y="334" fill="#C68220">credentials minted for the user, returned to the broker</text>
+  <text class="sub" x="606" y="334" fill="#C68220">credentials minted for the user, returned to the broker</text>
 </svg>
