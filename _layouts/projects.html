@@ -53,25 +53,7 @@ layout: default
     </div>
 </div>
 
-{% if site.data.projects.past and site.data.projects.past.size > 0 %}
-<div class="uk-section team-former">
-    <div class="uk-container uk-container-small">
 
-        <h2 class="uk-text-center heading-hero-2">{{ page.past.title | default: "Past Projects" }}</h2>
-        {% if page.past.subtitle %}
-            <p class="subtitle uk-text-lead uk-text-center">{{ page.past.subtitle | escape }}</p>
-        {% endif %}
-
-        <dl class="uk-description-list uk-description-list-divider uk-margin-medium-top">
-        {% for item in site.data.projects.past %}
-            <dt>{{ item.title | escape }}{% if item.tagline %} <span class="project-tagline-inline">{{ item.tagline | escape }}</span>{% endif %}{% if item.years %} <span class="team-tenure">{{ item.years | escape }}</span>{% endif %}</dt>
-            <dd>{{ item.desc | escape }}</dd>
-        {% endfor %}
-        </dl>
-
-    </div>
-</div>
-{% endif %}
 
 {% assign collabs = site.collaborations | sort: "order" %}
 {% if collabs.size > 0 %}
@@ -97,6 +79,26 @@ layout: default
             </div>
         {% endfor %}
         </div>
+
+    </div>
+</div>
+{% endif %}
+
+{% if site.data.projects.past and site.data.projects.past.size > 0 %}
+<div class="uk-section team-former">
+    <div class="uk-container uk-container-small">
+
+        <h2 class="uk-text-center heading-hero-2">{{ page.past.title | default: "Past Projects" }}</h2>
+        {% if page.past.subtitle %}
+            <p class="subtitle uk-text-lead uk-text-center">{{ page.past.subtitle | escape }}</p>
+        {% endif %}
+
+        <dl class="uk-description-list uk-description-list-divider uk-margin-medium-top">
+        {% for item in site.data.projects.past %}
+            <dt>{{ item.title | escape }}{% if item.tagline %} <span class="project-tagline-inline">{{ item.tagline | escape }}</span>{% endif %}{% if item.years %} <span class="team-tenure">{{ item.years | escape }}</span>{% endif %}</dt>
+            <dd>{{ item.desc | escape }}</dd>
+        {% endfor %}
+        </dl>
 
     </div>
 </div>
