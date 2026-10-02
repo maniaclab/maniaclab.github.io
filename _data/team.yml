@@ -7,7 +7,8 @@
 #   name         full name
 #   title        job title (for affiliated members, include the institution)
 #   affiliation  optional; shown as a small label for members based elsewhere
-#   tenure       optional; years with the Lab, e.g. "2019–2026" (former members)
+#   tenure       optional record of years with the Lab, e.g. "2019–2026" (former members); kept for
+#                reference, not displayed on the site (Rob, 2026-10-02)
 #   desc         two to four sentence bio
 #   icon         portrait under /assets/team/; square images render best
 #
