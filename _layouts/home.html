@@ -74,11 +74,11 @@ layout: default
 </div>
 
 
-<img src="/assets/maniac_bottom_banner.png"/>
+<img src="{{ "/assets/maniac_bottom_banner.jpg" | relative_url }}" alt="ATLAS event display, the XENON detector, the SBND detector and the South Pole Telescope">
 
 {% if page.section %}
 <div class="uk-section" style="font-weight:200;">
-  <div class="uk-container uk-container-small" style="max-width: 75%;">
+  <div class="uk-container">
   {% if page.section.title %}
     <h2 class="uk-text-center heading-hero-2">{{ page.section.title }}</h2>
   {% endif %}
@@ -86,6 +86,22 @@ layout: default
   {% if page.section.subtitle %}
     <p class="subtitle uk-text-lead">{{ page.section.subtitle | escape }}</p>
   {% endif %}
+    {% if page.pillars %}
+    <div class="uk-child-width-1-3@m uk-grid-match uk-margin-medium-top" data-uk-grid>
+      {% for pillar in page.pillars %}
+      <div>
+        <div class="uk-card uk-card-body uk-border-rounded project-card pillar-card">
+          <div class="project-head">
+            {% if pillar.icon %}<span class="project-icon" data-uk-icon="icon: {{ pillar.icon }}; ratio: 1.6"></span>{% endif %}
+            <h3 class="uk-card-title uk-margin-remove">{{ pillar.title | escape }}</h3>
+          </div>
+          <p class="project-desc">{{ pillar.desc | escape }}</p>
+          {% if pillar.url %}<a class="uk-button uk-button-text project-link" href="{{ pillar.url | relative_url }}">{{ pillar.link_text | default: "Learn more" | escape }} &rarr;</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
     <div class="article-content uk-margin-medium-top">{{ content }}</div>
   </div>
 </div>
