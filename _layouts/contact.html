@@ -4,58 +4,82 @@ layout: default
 
 <div class="uk-section">
     <div class="uk-container">
-        <div class="uk-grid">
-            <div class="uk-width-1-2@m">
-                <article class="uk-article">
 
-                    <h1 class="uk-article-title">{{ page.title | escape }}</h1>
-        
-                    <div class="article-content">
-                        {{ content }}
+        <h2 class="uk-text-center heading-hero-2">{{ page.title | escape }}</h2>
+        {% if page.intro.headline %}<p class="contact-headline uk-text-center">{{ page.intro.headline | escape }}</p>{% endif %}
+        {% if page.intro.text %}<p class="subtitle uk-text-lead uk-text-center">{{ page.intro.text | escape }}</p>{% endif %}
+
+        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-margin-medium-top" data-uk-grid>
+        {% for c in page.channels %}
+            <div>
+                <div class="uk-card uk-card-body uk-border-rounded project-card channel-card">
+                    <div class="project-head">
+                        {% if c.icon %}<span class="project-icon" data-uk-icon="icon: {{ c.icon }}; ratio: 1.6"></span>{% endif %}
+                        <h3 class="uk-card-title uk-margin-remove">{{ c.title | escape }}</h3>
                     </div>
-        
-                </article>
-                {% include map.html latitude="40.6700" longitude="-73.9400" zoom="16" %}
+                    <p class="project-desc">{{ c.desc | escape }}</p>
+                    {% if c.code %}<pre class="channel-code"><code>{{ c.code | escape }}</code></pre>{% endif %}
+                    <div class="channel-links">
+                        {% if c.url %}<a class="uk-button uk-button-text project-link" href="{{ c.url }}"{% if c.url contains 'http' %} target="_blank" rel="noopener"{% endif %}>{{ c.link_text | escape }} &rarr;</a>{% endif %}
+                        {% if c.url2 %}<a class="uk-button uk-button-text project-link" href="{{ c.url2 }}" target="_blank" rel="noopener">{{ c.link_text2 | escape }} &rarr;</a>{% endif %}
+                    </div>
+                </div>
             </div>
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<div class="uk-section team-former">
+    <div class="uk-container">
+        <div class="uk-grid-large" data-uk-grid>
+
             <div class="uk-width-1-2@m">
                 {% if page.formspree.email %}
-                <h3 class="uk-margin-small-top">Contact Us</h3>
-                <form class="uk-form-stacked uk-margin-small-top" method="POST" action="https://formspree.io/{{ page.formspree.email }}" accept-charset="UTF-8">
+                <h3 class="contact-h3">Write to us</h3>
+                <p class="project-desc">A person reads and answers every message. Nothing here is handled by an agent.</p>
+                <form class="uk-form-stacked uk-margin-small-top" method="POST" action="https://formspree.io/f/{{ page.formspree.email }}" accept-charset="UTF-8">
                     <div class="uk-margin-small-bottom">
-                        <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Name</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input uk-form-large uk-border-rounded" name="name" type="text" required>
-                        </div>
+                        <label class="uk-form-label" for="contact-name">Name</label>
+                        <div class="uk-form-controls"><input id="contact-name" class="uk-input uk-form-large uk-border-rounded" name="name" type="text" required></div>
                     </div>
                     <div class="uk-margin-small-bottom">
-                        <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Email</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input uk-form-large uk-border-rounded" name="_replyto" type="email" required>
-                        </div>
+                        <label class="uk-form-label" for="contact-email">Email</label>
+                        <div class="uk-form-controls"><input id="contact-email" class="uk-input uk-form-large uk-border-rounded" name="_replyto" type="email" required></div>
                     </div>
                     <div class="uk-margin-small-bottom">
-                        <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Subject</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input uk-form-large uk-border-rounded" name="_subject" type="text">
-                        </div>
+                        <label class="uk-form-label" for="contact-subject">Subject</label>
+                        <div class="uk-form-controls"><input id="contact-subject" class="uk-input uk-form-large uk-border-rounded" name="_subject" type="text"></div>
                     </div>
                     <div class="uk-margin-small-bottom">
-                        <label class="uk-form-label uk-margin-small-bottom" for="form-stacked-text">Message</label>
-                        <div class="uk-form-controls">
-                            <textarea class="uk-textarea uk-form-large" name="message" rows="5" minlength="10" required></textarea>
-                        </div>
+                        <label class="uk-form-label" for="contact-message">Message</label>
+                        <div class="uk-form-controls"><textarea id="contact-message" class="uk-textarea uk-form-large uk-border-rounded" name="message" rows="6" minlength="10" required></textarea></div>
                     </div>
                     <div>
-                        {% if page.formspree.redirect %}
-                        <input type="hidden" name="_next" value="{{ page.formspree.redirect | absolute_url }}">
-                        {% endif %}
-                        <input type="text" name="_gotcha" style="display:none">
-                        <input class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-border-rounded" style="width: 30%;" type="submit" value="Send">
+                        {% if page.formspree.redirect %}<input type="hidden" name="_next" value="{{ page.formspree.redirect | absolute_url }}">{% endif %}
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                        <button class="uk-button uk-button-primary uk-button-large uk-border-rounded contact-send" type="submit">Send</button>
                     </div>
                 </form>
                 {% endif %}
             </div>
-        </div>
 
+            <div class="uk-width-1-2@m">
+                <h3 class="contact-h3">{{ page.visit.title | default: "Visit" | escape }}</h3>
+                <p class="contact-address">
+                    <strong>{{ page.visit.org | escape }}</strong><br>
+                    {% for l in page.visit.lines %}{{ l | escape }}<br>{% endfor %}
+                    {% if page.visit.maps_url %}<a href="{{ page.visit.maps_url }}" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>{% endif %}
+                </p>
+                {% if page.visit.photo %}<img src="{{ page.visit.photo | relative_url }}" alt="{{ page.visit.photo_alt | escape }}" class="contact-photo uk-border-rounded">{% endif %}
+                {% if page.visit.map_embed %}
+                <div class="contact-map uk-border-rounded">
+                    <iframe src="{{ page.visit.map_embed }}" title="Map of the Michelson Center for Physics" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+                {% endif %}
+            </div>
+
+        </div>
     </div>
 </div>
