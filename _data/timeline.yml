@@ -14,7 +14,7 @@ lanes:
 
   - name: Grid and high-throughput computing
     items:
-      - title: GriPhyN
+      - title: GriPhyN (Grid Physics Network)
         full: "GriPhyN: Towards Petascale Virtual-Data Grids"
         sponsor: NSF (PI Paul Avery, Florida; UChicago through Ian Foster)
         start: 2000-09
@@ -26,7 +26,7 @@ lanes:
         start: 2001-09
         end: 2006-08
         url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0241939
-      - title: iVDGL
+      - title: iVDGL (International Virtual Data Grid Laboratory)
         full: "iVDGL: An International Virtual-Data Grid Laboratory for Data Intensive Science"
         sponsor: NSF, co-PI Gardner
         start: 2001-09
@@ -39,17 +39,18 @@ lanes:
         end: 2023-05
         approx: true
         url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1148698
-      - title: CESAR
+      - title: CESAR (LIGO/IceCube)
         full: "CESAR: Data Infrastructure for Open Science in Support of LIGO and IceCube"
         sponsor: NSF, PI Gardner
         start: 2018-10
         end: 2021-09
         url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1841487
-      - title: PATh
+      - title: PATh (Partnership to Advance Throughput Computing)
         full: Partnership to Advance Throughput Computing (mid-scale collaboration support)
         sponsor: NSF through UW–Madison
         start: 2020-10
         end: 2026-05
+        url: https://path-cc.io/
 
   - name: ATLAS
     items:
@@ -109,12 +110,12 @@ lanes:
         start: 2012-09
         end: 2017-08
         url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1247316
-      - title: VC3
+      - title: VC3 (Virtual Clusters for Community Computation)
         full: Virtual Clusters for Community Computation
         sponsor: DOE
         start: 2016-03
         end: 2019-02
-      - title: SLATE
+      - title: SLATE (Services Layer at the Edge)
         full: "SLATE and the Mobility of Capability (CIF21 DIBBs)"
         sponsor: NSF, PI Gardner
         start: 2017-07
@@ -139,7 +140,13 @@ lanes:
 
   - name: Networking and security
     items:
-      - title: Science DMZ
+      - title: Science DMZ (HiPerNet)
+        full: "CC-NIE: High Performance Research Networking (HiPerNet), the first UChicago Science DMZ"
+        sponsor: NSF, PI Klara Jelinkova (IT Services); science drivers and design led by Gardner, not on the official record
+        start: 2012-11
+        end: 2013-10
+        url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1246019
+      - title: Science DMZ (CC*IIE)
         full: "CC*IIE: A Performant and Reliable Science DMZ for National and International Collaboration"
         sponsor: NSF, PI Gardner
         start: 2014-10
