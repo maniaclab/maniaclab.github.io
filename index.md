@@ -6,7 +6,10 @@ hero:
     sub_image: uc_shield_logo.gif
     search: false
     description: We build and operate the cyberinfrastructure behind the largest scientific instruments, and we are making it a place where AI agents can work, trusted to help run the facility and able to carry a physicist's analysis from question to result.
-    description_2: Our (admittedly frivolous) name is a nod to the University of Chicago’s first computer, MANIAC III. Built in 1961 at the Institute for Computer Research, MANIAC III, short for Mathematical Analyzer, Numerical Integrator, and Computer (Model III), was a second-generation machine that replaced vacuum tubes with solid-state components. It was developed under the leadership of Nicholas Metropolis (SB 1937, PhD 1941), who carried forward and extended computer designs he had helped build at Los Alamos after World War II.
+    description_2: |
+      Our name comes from Nicholas Metropolis (SB'36, PhD'41). At Los Alamos he led the team that built the <strong class="maniac-name">MANIAC I</strong>, operational in 1952, and he later said he had chosen its acronym, Mathematical Analyzer, Numerical Integrator, and Computer, in the hope of ending the fashion for such names. In 1957 he returned to Chicago as founding director of the Institute for Computer Research, where the solid-state <strong class="maniac-name">MANIAC III</strong> ran from 1961 at the University's [new Computation Center on Ellis Avenue](https://mag.uchicago.edu/university-news/snapshots-0).
+
+      We like the lineage. The MANIAC I ran the first Monte Carlo calculations, the method that still underpins every LHC simulation, and the MANIAC III was a machine built by physicists so that physicists could compute. That is still the job.
 categories:
     columns: 3
     title: Meet Our Team
