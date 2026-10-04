@@ -212,8 +212,16 @@
 .project-side-text { margin: 0; }
 
 // Home page: the MANIAC III historic photo
-.maniac-historic-photo { max-height: 380px; width: auto; max-width: 100%; border-radius: 6px; }
-@media (max-width: 639px) { .maniac-historic-photo { max-height: 280px; } }
+// Home: then-and-now photo pair (MANIAC III, 1960s / MANIAC Lab, 2026)
+.then-now { display: flex; justify-content: center; align-items: flex-start; gap: 24px; margin: 2rem 0 1.25rem; }
+.then-now-figure { margin: 0; flex: 0 1 auto; min-width: 0; text-align: center; }
+.then-now-figure img { height: 340px; width: auto; max-width: 100%; border-radius: 6px; display: block; margin: 0 auto; }
+.then-now-figure figcaption { margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.35; color: #666; }
+.then-now-text { margin: 0 auto; max-width: 56rem; }
+@media (max-width: 799px) {
+  .then-now { flex-direction: column; align-items: center; gap: 20px; }
+  .then-now-figure img { height: auto; max-height: 340px; }
+}
 
 // Navbar search results
 .search-section { color: #767676; font-size: 0.75rem; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
