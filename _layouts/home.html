@@ -57,18 +57,21 @@ layout: default
           {% endif %}
         </div>
       </div>
-      <div class="columns">
       {% if page.hero.description_2 %}
-        <div class="column uk-text-center">
-          <img src="/assets/img/maniac_nicholas.jpg" class="maniac-historic-photo" alt="Nicholas Metropolis with the MANIAC III computer at the University of Chicago, 1960s">
-        </div>
-        <div class="column">
-          <p class="">
-            {{ page.hero.description_2 }}
-          </p>
-        </div>
-      {% endif %}
+      <div class="then-now">
+        <figure class="then-now-figure">
+          <img src="{{ "/assets/img/maniac_nicholas.jpg" | relative_url }}" alt="Nicholas Metropolis with the MANIAC III computer at the University of Chicago, 1960s">
+          <figcaption>Nicholas Metropolis with MANIAC III, Institute for Computer Research, 1960s</figcaption>
+        </figure>
+        <figure class="then-now-figure">
+          <img src="{{ "/assets/img/maniac_lab_2026.jpg" | relative_url }}" alt="The MANIAC Lab team standing together in the Michelson Center for Physics, 2026">
+          <figcaption>MANIAC Lab at the Michelson Center for Physics, 2026</figcaption>
+        </figure>
       </div>
+      <p class="then-now-text">
+        {{ page.hero.description_2 }}
+      </p>
+      {% endif %}
 
     </div>
 </div>
