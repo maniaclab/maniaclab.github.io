@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 640" width="1140" height="640" font-family="Helvetica, Arial, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">CI Connect architecture</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#800000"/></marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5B8E7D"/></marker>
+    <style>
+      .h{font-size:13px;font-weight:700;fill:#333;letter-spacing:.04em;text-transform:uppercase}
+      .b{font-size:13px;font-weight:700;fill:#222}
+      .s{font-size:11.5px;fill:#444}
+      .d{font-size:11px;fill:#777}
+      .box{fill:#fff;stroke:#155F83;stroke-width:1.4;rx:6}
+      .ret{fill:#f4f4f4;stroke:#9a9a9a;stroke-width:1.2;rx:6}
+      .live{fill:#fff;stroke:#C68220;stroke-width:1.8;rx:6}
+      .plat{fill:#fbf6ef;stroke:#800000;stroke-width:1.6;rx:8}
+      .res{fill:#f3f7f5;stroke:#5B8E7D;stroke-width:1.4;rx:6}
+      .flow{stroke:#800000;stroke-width:1.8;fill:none;marker-end:url(#arr)}
+      .opp{stroke:#5B8E7D;stroke-width:1.6;fill:none;stroke-dasharray:6 5;marker-end:url(#arrg)}
+    </style>
+  </defs>
+
+  <!-- column headers -->
+  <text x="20" y="34" class="h">Researchers</text>
+  <text x="300" y="34" class="h">CI Connect platform</text>
+  <text x="580" y="34" class="h">Access points</text>
+  <text x="870" y="34" class="h">Resources</text>
+
+  <!-- Researchers -->
+  <rect x="20" y="60" width="240" height="78" class="box"/>
+  <text x="34" y="84" class="b" data-maxw="214">Individual investigators</text>
+  <text x="34" y="104" class="s" data-maxw="214">and small campus labs, from</text>
+  <text x="34" y="121" class="s" data-maxw="214">more than 250 institutions</text>
+
+  <rect x="20" y="156" width="240" height="78" class="box"/>
+  <text x="34" y="180" class="b" data-maxw="214">Collaborations</text>
+  <text x="34" y="200" class="s" data-maxw="214">CMS, ATLAS, South Pole Telescope,</text>
+  <text x="34" y="217" class="s" data-maxw="214">Snowmass 2021 working groups</text>
+
+  <rect x="20" y="252" width="240" height="78" class="live"/>
+  <text x="34" y="276" class="b" data-maxw="214">PSD researchers</text>
+  <text x="34" y="296" class="s" data-maxw="214">Anyone in the UChicago Physical</text>
+  <text x="34" y="313" class="s" data-maxw="214">Sciences Division, via PSD Connect</text>
+
+  <text x="20" y="372" class="s" data-maxw="240">Sign in with a campus login or another</text>
+  <text x="20" y="389" class="s" data-maxw="240">federated identity through Globus Auth.</text>
+  <text x="20" y="406" class="s" data-maxw="240">No grid certificate is ever needed.</text>
+
+  <!-- Platform -->
+  <rect x="300" y="60" width="240" height="270" class="plat"/>
+  <text x="314" y="86" class="b" data-maxw="214">Globus Auth</text>
+  <text x="314" y="104" class="s" data-maxw="214">Federated identity, OAuth2 sign-in</text>
+
+  <text x="314" y="138" class="b" data-maxw="214">Projects and memberships</text>
+  <text x="314" y="156" class="s" data-maxw="214">ci-connect-api with a group hierarchy</text>
+  <text x="314" y="173" class="s" data-maxw="214">per community, project and subgroup</text>
+
+  <text x="314" y="207" class="b" data-maxw="214">Account provisioning</text>
+  <text x="314" y="225" class="s" data-maxw="214">Unix accounts and keys pushed to each</text>
+  <text x="314" y="242" class="s" data-maxw="214">access point as members are approved</text>
+
+  <text x="314" y="276" class="b" data-maxw="214">Keycloak bridge</text>
+  <text x="314" y="294" class="s" data-maxw="214">The same memberships for JupyterHub</text>
+  <text x="314" y="311" class="s" data-maxw="214">and other web applications</text>
+
+  <text x="300" y="372" class="s" data-maxw="240">One platform, one sign-up flow and one</text>
+  <text x="300" y="389" class="s" data-maxw="240">set of projects behind every front door.</text>
+
+  <!-- Access points -->
+  <rect x="580" y="60" width="250" height="40" class="ret"/>
+  <text x="594" y="77" class="b" data-maxw="222">OSG Connect</text>
+  <text x="594" y="92" class="d" data-maxw="222">2013 to 2025, now run by OSG and PATh</text>
+
+  <rect x="580" y="108" width="250" height="40" class="ret"/>
+  <text x="594" y="125" class="b" data-maxw="222">CMS Connect</text>
+  <text x="594" y="140" class="d" data-maxw="222">A decade at UChicago, to Wisconsin 2025</text>
+
+  <rect x="580" y="156" width="250" height="40" class="ret"/>
+  <text x="594" y="173" class="b" data-maxw="222">ATLAS Connect</text>
+  <text x="594" y="188" class="d" data-maxw="222">Absorbed into the Analysis Facility</text>
+
+  <rect x="580" y="204" width="250" height="40" class="ret"/>
+  <text x="594" y="221" class="b" data-maxw="222">Duke Connect</text>
+  <text x="594" y="236" class="d" data-maxw="222">Launched with OSG Connect, 2013; retired</text>
+
+  <rect x="580" y="252" width="250" height="40" class="ret"/>
+  <text x="594" y="269" class="b" data-maxw="222">Snowmass Connect</text>
+  <text x="594" y="284" class="d" data-maxw="222">2021 community planning; retired 2024</text>
+
+  <rect x="580" y="300" width="250" height="40" class="live"/>
+  <text x="594" y="317" class="b" data-maxw="222">SPT Connect</text>
+  <text x="594" y="332" class="d" data-maxw="222">South Pole Telescope, since 2016</text>
+
+  <rect x="580" y="348" width="250" height="40" class="live"/>
+  <text x="594" y="365" class="b" data-maxw="222">PSD Connect</text>
+  <text x="594" y="380" class="d" data-maxw="222">Physical Sciences Division, Pile since 2024</text>
+
+  <text x="580" y="420" class="s" data-maxw="250">Each is an HTCondor submit host with</text>
+  <text x="580" y="437" class="s" data-maxw="250">software over CVMFS and data through the</text>
+  <text x="580" y="454" class="s" data-maxw="250">Open Science Data Federation caches.</text>
+
+  <!-- Resources -->
+  <rect x="870" y="60" width="250" height="64" class="res"/>
+  <text x="884" y="82" class="b" data-maxw="222">Open Science Pool</text>
+  <text x="884" y="99" class="s" data-maxw="222">The OSG's shared national pool;</text>
+  <text x="884" y="115" class="s" data-maxw="222">2.5 billion core hours via OSG Connect</text>
+
+  <rect x="870" y="134" width="250" height="64" class="res"/>
+  <text x="884" y="156" class="b" data-maxw="222">Pile cluster</text>
+  <text x="884" y="173" class="s" data-maxw="222">Kubernetes in the Hinds data center:</text>
+  <text x="884" y="189" class="s" data-maxw="222">HTCondor, BinderHub, Ceph scratch</text>
+
+  <rect x="870" y="208" width="250" height="64" class="res"/>
+  <text x="884" y="230" class="b" data-maxw="222">Midwest Tier2 Center</text>
+  <text x="884" y="247" class="s" data-maxw="222">ATLAS Tier2 at UChicago, Illinois</text>
+  <text x="884" y="263" class="s" data-maxw="222">and Indiana; opportunistic cycles</text>
+
+  <rect x="870" y="282" width="250" height="64" class="res"/>
+  <text x="884" y="304" class="b" data-maxw="222">SPT analysis and storage</text>
+  <text x="884" y="321" class="s" data-maxw="222">Scott and Amundsen servers, dCache</text>
+  <text x="884" y="337" class="s" data-maxw="222">and ZFS, archive replicas at NERSC</text>
+
+  <rect x="870" y="356" width="250" height="64" class="res"/>
+  <text x="884" y="378" class="b" data-maxw="222">Campus and national</text>
+  <text x="884" y="395" class="s" data-maxw="222">RCC Midway and SHARED storage,</text>
+  <text x="884" y="411" class="s" data-maxw="222">NERSC and other allocations</text>
+
+  <!-- flows -->
+  <path class="flow" d="M260 99 H300"/>
+  <path class="flow" d="M260 195 H300"/>
+  <path class="flow" d="M260 291 H300"/>
+  <path class="flow" d="M540 195 H580"/>
+  <path class="flow" d="M830 80 H870 V92"/>
+  <path class="flow" d="M830 368 H850 V166 H870"/>
+  <path class="flow" d="M830 320 H858 V314 H870"/>
+  <path class="flow" d="M830 128 H845 V92 H870"/>
+  <path class="flow" d="M830 176 H845 V240 H870"/>
+  <path class="flow" d="M830 272 H858 V388 H870"/>
+  <!-- opportunistic cycles back to the pool -->
+  <path class="opp" d="M995 208 V124"/>
+  <path class="opp" d="M1060 134 V124"/>
+
+  <!-- legend -->
+  <rect x="20" y="520" width="18" height="12" class="live"/><text x="46" y="531" class="s">In operation</text>
+  <rect x="150" y="520" width="18" height="12" class="ret"/><text x="176" y="531" class="s">Retired or handed over</text>
+  <rect x="340" y="520" width="18" height="12" class="box"/><text x="366" y="531" class="s">Users</text>
+  <rect x="430" y="520" width="18" height="12" class="plat"/><text x="456" y="531" class="s">Shared platform</text>
+  <rect x="580" y="520" width="18" height="12" class="res"/><text x="606" y="531" class="s">Computing and storage</text>
+  <line x1="770" y1="526" x2="810" y2="526" class="flow"/><text x="820" y="531" class="s">Sign-in, accounts and jobs</text>
+  <line x1="20" y1="562" x2="60" y2="562" class="opp"/><text x="70" y="567" class="s">Opportunistic cycles contributed to the Open Science Pool by MWT2 and Pile</text>
+
+  <text x="20" y="612" class="d">Launched as OSG Connect and Duke Connect in August 2013 at a workshop at Duke University; generalized as CI Connect. Usage figures from OSG GRACC accounting, August 2013 to December 2025.</text>
+</svg>

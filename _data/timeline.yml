@@ -51,6 +51,12 @@ lanes:
         start: 2020-10
         end: 2026-05
         url: https://path-cc.io/
+      - title: CI Connect (OSG, CMS, ATLAS, SPT, PSD Connect)
+        full: "CI Connect: hosted HTCondor access points, from OSG Connect and Duke Connect (August 2013) to SPT Connect and PSD Connect today"
+        sponsor: Operated by the Lab under OSG, PATh, U.S. ATLAS, SPT and PSD support
+        start: 2013-08
+        open: true
+        url: /projects/ci-connect/
 
   - name: ATLAS
     items:
