@@ -59,6 +59,14 @@ current:
     url: https://af.uchicago.edu
     link_text: af.uchicago.edu
 
+  - title: CI Connect
+    group: facilities
+    tagline: One front door to high-throughput computing, for a dozen communities
+    icon: sign-in
+    desc: Hosted HTCondor access points where a researcher signs in with a campus identity, joins a project and submits work to the Open Science Pool, campus clusters and collaboration resources. OSG Connect, launched in August 2013, was the first front door to the OSG for individual investigators and small campus labs and delivered 2.5 billion core hours to more than 650 projects. CMS Connect ran at UChicago for a decade; SPT Connect and PSD Connect, now on the Pile cluster and open to anyone in the Physical Sciences Division, run today.
+    url: /projects/ci-connect/
+    link_text: Project page
+
   - title: Operations Analytics Platform
     group: facilities
     tagline: The long-term memory of ATLAS distributed computing
@@ -133,7 +141,7 @@ past:
   - title: Open Science Grid and PATh
     tagline: High-throughput computing for mid-scale collaborations
     years: 2006–2026
-    desc: MANIAC Lab was a founding member of the Open Science Grid and ran its user support and OSG Connect services for many years. Under the NSF PATh project the Lab supported mid-scale physics collaborations, including SPT-3G, XENON, KOTO, VERITAS, LIGO, IceCube and the EIC, running high-throughput computing on the OSG Open Science Pool.
+    desc: MANIAC Lab was a founding member of the Open Science Grid, ran its user support for many years and built OSG Connect, the first front door to the OSG for individual investigators (see CI Connect above). Under the NSF PATh project the Lab supported mid-scale physics collaborations, including SPT-3G, XENON, KOTO, VERITAS, LIGO, IceCube and the EIC, running high-throughput computing on the OSG Open Science Pool.
 
   - title: SOTERIA
     tagline: Secure science registries

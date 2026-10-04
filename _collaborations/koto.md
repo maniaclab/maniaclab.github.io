@@ -3,7 +3,7 @@ layout: collaboration_post
 title: High-Throughput Computing for KOTO
 categories: [collaborations]
 author: Rob Gardner
-order: 5
+order: 6
 image: /assets/img/slideshow/koto.jpg
 icon: /assets/collaborations/koto-logo.png
 excerpt: We connect the University of Chicago KOTO group, led by Yau Wah, to the Open Science Pool and to campus storage, so the search for an ultra-rare neutral kaon decay at J-PARC can run its simulation and analysis at scale.
