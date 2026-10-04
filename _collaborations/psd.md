@@ -5,7 +5,7 @@ categories: [collaborations]
 author: Rob Gardner
 order: 2
 image: /assets/collaborations/prc_building_2.jpg
-icon: /assets/img/logos/shield_uc_logo.png
+icon: /assets/collaborations/uchicago-shield.png
 excerpt: PSD Connect gives any researcher in the University of Chicago's Physical Sciences Division a login, a batch queue on the Pile cluster, notebook sessions and scratch storage, with overflow to the Open Science Pool. Sign up at psdconnect.uchicago.edu.
 ---
 If you do research in the Physical Sciences Division and have more computing than your laptop can handle, PSD Connect is for you. It is the campus instance of [CI Connect](/projects/ci-connect/), the platform MANIAC Lab has run since 2013 for the Open Science Grid and for collaborations such as CMS and the South Pole Telescope. There is no proposal to write and no allocation to request. Sign in at [psdconnect.uchicago.edu](https://psdconnect.uchicago.edu/) with your CNetID, ask to join the PSD project, and you will have an account within a day.
