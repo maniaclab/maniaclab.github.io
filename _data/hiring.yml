@@ -2,6 +2,7 @@
 # pointer on the home page. Remove or empty the `positions` list when a search closes.
 positions:
   - title: Cyberinfrastructure Engineer
+    tagline: Operate the ATLAS Tier2 and Analysis Facility; build the infrastructure for AI agents in physics. Chicago, full time, open until filled.
     summary: Half operating the ATLAS Midwest Tier2 Center and the UChicago Analysis Facility (Linux, Kubernetes, Ceph, GPUs, hands-on hardware in our campus data centers), half building the IRIS-HEP infrastructure that lets AI agents drive physics analysis and facility operations, including the MCP gateway. Full time, Chicago. Open until filled.
     url: https://uchicago.wd5.myworkdayjobs.com/External/job/Chicago-IL/Cyberinfrastructure-Engineer_JR35473-1
     link_text: View the posting and apply

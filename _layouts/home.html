@@ -34,6 +34,19 @@ layout: default
   </div>
 </div>
 
+{% if site.data.hiring.positions and site.data.hiring.positions.size > 0 %}
+<div class="hiring-bar" role="region" aria-label="Open positions">
+  <div class="uk-container uk-container-small hiring-bar-inner">
+    <span class="hiring-bar-kicker">We are hiring</span>
+    {% for job in site.data.hiring.positions %}
+    <span class="hiring-bar-text"><a class="hiring-bar-title" href="{{ job.url }}">{{ job.title | escape }}</a>{% if job.tagline %} <span class="hiring-bar-tagline">{{ job.tagline | escape }}</span>{% endif %}</span>
+    {% endfor %}
+    <a class="hiring-bar-cta" href="{{ site.data.hiring.positions[0].url }}">Apply &rarr;</a>
+    <a class="hiring-bar-more" href="{{ "/team/#hiring" | relative_url }}">Details</a>
+  </div>
+</div>
+{% endif %}
+
 <div class="uk-section sub-hero"
       data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
     <div class="uk-container uk-container-small row">
@@ -71,9 +84,6 @@ layout: default
       <div class="then-now-text">
         {{ page.hero.description_2 | markdownify }}
       </div>
-      {% endif %}
-      {% if site.data.hiring.positions and site.data.hiring.positions.size > 0 %}
-      <p class="hiring-line">We are hiring: {% for job in site.data.hiring.positions %}<a href="{{ job.url }}">{{ job.title | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}. <a href="{{ "/team/#hiring" | relative_url }}">Details on the Team page</a>.</p>
       {% endif %}
 
     </div>

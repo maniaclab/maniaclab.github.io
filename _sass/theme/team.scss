@@ -244,6 +244,16 @@
 .hiring-cta { font-weight: 700; color: #800000; }
 .hiring-contact { color: #666; margin-left: 0.75rem; }
 .hiring-job + .hiring-job { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eadfd2; }
-.hiring-line { margin: 1.25rem auto 0; max-width: 56rem; font-size: 0.95rem; color: #555; }
-.hiring-line a { color: #800000; font-weight: 600; }
+// Home-page announcement bar, between the hero slideshow and the sub-hero
+.hiring-bar { background: #800000; color: #fff; }
+.hiring-bar-inner { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 1.25rem; padding-top: 0.9rem; padding-bottom: 0.9rem; }
+.hiring-bar-kicker { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #F2C38A; white-space: nowrap; }
+.hiring-bar-text { flex: 1 1 320px; min-width: 0; line-height: 1.35; }
+.hiring-bar-title { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+.hiring-bar-title:hover { color: #F2C38A; text-decoration: none; }
+.hiring-bar-tagline { display: block; color: #f3dede; font-size: 0.92rem; }
+.hiring-bar-cta { background: #C68220; color: #fff; font-weight: 700; padding: 0.5rem 1.1rem; border-radius: 4px; text-decoration: none; white-space: nowrap; }
+.hiring-bar-cta:hover { background: #a86a16; color: #fff; text-decoration: none; }
+.hiring-bar-more { color: #f3dede; font-size: 0.9rem; text-decoration: underline; white-space: nowrap; }
+.hiring-bar-more:hover { color: #fff; }
 
