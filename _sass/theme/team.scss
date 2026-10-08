@@ -233,3 +233,17 @@
 // Navbar search results
 .search-section { color: #767676; font-size: 0.75rem; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
 #navbar-search-results li:last-child { padding-bottom: 20px; border-bottom: solid 1px #e5e5e5; }
+
+// Hiring notice (data in _data/hiring.yml)
+.hiring-box { max-width: 56rem; margin: 1.5rem auto 0; padding: 1.25rem 1.5rem; border: 1px solid #e3d3c2; border-left: 5px solid #C68220; border-radius: 6px; background: #fdf8f2; }
+.hiring-kicker { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C68220; margin-bottom: 0.4rem; }
+.hiring-title { margin: 0 0 0.4rem; font-size: 1.25rem; }
+.hiring-title a { color: #800000; }
+.hiring-summary { margin: 0 0 0.6rem; color: #333; }
+.hiring-meta { margin: 0; font-size: 0.95rem; }
+.hiring-cta { font-weight: 700; color: #800000; }
+.hiring-contact { color: #666; margin-left: 0.75rem; }
+.hiring-job + .hiring-job { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eadfd2; }
+.hiring-line { margin: 1.25rem auto 0; max-width: 56rem; font-size: 0.95rem; color: #555; }
+.hiring-line a { color: #800000; font-weight: 600; }
+

@@ -15,6 +15,19 @@ layout: default
             <p class="subtitle uk-text-lead uk-text-center">{{ page.categories.subtitle | escape }}</p>
         {% endif %}
 
+        {% if site.data.hiring.positions and site.data.hiring.positions.size > 0 %}
+        <div class="hiring-box" id="hiring">
+            <div class="hiring-kicker">We are hiring</div>
+            {% for job in site.data.hiring.positions %}
+            <div class="hiring-job">
+                <h3 class="hiring-title"><a href="{{ job.url }}">{{ job.title | escape }}</a></h3>
+                <p class="hiring-summary">{{ job.summary | escape }}</p>
+                <p class="hiring-meta"><a class="hiring-cta" href="{{ job.url }}">{{ job.link_text | default: "View the posting" | escape }} &rarr;</a>{% if job.contact %} <span class="hiring-contact">{{ job.contact | escape }}</span>{% endif %}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
         <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
         {% for item in site.data.team.current %}
             <div>
