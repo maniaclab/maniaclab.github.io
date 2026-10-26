@@ -7,10 +7,10 @@
             <a href="#">
               <img src="/assets/img/logos/Maniac_Logo_M_text_grey.png" class="maniac-logo" alt="Maniac Lab Logo">
             </a>
-            <a href="https://www.uchicago.edu/" target="_blank" class="shield-logo-links">
+            <a href="https://www.uchicago.edu/" target="_blank" rel="noopener noreferrer" class="shield-logo-links">
               <img src="/assets/img/logos/shield_uc_logo.png" class="shield-logo" alt="The University of Chicago Logo">
             </a>
-            <a href="https://efi.uchicago.edu/" target="_blank" class="efi-logo-links">
+            <a href="https://efi.uchicago.edu/" target="_blank" rel="noopener noreferrer" class="efi-logo-links">
               <img src="/assets/img/logos/efi_logo_grey.png" class="efi-logo" alt="Enrico Fermi Institue Logo">
             </a>
           </div>
@@ -27,7 +27,7 @@
                         {% assign current = null %}
                     {% endif %}
                     {% if link.title %}
-                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer" {% endif %}>{{ link.title }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
