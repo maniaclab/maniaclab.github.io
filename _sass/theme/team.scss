@@ -206,6 +206,12 @@
 .project-figure-wide { margin: 0; border: 1px solid #e5e5e5; border-radius: 10px; padding: 14px 18px 10px; background: #fff; }
 .project-figure img, .project-figure svg { width: 100%; height: auto; display: block; }
 .project-figure figcaption { color: #767676; font-size: 0.85rem; margin-top: 6px; }
+/* The sticky side column is taller than the viewport, so UIkit scrolls its
+   top up through the navbar band. UIkit gives both the sticky header and the
+   sticky column z-index 980, and the column comes later in the DOM, so it
+   painted over the menu bar. Lift the header above it. */
+header .uk-sticky { z-index: 990; }
+
 .project-side-title { color: #800000; font-size: 1rem; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.06em; }
 .project-side-list > li { margin-bottom: 8px; }
 .project-side-note, .project-side-text { color: #555; font-size: 0.85rem; line-height: 1.45; }
