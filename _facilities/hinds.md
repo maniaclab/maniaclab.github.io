@@ -5,13 +5,13 @@ group_title: Platforms and Services
 order: 3
 icon: world
 tagline: The R&D platform, the collaboration clusters and the services layer
-summary: Three Kubernetes clusters in the Hinds building, where new analysis patterns are proven, where campus and neutrino physicists compute, and where the identity, registry and data management services other facilities depend on actually run.
+summary: Three Kubernetes clusters in the Hinds building, where new analysis patterns are proven, where Physical Sciences Division and neutrino physicists compute, and where the identity, registry and data management services other facilities depend on actually run.
 lead: Hinds is not a third production site. It is where the work that is not yet production happens, and where the shared services sit that everything else leans on. Three distinct Kubernetes clusters live here, each with its own job, together accounting for more than three hundred machines across sixteen racks.
 facts:
   - value: River
     label: The IRIS-HEP Scalable Systems Laboratory testbed, about 70 nodes
   - value: Pile
-    label: Campus and SBND analysis cluster, with batch, notebooks and Ceph storage
+    label: PSD and SBND analysis cluster, with batch, notebooks and Ceph storage
   - value: Tempest
     label: The services cluster carrying identity, registry, OSG and data management
   - value: 16 racks
@@ -36,6 +36,9 @@ people:
   - name: Fengping Hu
     url: /team/
     role: Scalable Systems Laboratory and Kubernetes platform engineering
+  - name: Giordon Stark
+    url: /team/
+    role: Scalable Systems Laboratory; analysis tooling and agentic interfaces on the River testbed
   - name: Judith Stephen
     url: /team/
     role: Storage, OpenStack and security
@@ -58,7 +61,7 @@ River also carries infrastructure that serves the rest of the Lab: the collector
 
 The point of River is that things are allowed to break there.
 
-## Pile, the campus cluster
+## Pile, the PSD cluster
 
 Pile serves people, not grid workflows. It provides interactive login nodes, HTCondor batch, notebook sessions through BinderHub and JupyterHub, Ceph storage with a separate pool for scratch, CVMFS for software delivery, and a Globus endpoint for moving datasets in and out.
 

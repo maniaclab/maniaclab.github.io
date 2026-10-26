@@ -10,12 +10,16 @@ lead: MWT2 is one of five U.S. ATLAS Tier 2 centers and among the largest ATLAS 
 facts:
   - value: 42,000 job slots
     label: About 646,000 HEPSpec of compute, scheduled with HTCondor
-  - value: 25 PB
+  - value: 26 PB
     label: Active disk storage served by dCache at Chicago and Indiana
   - value: 99.8% reliability
     label: September 2025 to September 2026, from WLCG published records
   - value: Three universities
     label: Chicago, Indiana and Illinois Urbana-Champaign, run as one site
+figure:
+  src: /assets/img/mwt2-dc.jpg
+  alt: "Row A in the POD-C data centre: two rack doors stand open on the left, showing columns of Dell servers with blue status lights, while a line of closed white racks recedes down the corridor under overhead cable trays and conduit."
+  caption: Row A in POD-C, with the front doors of two racks open. The Analysis Facility and the UChicago half of MWT2 share this room.
 links:
   - title: Worldwide LHC Computing Grid
     url: https://wlcg.web.cern.ch/
@@ -42,6 +46,9 @@ people:
   - name: David Jordan
     url: /team/
     role: Systems and infrastructure; site reporting
+  - name: Aidan Rosberg
+    url: /team/
+    role: Indiana site operations and heterogeneous resource integration
 status: In continuous production since 2005. A network refresh is under way, taking the UChicago wide-area connection from 200 to 400 Gbps and replacing storage top-of-rack switches, alongside an operating system migration and the move to the next OSG and HTCondor release.
 ---
 
@@ -50,6 +57,11 @@ status: In continuous production since 2005. A network refresh is under way, tak
 MWT2 runs the ATLAS production grid workflow: Monte Carlo event generation and simulation, reconstruction, group production and user analysis, scheduled centrally by ATLAS and delivered continuously. Work arrives through the grid rather than through a login prompt, and the facility's job is to keep accepting it without interruption.
 
 That shapes the design. MWT2 is deliberately bare metal and deliberately conservative, built for long-term support and stability rather than for rapid change. It is the counterweight to the Analysis Facility, which sits a few racks away in the same Chicago data center and is built on Kubernetes for exactly the opposite reason.
+
+<figure class="project-figure">
+  <img src="/assets/img/mwt2-architecture.svg" alt="Diagram: ATLAS grid services PanDA, Rucio and XRootD feed a single facility spanning the University of Chicago, Indiana University and the University of Illinois. Its compute forms one HTCondor pool of 42,000 job slots and its disk is 26 PB on dCache at Chicago and Indiana. The centre also serves the UChicago Analysis Facility with flocked cores and LOCALGROUPDISK, hosts the operations analytics platform, and contributes idle cycles to the Open Science Pool.">
+  <figcaption>Work arrives from the ATLAS grid in maroon; the three university sites present as one facility. Dashed lines are services the centre provides beyond ATLAS production.</figcaption>
+</figure>
 
 ## Across three universities
 

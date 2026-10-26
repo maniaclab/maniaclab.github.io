@@ -120,6 +120,8 @@ current:
     tagline: A U.S. home for ATLAS Open Data
     icon: world
     desc: The Open Data Facility mirrors ATLAS Open Data in the United States and offers several ways to work with it, from BinderHub and JupyterHub notebooks to reproducible REANA workflows, all running on RP1. It supports education, outreach and AI-era research on open physics data, and is being developed with the CLARIPHY community.
+    url: /facilities/open-data/
+    link_text: About the facility
 
 past:
 
