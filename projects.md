@@ -14,7 +14,7 @@ groups:
       image_credit: AI-generated illustration, G. Stark
     - key: facilities
       title: Facilities and Platforms
-      subtitle: The infrastructure we build and operate, and the testbeds where new patterns are proven.
+      subtitle: The platforms and services we build on our own infrastructure. The hardware and data centers behind them are described under Facilities.
 collaborations:
     title: Experiments and Communities We Serve
     subtitle: The collaborations whose computing we operate or help build.

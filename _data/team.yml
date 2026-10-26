@@ -53,11 +53,6 @@ current:
     desc: Fengping joined in August 2021 and is the primary engineer of the Analysis Facility platform, spanning Kubernetes, GitOps with FluxCD, Prometheus and Grafana observability, and the hosted BinderHub service (binderhub.ssl-hep.org) that has carried HSF-India, CODAS-HEP and PyHEP workshops of up to a hundred participants across the Analysis Facility and the National Research Platform, presented at CHEP 2026. Fengping also leads the Lab's work on the IRIS-HEP Scalable Systems Laboratory and Triton inference-as-a-service, and is a core contributor to Shannon and Elwood, owning the Kubernetes access controls and executor policies that keep AI agents within approved boundaries.
     icon: /assets/team/fengping-atlas.jpg
 
-  - name: Farnaz Golnaraghi
-    title: HPC Systems Administrator
-    desc: Farnaz joined in December 2021 and owns the physical infrastructure of the Analysis Facility and the Midwest Tier2 Center, from servers and Ceph storage to firmware and hardware lifecycle. She operates ServiceX for IRIS-HEP, maintains the OSG access-point backups, and develops JupyterHub environments and AI-assistant tooling for facility users.
-    icon: /assets/team/farnaz-atlas.jpg
-
   - name: Aidan Rosberg
     title: DevOps Systems Engineer
     affiliation: Indiana University
@@ -65,6 +60,12 @@ current:
     icon: /assets/team/aidan-atlas.jpg
 
 former:
+
+  - name: Farnaz Golnaraghi
+    title: HPC Systems Administrator
+    tenure: 2021–2026
+    desc: Farnaz joined in December 2021 and owned the physical infrastructure of the Analysis Facility and the Midwest Tier2 Center, from servers and Ceph storage to firmware and hardware lifecycle. She operated ServiceX for IRIS-HEP, maintained the OSG access-point backups, and developed JupyterHub environments and AI-assistant tooling for facility users.
+    icon: /assets/team/farnaz-atlas.jpg
 
   - name: Lincoln Bryant
     title: Scientific Systems Engineer

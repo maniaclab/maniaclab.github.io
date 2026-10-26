@@ -101,3 +101,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  facilities:
+    output: true
+    permalink: /facilities/:name/
