@@ -39,7 +39,10 @@ people:
     role: Principal Investigator; UChicago site lead
   - name: Fred Luehring
     url: /team/
-    role: Site lead, Indiana University
+    role: Principal Investigator, Indiana University site
+  - name: Mark Neubauer
+    url: https://physics.illinois.edu/people/directory/profile/msn
+    role: Principal Investigator, University of Illinois Urbana-Champaign site
   - name: Judith Stephen
     url: /team/
     role: Storage, OpenStack and security
@@ -68,6 +71,27 @@ That shapes the design. MWT2 is deliberately bare metal and deliberately conserv
 The center is split between the University of Chicago, Indiana University and the University of Illinois Urbana-Champaign, with the three sites presenting to ATLAS as a single resource. Compute is distributed across all three; disk storage is served by dCache at Chicago and Indiana.
 
 The hardware spans about a decade of procurement cycles, with the compute fleet averaging roughly five years old and the storage fleet closer to three. Equipment is retired as it ages out, and the facility has twice absorbed the relocation of entire data centers without interrupting production.
+
+## The Illinois site
+
+The Illinois third of MWT2 works differently from the other two. Rather than a cluster of its
+own, it is an investment in the **Illinois Campus Cluster Program**, the university's
+campus-wide high-performance computing resource. Under its model, groups and units buy compute
+and storage and are guaranteed the nodes they paid for; when an owner is not using their share,
+the cycles go to other Illinois researchers. MWT2 benefits from the same arrangement in
+reverse. For ATLAS production, which can absorb any amount of opportunistic capacity and does
+not mind waiting, that is an unusually good fit: the site gets a floor it can count on and a
+ceiling it does not pay for.
+
+The hardware lives in the **National Petascale Computing Facility**, which NCSA operates. It is
+88,000 square feet, LEED Gold, and was built for Blue Waters. For much of the year three
+on-site cooling towers chill water using outside air rather than drawing on the campus
+chilled-water loop, and the building runs at the high end of the ASHRAE envelope, with
+equipment rated for 65°F inlet water and 78°F inlet air. MWT2 is a small tenant in a national
+facility, which is precisely the advantage: ATLAS gets that standard of power, cooling and
+operations without having to build or run a machine room for it.
+
+Mark Neubauer, Professor of Physics at Illinois, is the site's principal investigator.
 
 ## Compute and storage
 
