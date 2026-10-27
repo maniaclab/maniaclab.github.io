@@ -41,8 +41,8 @@ people:
     url: /team/
     role: Principal Investigator, Indiana University site
   - name: Mark Neubauer
-    url: https://physics.illinois.edu/people/directory/profile/msn
-    role: Principal Investigator, University of Illinois Urbana-Champaign site
+    url: /team/
+    role: Illinois Principal Investigator; site lead for MWT2-NPCF
   - name: Judith Stephen
     url: /team/
     role: Storage, OpenStack and security
