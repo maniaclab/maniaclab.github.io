@@ -224,6 +224,12 @@ lanes:
         start: 2005-09
         open: true
         url: /team/
+      - title: Mark Neubauer
+        full: Mark Neubauer, Professor of Physics, University of Illinois Urbana-Champaign; Illinois PI for the Midwest Tier2 Center and site lead for MWT2-NPCF since Illinois joined in 2011
+        sponsor: With MWT2 since 2011
+        start: 2011-06
+        open: true
+        url: /team/
       - title: Ilija Vukotic
         full: Ilija Vukotic, Senior Computational Scientist. Joined March 2012
         sponsor: Joined 2012
@@ -246,12 +252,6 @@ lanes:
         full: Fengping Hu, Senior Research Platform Engineer. Joined August 2021
         sponsor: Joined 2021
         start: 2021-08
-        open: true
-        url: /team/
-      - title: Farnaz Golnaraghi
-        full: Farnaz Golnaraghi, HPC Systems Administrator. Joined December 2021
-        sponsor: Joined 2021
-        start: 2021-12
         open: true
         url: /team/
       - title: Aidan Rosberg
