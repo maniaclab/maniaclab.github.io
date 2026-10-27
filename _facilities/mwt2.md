@@ -5,7 +5,7 @@ group_title: Production Computing
 order: 1
 icon: server
 tagline: ATLAS production computing on the Worldwide LHC Computing Grid
-summary: A U.S. ATLAS Tier 2 center since 2005, run as one facility across three universities, delivering simulation, reconstruction and analysis for the ATLAS experiment at CERN.
+summary: A U.S. ATLAS Tier 2 center since 2005, run as one facility across three universities — Chicago, Indiana, and Illinois inside NCSA's National Petascale Computing Facility — delivering simulation, reconstruction and analysis for the ATLAS experiment at CERN.
 lead: MWT2 is one of five U.S. ATLAS Tier 2 centers and among the largest ATLAS computing sites outside CERN itself. It is operated as a single facility spanning the University of Chicago, Indiana University and the University of Illinois Urbana-Champaign, with a bare-metal design that prioritizes long-term stability over novelty.
 facts:
   - value: 42,000 cores
@@ -85,13 +85,19 @@ reverse. For ATLAS production, which can absorb any amount of opportunistic capa
 not mind waiting, that is an unusually good fit: the site gets a floor it can count on and a
 ceiling it does not pay for.
 
-The hardware lives in the **National Petascale Computing Facility**, which NCSA operates. It is
-88,000 square feet, LEED Gold, and was built for Blue Waters. For much of the year three
-on-site cooling towers chill water using outside air rather than drawing on the campus
-chilled-water loop, and the building runs at the high end of the ASHRAE envelope, with
-equipment rated for 65°F inlet water and 78°F inlet air. MWT2 is a small tenant in a national
-facility, which is precisely the advantage: ATLAS gets that standard of power, cooling and
-operations without having to build or run a machine room for it.
+The hardware lives in the **National Petascale Computing Facility**, which NCSA operates — the
+88,000 square foot, LEED Gold building put up for Blue Waters. It is engineered for high power
+density rather than for general-purpose racks. Computational and storage equipment is water
+cooled, which NCSA puts at roughly twice the efficiency of air, with direct liquid cooling to
+the processors, rear-door heat exchangers on the racks and 480-volt distribution to the floor.
+For much of the year three on-site towers chill that water with outside air instead of drawing
+on the campus chilled-water loop, and the building runs at the high end of the ASHRAE envelope,
+rated for 65°F inlet water and 78°F inlet air.
+
+The practical effect for ATLAS is that the Illinois third gets national-facility power, cooling
+and operations without anyone in the collaboration having to build or run a machine room. NPCF
+hosts major projects for NSF and industry partners alongside university systems, and leases
+machine-room space by the square foot. MWT2 occupies a small part of it.
 
 Mark Neubauer, Professor of Physics at Illinois, is the site's principal investigator.
 
