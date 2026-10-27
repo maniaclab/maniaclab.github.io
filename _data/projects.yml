@@ -27,9 +27,9 @@ current:
     group: agentic
     tagline: AI Experimental Grid Infrastructure Sentinel
     icon: search
-    desc: AEGIS is an agentic operations platform that provides operational intelligence for ATLAS Distributed Computing Operations. Agents reason over monitoring data, job and transfer analytics and site status to detect problems, explain them and propose actions to operators, improving the monitoring and operation of the distributed computing systems used by ATLAS and potentially other LHC experiments.
-    url: https://github.com/maniaclab/aegis
-    link_text: AEGIS on GitHub
+    desc: 'AEGIS puts AI agents into the day-to-day monitoring and operation of ATLAS distributed computing, reasoning over monitoring data, job and transfer analytics and site status to detect problems, explain them and propose actions. Underneath it sits OWL, the ATLAS AI Librarian: a curated knowledge store that keeps atomic claims rather than document chunks, each cited to a span of a stored original and carrying two timelines, so obsolete facts are superseded rather than argued over at query time. Scope today is ATLAS distributed computing operations; the Analysis Facility and the Open Data Facility are next.'
+    url: /projects/aegis/
+    link_text: Project page
 
   - title: Shannon
     group: agentic
