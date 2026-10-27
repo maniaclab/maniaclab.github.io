@@ -8,14 +8,14 @@ tagline: Interactive analysis at scale for U.S. ATLAS
 summary: In production since 2021, the Analysis Facility gives ATLAS physicists login nodes, notebooks, batch computing, GPUs and petabytes of storage, built on Kubernetes and designed around how people actually work.
 lead: The Analysis Facility was built for a different problem than a grid site. Physicists do not submit an analysis and come back in a week; they iterate, interactively, on data they want close at hand. The facility is designed around that, with user interactivity, newer analysis workflows and emerging technologies as the organizing principles, and Kubernetes as the substrate that makes change cheap. It is open to any member of U.S. ATLAS and their collaborators, using their own institution's credentials.
 facts:
-  - value: 8,600 cores
-    label: Local batch capacity, with 13,000 more reachable by flocking to MWT2
+  - value: 141 worker nodes
+    label: 10,444 CPU cores and 42.7 TB of memory in one Kubernetes cluster
+  - value: 8,600 batch cores
+    label: With about 13,000 more reachable by flocking to MWT2
   - value: 5.2 PB
     label: Ceph-backed user storage, about 1.7 PB usable at three-way replication
-  - value: 38 GPUs
-    label: Across seven nodes, partitioned into 74 allocatable devices
   - value: 757 users
-    label: Unique interactive users over the past year, from institutions nationwide
+    label: Unique interactive users over the past year, from more than 80 institutions
 figure:
   src: /assets/img/af-architecture.svg
   alt: "Diagram: physicists reach the Analysis Facility through ssh login nodes, dedicated Jupyter nodes or a credential-brokered MCP gateway. These feed facility services on Kubernetes, an HTCondor pool, JupyterLab and BinderHub, Coffea-casa, REANA, ServiceX, Triton inference and XCache, with 38 GPUs. Those services read and write layered storage: NFS home directories, CephFS user data, a solid-state pool, worker-local scratch, an erasure-coded cold tier and LOCALGROUPDISK at MWT2. Batch work overflows to the MWT2 pool by flocking."
@@ -55,7 +55,7 @@ people:
   - name: Giordon Stark
     url: /team/
     role: Analysis tooling, the MCP platform and agentic interfaces to the facility
-status: In production since 2021, serving U.S. ATLAS physicists at institutions across the country. Under way, a migration of user data from three-way replication to erasure coding, which roughly doubles effective capacity, along with a network refresh and consolidation of the notebook services.
+status: 'In production since 2021, serving U.S. ATLAS physicists at more than 80 institutions. Under way, a migration of user data from three-way replication to erasure coding, which roughly doubles effective capacity; a network refresh of the internal fabric between storage and compute; and consolidation of the notebook services.'
 ---
 
 ## Getting in
@@ -70,7 +70,12 @@ Over the past year the facility served about 458 batch users and 757 interactive
 
 Local batch is HTCondor, about 8,600 cores shared across batch submission, notebook sessions and the services that support them. When that is not enough, jobs flock to the Midwest Tier 2 Center's Chicago compute cluster, adding roughly 13,000 more cores. The two facilities share a data center and a network, so the boundary between them is close to invisible from a user's perspective.
 
-Thirty-eight physical GPUs sit across seven nodes, spanning several NVIDIA generations and partitioned into 74 allocatable devices so that many users can share a card. Most GPU use at this facility happens inside notebooks rather than in batch jobs, which is the opposite of the pattern at most HPC centers and shapes how the capacity is carved up.
+The GPU pool spans several NVIDIA generations across seven nodes: an H200, four A100s, four
+V100s and two dozen RTX cards. Partitioning matters more than the raw count — the newest cards
+are sliced finely, so roughly three dozen physical GPUs present as about 74 allocatable
+devices and many users share a card without contending for it. Most GPU use here happens
+inside notebooks rather than in batch jobs, the opposite of the pattern at most HPC centres,
+and that shapes how the capacity is carved up.
 
 ## Storage, in layers
 
@@ -86,11 +91,37 @@ A cold tier using erasure coding has been introduced for data that is no longer 
 
 The traffic those tiers carry is lopsided in a useful way. Over a recent ninety-day window the shared filesystem absorbed 885 TB of writes and served 16.2 PB of reads; the facility's caches pulled 197 TB from the grid and delivered more than a petabyte from it; and the columnar delivery service read 468 TB to produce 28 TB of transformed output. Analysis is overwhelmingly a read problem, and caching and pre-transformation are what keep it affordable.
 
+## The service stack
+
+Beneath the shell and the notebook sits the stack a data-intensive analysis actually touches,
+and the quarterly numbers give a sense of the load it carries.
+
+**ServiceX** delivers columnar data on demand — about 24,000 extraction requests across 166
+datasets in a recent quarter, serving 6.9 billion records. **Triton** provides
+inference-as-a-service, sustaining roughly 5,500 to 7,000 inferences per second without
+failures under stress testing. **XCache** keeps about 2.3 PB served from close to the compute
+rather than fetched across the wide area. **coffea-casa** supplies scalable interactive Python,
+**REANA** reproducible workflows, and **JupyterHub and BinderHub** the front doors — all behind
+one institutional sign-on.
+
 ## Built on Kubernetes
 
 Everything above the hardware runs on Kubernetes, with Ceph integrated through Rook and the cluster managed declaratively. Identity is handled by Keycloak, giving users one sign-in across the facility's web services. Batch, notebooks, data delivery, inference-as-a-service and the facility's own supporting services are all workloads on the same substrate, which is what allows a quarterly update cadence on a facility in constant use.
 
 That choice is the facility's defining difference from the Tier 2 center beside it. MWT2 is bare metal and changes slowly by design. The Analysis Facility is expected to change, because the analysis methods it serves are still being invented.
+
+## The cluster as it runs
+
+A live snapshot gives a better picture of the facility than any architecture diagram: 141
+worker nodes carrying **859 deployments across 76 namespaces**, with roughly **3,234 pods**
+running at once.
+
+The distribution is instructive. Storage dominates by a wide margin — the Ceph layer alone
+accounts for the largest share of running pods — followed by reproducible workflows, then the
+platform's own networking and monitoring, then batch. The user-facing services everyone thinks
+of as "the Analysis Facility" — notebooks, data delivery, the agent gateway — are a small
+fraction of the pod count. Most of what runs here exists to make storage and scheduling work
+reliably, which is usually where the real effort in a facility goes.
 
 ## What it has been used to prove
 

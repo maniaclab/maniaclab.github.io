@@ -8,18 +8,18 @@ tagline: ATLAS production computing on the Worldwide LHC Computing Grid
 summary: A U.S. ATLAS Tier 2 center since 2005, run as one facility across three universities, delivering simulation, reconstruction and analysis for the ATLAS experiment at CERN.
 lead: MWT2 is one of five U.S. ATLAS Tier 2 centers and among the largest ATLAS computing sites outside CERN itself. It is operated as a single facility spanning the University of Chicago, Indiana University and the University of Illinois Urbana-Champaign, with a bare-metal design that prioritizes long-term stability over novelty.
 facts:
-  - value: 42,000 job slots
-    label: About 646,000 HEPSpec of compute, scheduled with HTCondor
-  - value: 26 PB
-    label: Active disk storage served by dCache at Chicago and Indiana
-  - value: 99.8% reliability
-    label: September 2025 to September 2026, from WLCG published records
-  - value: Three universities
-    label: Chicago, Indiana and Illinois Urbana-Champaign, run as one site
+  - value: 42,000 cores
+    label: About 21,000 physical, roughly 646,000 HS06, scheduled with HTCondor
+  - value: 26 PB on dCache
+    label: Around 88 million files under management, served at Chicago and Indiana
+  - value: 9.2 million jobs a quarter
+    label: At about 93% success, moving roughly 40 PB over the research network
+  - value: Second only to CERN
+    label: Among ATLAS computing centres worldwide, and the largest in the United States
 figure:
   src: /assets/img/mwt2-dc.jpg
   alt: "Row A in the POD-C data centre: two rack doors stand open on the left, showing columns of Dell servers with blue status lights, while a line of closed white racks recedes down the corridor under overhead cable trays and conduit."
-  caption: Row A in POD-C, with the front doors of two racks open. The Analysis Facility and the UChicago half of MWT2 share this room.
+  caption: Row A in POD-C, with the front doors of two racks open. The Analysis Facility and the UChicago third of MWT2 share this room.
 links:
   - title: Worldwide LHC Computing Grid
     url: https://wlcg.web.cern.ch/
@@ -52,7 +52,7 @@ people:
   - name: Aidan Rosberg
     url: /team/
     role: Indiana site operations and heterogeneous resource integration
-status: In continuous production since 2005. A network refresh is under way, taking the UChicago wide-area connection from 200 to 400 Gbps and replacing storage top-of-rack switches, alongside an operating system migration and the move to the next OSG and HTCondor release.
+status: 'In continuous production since 2005. The three sites are joined at 2x100 Gbps over ESnet and Internet2. A network refresh now under way targets the internal fabric, improving the path between storage — both MWT2 LOCALGROUPDISK and the Analysis Facility Ceph — and Analysis Facility compute. An operating system migration and the move to the next OSG and HTCondor release are in progress alongside it.'
 ---
 
 ## What it does
@@ -69,6 +69,8 @@ That shapes the design. MWT2 is deliberately bare metal and deliberately conserv
 ## Across three universities
 
 The center is split between the University of Chicago, Indiana University and the University of Illinois Urbana-Champaign, with the three sites presenting to ATLAS as a single resource. Compute is distributed across all three; disk storage is served by dCache at Chicago and Indiana.
+
+The three campuses carry very nearly a third of the load each — in jobs, in compute delivered and in events processed — and are joined by a dedicated research network, a Science DMZ running at 2x100 Gbps over ESnet and Internet2, with a shared data layer that lets any site's storage and compute serve the others. That fabric is not incidental to the Lab's work: MANIAC Lab has been the primary scientific driver and funding justification for the University's campus and wide-area network upgrades across two NSF networking awards.
 
 The hardware spans about a decade of procurement cycles, with the compute fleet averaging roughly five years old and the storage fleet closer to three. Equipment is retired as it ages out, and the facility has twice absorbed the relocation of entire data centers without interrupting production.
 
@@ -98,6 +100,28 @@ Mark Neubauer, Professor of Physics at Illinois, is the site's principal investi
 Batch scheduling is HTCondor throughout. Storage is dCache, with XRootD providing the wide-area data access that lets ATLAS jobs read from the nearest copy of a dataset rather than waiting for a transfer. Data placement across the grid is managed by Rucio, the ATLAS data management system.
 
 The facility also provides LOCALGROUPDISK, a Rucio storage endpoint where individual physicists keep datasets larger than a shared analysis filesystem can reasonably hold. Because it sits on the same networking infrastructure as the Analysis Facility, analysts can reach that data at local speeds.
+
+## What a quarter looks like
+
+In a recent quarter MWT2 completed about **9.2 million jobs** at roughly 93% success and moved
+close to **40 petabytes** over the research network. It holds around 88 million files.
+
+The wide-area traffic is a two-way exchange with the rest of the grid rather than a one-way
+feed: roughly 23 PB in and 17 PB out over the quarter. The heaviest partners in both
+directions are the Brookhaven Tier-1 and CERN, followed by the European and Canadian Tier-1s —
+RAL, TRIUMF, IN2P3 — and the other U.S. Tier-2s. Data arrives from a site in Tokyo as readily
+as from one in New York, which is what a global grid looks like in practice.
+
+## Two roles at once
+
+MWT2 is simultaneously a top **production** site and a heavy **analysis** endpoint, and the two
+workloads look nothing alike. Managed production consumes about 71% of the compute. User
+analysis accounts for 58% of the jobs and reads **94% of all events**.
+
+That asymmetry is the real shape of the facility. Production is a smaller number of long,
+compute-heavy jobs; analysis is a flood of short jobs that touch enormous amounts of data.
+Designing for either one alone would get the other badly wrong, and it is why storage
+throughput, not core count, is usually the thing that limits what the site can do.
 
 ## Beyond ATLAS
 
