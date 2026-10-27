@@ -3,7 +3,7 @@ layout: contact
 title: Contact
 permalink: /contact/
 intro:
-    headline: Humans answer email. Agents answer at the gateway.
+    headline: Write to us, or plug your agent in.
     text: Whether you are a physicist who needs a hand, a facility that wants to compare notes, or an agent that needs a port to plug into, there is a channel for you.
 channels:
     - title: Reach a person
